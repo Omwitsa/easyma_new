@@ -41,14 +41,17 @@ public class AdminLogin extends Activity implements AdapterView.OnItemSelectedLi
     SQLiteDatabase db;
 
     private ProgressBar progress;
-    private SharedPreferences pref;
+    SharedPreferences sharedPreferences;
+    // Creating an Editor object to edit(write to the file)
+    SharedPreferences.Editor prefsEditor;
     String bran, compny,usser;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_login);
-
+        sharedPreferences = getSharedPreferences("preferences",MODE_PRIVATE);
+        prefsEditor = sharedPreferences.edit();
         b = (Button) findViewById(R.id.Button01);
         et = (EditText) findViewById(R.id.username);
         pass = (EditText) findViewById(R.id.password);
@@ -128,6 +131,11 @@ public class AdminLogin extends Activity implements AdapterView.OnItemSelectedLi
                             int branchIndex = c.getColumnIndex("branch");
                             bran = c.getString(branchIndex);
                         }
+
+                        // Storing the key and its value as the data fetched from edittext
+                        prefsEditor.putString("loggedInUser", usser);
+                        // Commit to apply the changes
+                        prefsEditor.commit();
 
                         Intent intent = new Intent(AdminLogin.this, MainActivity.class);
                         Bundle bundle = new Bundle();

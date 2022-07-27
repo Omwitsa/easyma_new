@@ -1125,8 +1125,6 @@ id META
 id SHIFT
 id SYM
 id TextView
-id TextViewc
-id TextViewf
 id Transsdate
 id action0
 id action_all_clients
@@ -1168,7 +1166,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id branch
 id btnAbout
 id btnAddPlant
 id btnAddUser
@@ -1207,8 +1204,6 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id collection_search
-id conType
-id cont
 id container
 id content
 id contentPanel
@@ -1217,7 +1212,6 @@ id coordinator
 id coporate_branch
 id custom
 id customPanel
-id dcollection
 id decor_content_parent
 id default_activity_button
 id design_bottom_sheet
@@ -1258,7 +1252,6 @@ id fill_horizontal
 id fill_parent
 id fill_vertical
 id filled
-id finale
 id fixed
 id forever
 id ghost_view
@@ -1371,9 +1364,7 @@ id selected
 id separator
 id separator2
 id separatord
-id separatord2
 id separatorp
-id shift
 id shortcut
 id showCustom
 id showHome

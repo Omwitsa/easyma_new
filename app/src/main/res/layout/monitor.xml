@@ -28,12 +28,6 @@
             android:layout_height="fill_parent"
             android:orientation="vertical" >
 
-            <Spinner
-                android:id="@+id/branch"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:entries="@array/branch_array"
-                android:prompt="@string/container_prompt" />
             <EditText
                 android:id="@+id/sTextView"
                 android:layout_width="wrap_content"
@@ -53,47 +47,9 @@
                 android:id="@+id/TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:editable="false"
                 android:scrollHorizontally="false"
                 android:scrollbars="vertical"
                 android:textSize="45sp" >
-
-            </EditText>
-            <TextView
-                android:id="@+id/cont"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Container weight" >
-            </TextView>
-
-            <EditText
-                android:id="@+id/TextViewc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:editable="false"
-                android:scrollHorizontally="false"
-                android:scrollbars="vertical"
-                android:textSize="45sp" >
-
-            </EditText>
-
-            <TextView
-                android:id="@+id/finale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Final  weight" >
-            </TextView>
-
-            <EditText
-                android:id="@+id/TextViewf"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:editable="false"
-                android:scrollHorizontally="false"
-                android:scrollbars="vertical"
-
-                android:textSize="45sp" >
-
             </EditText>
 
             <TextView
@@ -116,7 +72,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Product" >
-
             </TextView>
 
             <Spinner
@@ -125,26 +80,12 @@
                 android:layout_height="50dp"
                 />
 
-            <TextView
-                android:id="@+id/conType"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="SHIFT" >
-            </TextView>
-
-            <Spinner
-                android:id="@+id/shift"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:entries="@array/shift_array"
-                android:prompt="@string/container_prompt" />
-
             <Button
                 android:id="@+id/save"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/back"
-                android:text="Print and Save Collection" >
+                android:text="Save Collection" >
             </Button>
 
         </TableLayout>

@@ -3656,7 +3656,6 @@ This current collection button takes you to searching of the scale device, that 
     </string-array><string-array name="branch_array">
         <item>0</item>
         <item>1.5</item>
-
     </string-array></file><file path="D:\Newtech\SourceCode\android\Freshpro\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         
         <item name="colorPrimary">@color/colorPrimary</item>
