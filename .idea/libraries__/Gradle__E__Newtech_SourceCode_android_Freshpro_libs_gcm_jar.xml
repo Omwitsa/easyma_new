@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: E./Newtech/SourceCode/android/Freshpro/libs/gcm.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/gcm.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

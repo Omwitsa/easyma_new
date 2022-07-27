@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/tools"
+    android:background="@drawable/bg3"
+    android:fitsSystemWindows="true"
+    app:ignore="NamespaceTypo">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:background="@color/tabteal"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:background="@drawable/customborder"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ccollection"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/moringa" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Collection"
+                android:id="@+id/text2"
+                android:textColor="@color/jet"
+                android:layout_below="@+id/ccollection"/>
+
+            <View
+                android:id="@+id/separatord"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/text2"
+                android:background="#ff8800"/>
+
+
+            <ImageView
+                android:id="@+id/dcollection"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_below="@+id/separatord"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/moringa" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Daily Collection"
+                android:id="@+id/text1"
+                android:textColor="@color/jet"
+                android:layout_below="@+id/dcollection"/>
+
+
+            <View
+                android:id="@+id/separatord2"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/text1"
+                android:background="#ff8800"/>
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:text="Convinience and faster technology of Moringa colection"
+                android:layout_below="@+id/separatord2"
+                android:textColor="@color/tabteal" />
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/btn_Enquiry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="0sp"
+        android:text="Check data" />
+</LinearLayout>
+</ScrollView>

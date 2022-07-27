@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/widget30"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/bg3">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_height="fill_parent"
+	android:background="@drawable/bg3">
+
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/my_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:elevation="4dp"
+		android:background="@color/tabteal"
+		android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+		app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+	<TextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="30dip"
+	    android:text="@string/about_us"
+	    android:textColor="@color/Black"
+	    android:textSize="20dip" />
+
+		<TextView
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="30dip"
+		    android:text="@string/about1"
+		    android:textColor="@color/Maroon"
+		    android:textSize="16dip" >
+
+		</TextView>
+
+		<TextView
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="30dip"
+		    android:text="@string/about2"
+		    android:textColor="@color/Black"
+		    android:textSize="14dip" >
+
+		</TextView>
+
+		<TextView
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="30dip"
+		    android:autoLink="web"
+		    android:inputType="textUri"
+		    android:text="@string/uri"
+		    android:textColor="@color/Yellow"
+		    android:textSize="12dip" >
+
+		</TextView>
+
+		<TextView
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="30dip"
+		    android:text="@string/version"
+		    android:textColor="@color/Black"
+		    android:textSize="12dip" >
+
+		</TextView>
+</LinearLayout>
+	</ScrollView>

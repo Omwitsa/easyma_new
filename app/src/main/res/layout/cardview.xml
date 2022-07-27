@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:paddingTop="15dp"
+android:orientation="vertical">
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:background="#ffffff">
+
+
+    <TableRow>
+        <TextView
+            android:id="@+id/textViewname"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/Transparent"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/jet"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/textViewid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/Transparent"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/black"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/textViewhaddress"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/Transparent"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/jet"
+            android:textStyle="normal"/>
+
+    </TableRow>
+</TableLayout>
+</LinearLayout>

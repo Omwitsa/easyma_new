@@ -1,0 +1,678 @@
+[
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap_d_logo3.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap\\d_logo3.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_bg3.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-ldpi\\bg3.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_content_main.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\content_main.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_news.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-mdpi\\news.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_daily.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-mdpi\\daily.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi-v21_ic_menu_slideshow.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi-v21\\ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_ic_checked.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-hdpi\\ic_checked.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxxhdpi_aboutus.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xxxhdpi\\aboutus.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_searchable.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\searchable.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xhdpi_d_logo3.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xhdpi\\d_logo3.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-hdpi_reg.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-hdpi\\reg.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_about.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\about.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\menu_clients.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\menu\\clients.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxhdpi_news.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xxhdpi\\news.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_dialog_input.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\dialog_input.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xhdpi_daily.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xhdpi\\daily.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_ic_sync.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-mdpi\\ic_sync.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_ic_change.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-hdpi\\ic_change.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_ic_menu_slideshow.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\ic_menu_slideshow.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_ic_action_arrow_left.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-hdpi\\ic_action_arrow_left.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_simple_spinner_dropdown_item1.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\simple_spinner_dropdown_item1.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi-v21_ic_menu_manage.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi-v21\\ic_menu_manage.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxhdpi_reg.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xxhdpi\\reg.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_ic_action_search.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-hdpi\\ic_action_search.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\menu_main.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_simple_spinner_item2.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\simple_spinner_item2.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxxhdpi_daily.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xxxhdpi\\daily.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\menu_menu_adduser.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\menu\\menu_adduser.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi-v21_ic_menu_slideshow.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi-v21\\ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_ic_menu_share.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\ic_menu_share.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout-v21_activity_generalbar.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout-v21\\activity_generalbar.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_ic_farmer.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-hdpi\\ic_farmer.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_simple_spinner_dropdown_item.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_d_logo3.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-mdpi\\d_logo3.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxhdpi_aboutus.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xxhdpi\\aboutus.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxhdpi_col3.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xxhdpi\\col3.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_list_item.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\list_item.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_ic_acc.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-ldpi\\ic_acc.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_main_one.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\main_one.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_ic_sync.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-ldpi\\ic_sync.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_cardview.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\cardview.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi-v21_ic_menu_share.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi-v21\\ic_menu_share.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_ic_menu_share.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\ic_menu_share.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_activity_farmer_receipt.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\activity_farmer_receipt.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_ic_checked.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-mdpi\\ic_checked.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_setting.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\setting.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_ic_menu_gallery.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\ic_menu_gallery.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_activity_enquiry.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\activity_enquiry.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_ic_acc.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-hdpi\\ic_acc.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_ic_help.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-hdpi\\ic_help.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_activity_generalbar.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\activity_generalbar.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_side_nav_bar.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-hdpi\\side_nav_bar.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_content_main2.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\content_main2.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_ic_menu_slideshow.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\ic_menu_slideshow.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_ic_acc.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-mdpi\\ic_acc.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi-v21_ic_menu_share.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi-v21\\ic_menu_share.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap_col3.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap\\col3.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_ic_menu_gallery.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\ic_menu_gallery.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_drop_d.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-hdpi\\drop_d.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_side_nav_bar.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-ldpi\\side_nav_bar.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_admin_login.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\admin_login.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_web_view.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\web_view.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\menu_menu_addplant.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\menu\\menu_addplant.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_activity_farmingtab.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\activity_farmingtab.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_current.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-mdpi\\current.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-hdpi_current.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-hdpi\\current.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi-v21_ic_menu_gallery.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi-v21\\ic_menu_gallery.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_spinner_list.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\spinner_list.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_ic_farmer.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-mdpi\\ic_farmer.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_bg3.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-hdpi\\bg3.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_activity_splash.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap_current.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap\\current.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_reg.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-mdpi\\reg.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\menu_synch_farmer.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\menu\\synch_farmer.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_activity_register_farmer.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\activity_register_farmer.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_side_nav_bar.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-mdpi\\side_nav_bar.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\xml_searchable.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\xml\\searchable.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi-v21_ic_menu_manage.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi-v21\\ic_menu_manage.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_ic_change.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-mdpi\\ic_change.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_app_bar_main.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\app_bar_main.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\menu_create_user.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\menu\\create_user.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi-v21_ic_menu_share.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi-v21\\ic_menu_share.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_ic_help.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-mdpi\\ic_help.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_cell_layout.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\cell_layout.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_chck.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\chck.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xhdpi_aboutus.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xhdpi\\aboutus.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_ic_action_search.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-mdpi\\ic_action_search.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_monitor.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\monitor.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_activity_main.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-hdpi_d_logo3.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-hdpi\\d_logo3.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_search_layout.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\search_layout.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_customborder.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-mdpi\\customborder.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_activity_super_admin.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\activity_super_admin.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_checked.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-ldpi\\checked.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_search_action.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\search_action.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxhdpi_daily.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xxhdpi\\daily.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_ic_logout.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-hdpi\\ic_logout.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_ic_menu_gallery.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\ic_menu_gallery.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_ic_change.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-ldpi\\ic_change.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxhdpi_d_logo3.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xxhdpi\\d_logo3.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_ic_help.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-ldpi\\ic_help.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_ic_date.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-ldpi\\ic_date.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_activity_main3.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\activity_main3.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_main.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-hdpi_news.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-hdpi\\news.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_customborder.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-ldpi\\customborder.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_ic_action_arrow_left.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-mdpi\\ic_action_arrow_left.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_bg3.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-mdpi\\bg3.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_ic_sync.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-hdpi\\ic_sync.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_product_list.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\product_list.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\menu_menu3.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\menu\\menu3.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xhdpi_col3.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xhdpi\\col3.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_ic_menu_manage.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\ic_menu_manage.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap_reg.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap\\reg.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi-v21_ic_menu_slideshow.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi-v21\\ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_moringa.jpg.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-hdpi\\moringa.jpg"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_ic_date.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-mdpi\\ic_date.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_email_activity.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\email_activity.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_ic_action_search.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-ldpi\\ic_action_search.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-hdpi_col3.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-hdpi\\col3.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap_aboutus.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap\\aboutus.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_nav_header_main.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxxhdpi_news.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xxxhdpi\\news.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_ic_farmer.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-ldpi\\ic_farmer.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_printmain.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\printmain.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_checked.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-mdpi\\checked.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxxhdpi_current.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xxxhdpi\\current.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_ic_action_arrow_left.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-ldpi\\ic_action_arrow_left.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_collection.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\collection.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xhdpi_current.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xhdpi\\current.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_activity_resetpassword.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\activity_resetpassword.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_activity_printsales.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\activity_printsales.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_ic_checked.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-ldpi\\ic_checked.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxxhdpi_reg.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xxxhdpi\\reg.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_simple_spinner_item.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\simple_spinner_item.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xhdpi_reg.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xhdpi\\reg.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxhdpi_current.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xxhdpi\\current.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-hdpi_aboutus.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-hdpi\\aboutus.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi-v21_ic_menu_manage.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi-v21\\ic_menu_manage.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_statement.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\statement.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_activity_main2.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\activity_main2.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_aboutus.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-mdpi\\aboutus.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_ic_logout.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-mdpi\\ic_logout.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi-v21_ic_menu_gallery.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi-v21\\ic_menu_gallery.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_drop_d.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-mdpi\\drop_d.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\menu_activity_main_drawer.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi-v21_ic_menu_gallery.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi-v21\\ic_menu_gallery.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_ic_menu_slideshow.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\ic_menu_slideshow.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-hdpi_daily.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-hdpi\\daily.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxxhdpi_d_logo3.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xxxhdpi\\d_logo3.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_customborder.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-hdpi\\customborder.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap_daily.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap\\daily.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_ic_date.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-hdpi\\ic_date.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_checked.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-hdpi\\checked.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-hdpi_ic_menu_manage.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\ic_menu_manage.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xhdpi_news.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xhdpi\\news.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_col3.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-mdpi\\col3.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\menu_main_activity_actions.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\menu\\main_activity_actions.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_activity_dailyreport.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\activity_dailyreport.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap_news.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap\\news.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_drop_d.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-ldpi\\drop_d.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-xxxhdpi_col3.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xxxhdpi\\col3.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_ic_logout.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-ldpi\\ic_logout.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-mdpi_ic_menu_manage.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-mdpi\\ic_menu_manage.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_searchdevice.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\searchdevice.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_add_admin.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\add_admin.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_ic_menu_share.png.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\release\\drawable-ldpi\\ic_menu_share.png"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\menu_main2.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\menu\\main2.xml"
+    },
+    {
+        "merged": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_super_admin_login.xml.flat",
+        "source": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\super_admin_login.xml"
+    }
+]

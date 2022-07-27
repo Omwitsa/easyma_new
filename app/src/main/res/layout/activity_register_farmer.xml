@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg3"
+    android:fitsSystemWindows="true">
+ <LinearLayout android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:paddingTop="56dp"
+     android:paddingLeft="24dp"
+     android:paddingRight="24dp"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="AMTECH TECHNOLOGIES LTD"
+     android:id="@+id/text1"
+     android:textAlignment="center"
+     android:textSize="24dp"
+     android:textColor="@color/RED"/>
+
+  <!-- Supply Number Level -->
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp">
+   <EditText android:id="@+id/supply_number"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="number"
+       android:hint="Supply Number" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <!-- Name Label -->
+ <com.google.android.material.textfield.TextInputLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="8dp"
+     android:layout_marginBottom="8dp">
+  <EditText
+      android:id="@+id/editfirst"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="textCapWords"
+      android:hint="Full Name" />
+ </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp">
+   <EditText
+       android:id="@+id/editid"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="number"
+       android:hint="Id Number" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <!--  phone label -->
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp">
+   <EditText android:id="@+id/editphone"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="number"
+       android:hint="Phone Number"
+       />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp">
+   <EditText android:id="@+id/email_address"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="textEmailAddress"
+       android:hint="email address" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp">
+   <EditText
+       android:id="@+id/coporate_branch"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="textCapWords"
+       android:hint="Coporate Branch" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp">
+
+   <EditText
+       android:id="@+id/editbbranch"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="textCapWords"
+       android:hint="Bank Branch"  />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp">
+   <EditText android:id="@+id/eHomeaddress"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="textCapWords"
+       android:hint="Home Address" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp">
+   <EditText android:id="@+id/town"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="textCapWords"
+       android:hint="Town of Residence" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp">
+   <EditText android:id="@+id/district"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="textCapWords"
+       android:hint="District" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp">
+   <EditText android:id="@+id/division"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="textCapWords"
+       android:hint="Division" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp">
+   <EditText
+       android:id="@+id/editlocation"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="textCapWords"
+       android:maxLength="10"
+       android:hint="Location" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp">
+   <EditText android:id="@+id/village"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="textCapWords"
+       android:maxLength="10"
+       android:hint="Village" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp">
+   <EditText
+       android:id="@+id/dob"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:clickable="true"
+       android:cursorVisible="false"
+       android:drawableRight="@drawable/ic_date"
+       android:focusable="false"
+       android:focusableInTouchMode="false"
+       android:hint="Click Here to pick Famer's Date of Birth"
+       android:inputType="date" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp">
+   <EditText
+       android:id="@+id/reg_date"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:clickable="true"
+       android:cursorVisible="false"
+       android:drawableRight="@drawable/ic_date"
+       android:focusable="false"
+       android:focusableInTouchMode="false"
+       android:hint="Click Here to pick Famer's Registration Date"
+       android:inputType="date" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+<!--  <com.google.android.material.textfield.TextInputLayout-->
+<!--     android:layout_width="match_parent"-->
+<!--     android:layout_height="wrap_content"-->
+<!--     android:layout_marginTop="8dp"-->
+<!--     android:layout_marginBottom="8dp">-->
+<!--  <RadioGroup-->
+<!--      android:id="@+id/gender"-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:layout_marginLeft="50dp"-->
+<!--      android:textColor="@color/jet">-->
+
+<!--   <TextView-->
+<!--       android:layout_width="wrap_content"-->
+<!--       android:layout_height="wrap_content"-->
+<!--       android:text="Gender" />-->
+
+<!--   <RadioButton-->
+<!--       android:id="@+id/male"-->
+<!--       android:layout_width="wrap_content"-->
+<!--       android:layout_height="wrap_content"-->
+<!--       android:checked="true"-->
+<!--       android:text="Male" />-->
+
+<!--   <RadioButton-->
+<!--       android:id="@+id/female"-->
+<!--       android:layout_width="wrap_content"-->
+<!--       android:layout_height="wrap_content"-->
+<!--       android:text="Female" />-->
+
+<!--  </RadioGroup>-->
+<!-- </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--  <com.google.android.material.textfield.TextInputLayout-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:layout_marginTop="8dp"-->
+<!--      android:layout_marginBottom="8dp">-->
+<!--   <CheckedTextView-->
+<!--       android:id="@+id/is_trader"-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="wrap_content"-->
+<!--       android:layout_marginTop="10dp"-->
+<!--       android:checked="false"-->
+<!--       android:gravity="center_vertical"-->
+<!--       android:paddingLeft="15dp"-->
+<!--       android:text="Is Farmer a Trader?" />-->
+<!--  </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--  <com.google.android.material.textfield.TextInputLayout-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:layout_marginTop="8dp"-->
+<!--      android:layout_marginBottom="8dp">-->
+<!--   <CheckedTextView-->
+<!--       android:id="@+id/has_loan"-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="wrap_content"-->
+<!--       android:layout_marginTop="10dp"-->
+<!--       android:checked="false"-->
+<!--       android:gravity="center_vertical"-->
+<!--       android:paddingLeft="15dp"-->
+<!--       android:text="Farmer Has Loan?" />-->
+<!--  </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--  <com.google.android.material.textfield.TextInputLayout-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:visibility="gone"-->
+<!--      android:layout_marginTop="8dp"-->
+<!--      android:layout_marginBottom="8dp">-->
+<!--   <EditText-->
+<!--       android:id="@+id/loan_describe"-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:hint="Describe the loan Here"-->
+<!--       android:layout_height="wrap_content" />-->
+<!--  </com.google.android.material.textfield.TextInputLayout>-->
+
+<!-- <com.google.android.material.textfield.TextInputLayout-->
+<!--     android:layout_width="match_parent"-->
+<!--     android:layout_height="wrap_content"-->
+<!--     android:layout_marginTop="8dp"-->
+<!--     android:layout_marginBottom="8dp">-->
+<!--  <EditText-->
+<!--      android:id="@+id/editbank"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:inputType="textCapWords"-->
+<!--      android:hint="Bank Name" />-->
+<!-- </com.google.android.material.textfield.TextInputLayout>-->
+
+<!-- <com.google.android.material.textfield.TextInputLayout-->
+<!--     android:layout_width="match_parent"-->
+<!--     android:layout_height="wrap_content"-->
+<!--     android:layout_marginTop="8dp"-->
+<!--     android:layout_marginBottom="8dp">-->
+<!--  <EditText android:id="@+id/branch_code"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:inputType="number"-->
+<!--      android:hint="Branch Code(Optional)" />-->
+<!-- </com.google.android.material.textfield.TextInputLayout>-->
+
+<!-- <com.google.android.material.textfield.TextInputLayout-->
+<!--     android:layout_width="match_parent"-->
+<!--     android:layout_height="wrap_content"-->
+<!--     android:layout_marginTop="8dp"-->
+<!--     android:layout_marginBottom="8dp">-->
+<!--  <EditText-->
+<!--      android:id="@+id/editaccount"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:inputType="number"-->
+<!--      android:hint="Account Number(Optional)"  />-->
+<!-- </com.google.android.material.textfield.TextInputLayout>-->
+
+ <!-- Signup Button -->
+ <androidx.appcompat.widget.AppCompatButton
+     android:id="@+id/btnreg"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="24dp"
+     android:layout_marginBottom="24dp"
+     android:padding="12dp"
+     android:text="Register"/>
+
+ <TextView android:id="@+id/link_login"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginBottom="24dp"
+     android:textColor="@color/Teal"
+     android:text="Already registered? Collect Milk"
+     android:gravity="center"
+     android:textSize="16dip"/>
+
+</LinearLayout>
+</ScrollView>

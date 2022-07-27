@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+    <item
+        android:id="@+id/action_scan2"
+        android:title="@string/text_scan_devices"/>
+
+    <item
+        android:id="@+id/action_synch_collection"
+        android:title="Synch Collection"/>
+
+</menu>
+
+
+
+<!--
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item
+    android:id="@+id/action_scan"
+    android:showAsAction="always"
+    android:title="@string/text_scan_devices"/>
+
+</menu>-->

@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Search Widget -->
+    <item
+        android:id="@+id/action_synch_farmer"
+        android:title="Synchronise Farmer"
+        android:actionLayout="@layout/chck"
+        />
+
+</menu>
