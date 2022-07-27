@@ -28,11 +28,6 @@ import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpPost;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -57,17 +52,19 @@ import util.DateUtil;
 import static com.myactivities.MainActivity.branch;
 import static com.myactivities.MainActivity.logedInUser;
 
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.HttpResponse;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.NameValuePair;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.HttpClient;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.methods.HttpPost;
 
-public class MonitorActivity extends MyActivity implements OnItemSelectedListener {
+
+public class MonitorActivity extends MyActivity {
     ApiInterface apiService;
     private static final int REQUEST_DISCOVERY = 0x1;
     private static final String CollectionDB = null;
     private final String TAG = "MonitorActivity";
     private Handler _handler = new Handler();
     private final int maxlength = 28;
-    private BluetoothAdapter mBluetoothAdapter;
-    private BluetoothDevice device = null;
-    private BluetoothSocket socket = null;
 
     public EditText TextView, sTextView, sno,pin;
     public EditText TextViewc,TextViewf;
@@ -133,6 +130,14 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
             @Override
             public void onClick(View view) {
                 finish();
+            }
+        });
+
+        Button btnRegister = (Button) findViewById(R.id.save);
+        btnRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog();
             }
         });
 
@@ -279,260 +284,12 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
         //db.execSQL("ALTER TABLE CollectionDB  ADD transdate  varchar");
         //db.execSQL("UPDATE CollectionDB   SET transdate  = datep");
         /*Starting new db for accepting data from mysql database*/
-
-
-        mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-        BluetoothDevice finalDevice = this.getIntent().getParcelableExtra(
-                BluetoothDevice.EXTRA_DEVICE);
-        //Controller app = (Controller) getApplicationContext();
-        Controller app = new Controller();
-        device = app.getDevice();
-        Log.d(TAG, "test1");
-        if (finalDevice == null) {
-            if (device == null) {
-                Log.d(TAG, "test2");
-                Intent intent = new Intent(this, SearchDeviceActivity.class);
-                startActivity(intent);
-                finish();
-                return;
-            }
-            Log.d(TAG, "test4");
-        } else if (finalDevice != null) {
-            Log.d(TAG, "test3");
-            app.setDevice(finalDevice);
-            device = app.getDevice();
-        }
-        new Thread() {
-            public void run() {
-                connect(device);
-            }
-
-            ;
-        }.start();
     }
 
     public void onButtonClickclear(View view) throws IOException {
         hexString = new StringBuffer();
         sTextView.setText(hexString.toString());
     }
-
-    /* after select, connect to device */
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode != REQUEST_DISCOVERY) {
-            finish();
-            return;
-        }
-        if (resultCode != RESULT_OK) {
-            finish();
-            return;
-        }
-        final BluetoothDevice device = data
-                .getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-        new Thread() {
-            public void run() {
-                connect(device);
-            }
-
-            ;
-        }.start();
-    }
-
-    protected void onDestroy() {
-        super.onDestroy();
-        try {
-            if (socket != null) {
-                socket.close();
-            }
-        } catch (IOException e) {
-            Log.e(TAG, ">>", e);
-        }
-    }
-
-    protected void connect(BluetoothDevice device) {
-        try {
-            Log.d(TAG, "Searching");
-            // Create a Socket connection: need the server's UUID number of
-            // registered
-            Method m = device.getClass().getMethod("createRfcommSocket",
-                    new Class[]{int.class});
-            socket = (BluetoothSocket) m.invoke(device, 1);
-            socket.connect();
-            Log.d(TAG, ">>Client connectted");
-            inputStream = socket.getInputStream();
-            outputStream = socket.getOutputStream();
-            int read = -1;
-            final byte[] bytes = new byte[2048];
-            while (true) {
-                synchronized (obj1) {
-                    read = inputStream.read(bytes);
-                    Log.d(TAG, "read:" + read);
-                    if (read > 0) {
-                        final int count = read;
-                        String str = SamplesUtils.byteToHex(bytes, count);
-//						Log.d(TAG, "test1:" + str);
-
-                        String hex = hexString.toString();
-                        if (hex == "") {
-                            hexString.append(",");
-                        } else {
-                            if (hex.lastIndexOf("GS,") < hex.lastIndexOf(" ")) {
-                                hexString.append("\n, ");
-                            }
-                        }
-                        hexString.append(str);
-                        hex = hexString.toString();
-//						Log.d(TAG, "test2:" + hex);
-                        if (hex.length() > maxlength) {
-                            try {
-                                hex = hex.substring(hex.length() - maxlength,
-                                        hex.length());
-                                hex = hex.substring(hex.indexOf(" "));
-                                hex = "GS," + hex;
-                                hexString = new StringBuffer();
-                                hexString.append(hex);
-                            } catch (Exception e) {
-                                e.printStackTrace();
-                                Log.e(TAG, "e", e);
-                            }
-                        }
-                        //check it with albert for consistent flow of data
-                        _handler.post(new Runnable() {
-                            public void run() {
-                                String txt = sTextView.toString();
-                                String value = txt;
-                                //DecimalFormat nf = new DecimalFormat(".0");
-                                //String TextView1 = value.substring(value.lastIndexOf('g')+1);
-                                bb=TextView.getText().toString();
-                                bb = bufferStrToHex(hexString.toString(), false).trim().replaceAll("[^0-9.]", "");
-                                bb = bb.trim();
-                                if (bb.length()==0 )
-
-                                {
-                                    bb="0";
-                                    TextView.setText("0");
-                                }
-                                else {
-
-                                    if (bb.isEmpty()==false) {
-                                        TextView.setText((bb.toString()));
-                                        String bb1 = bb.replace("W", "");
-                                        bb1 = bb.replace("A", "");
-                                        bb1 = bb.replace("C", "");
-                                        bb1 = bb.replace("B", "");
-                                        bb1 = bb.replace("@", "");
-                                        bb1 = bb.replace("?", "");
-                                        bb1 = bb.replace("W", "");
-                                        bb1 = bb1.trim();
-                                        float quantity =0;
-                                        if (bb1 !="") {
-                                            try {
-
-
-                                                //Log.d(TAG, "e",String.valueOf(bb1));
-                                                //String qty=String.format("%.2f",Float.valueOf(bb1));
-//                                                String qty=String.format("%.0f",Float.valueOf(bb1));
-                                                String qty=String.format("%.2f",Float.valueOf(bb1));
-                                                quantity = Float.parseFloat(qty);
-                                            }
-                                            catch(Exception e)
-                                            {
-                                                Log.e(TAG, ">>", e);
-                                                Toast.makeText(getBaseContext(),
-                                                        getResources().getString(R.string.ioexception),
-                                                        Toast.LENGTH_SHORT).show();
-                                                return;
-                                            }
-                                        }
-                                        else {
-                                            quantity =0;
-                                        }
-                                        double containerWeight = 0;
-                                        if (!TextUtils.isEmpty(TextViewc.getText().toString())) {
-                                            containerWeight = Double.parseDouble(TextViewc.getText().toString().trim());
-                                        }
-
-                                        double finalWeight = quantity - containerWeight;
-
-//                                        DecimalFormat df = new DecimalFormat("#.##");
-//                                        df.setRoundingMode(RoundingMode.FLOOR);
-//                                        double result = Double.parseDouble(df.format(finalWeight));
-
-                                        TextViewf.setText(String.valueOf(finalWeight));
-                                        calculate();
-                                    }
-                                }
-
-                            }
-
-                        });
-
-
-                    }
-                    //TextViewc.setText(String.valueOf(CONTAINER_WEIGHT));
-
-                }
-                Button btnRegister = (Button) findViewById(R.id.save);
-                btnRegister.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-
-                        // Switching to Register screen
-                        if (TextView.getText().toString().trim().length() == 0 ||
-                                TextViewf.getText().toString().trim().length() == 0 ||
-                                sno.getText().toString().trim().length() == 0) {
-                            showMessage("Error", "Please enter all values");
-                            return;
-                        } else{
-                            dialog();
-                        }
-                    }
-
-                });
-            }
-
-        } catch (Exception e) {
-            Log.e(TAG, ">>", e);
-            Toast.makeText(getBaseContext(),
-                    getResources().getString(R.string.ioexception),
-                    Toast.LENGTH_SHORT).show();
-            return;
-        } finally {
-            if (socket != null) {
-                try {
-                    Log.d(TAG, ">>Client Socket Close");
-                    socket.close();
-                    socket = null;
-                    // this.finish();
-                    return;
-                } catch (IOException e) {
-                    Log.e(TAG, ">>", e);
-                }
-            }
-        }
-    }
-
-
-    private void calculate() {
-
-        DecimalFormat nf = new DecimalFormat(".#");
-        //String bb = bufferStrToHex(hexString.toString(), false).trim().replaceAll("[^0-9.]", "");
-        //TextView.setText(nf.format(Float.parseFloat(bb.toString())));
-        float quantity = Float.parseFloat(bb.toString());
-
-        float containerWeight =Float.parseFloat(fbranch) ;
-
-        if (!TextUtils.isEmpty(TextViewc.getText().toString())) {
-            containerWeight = Float.parseFloat(TextViewc.getText().toString().trim());
-        }
-
-        float finalWeight =  quantity - containerWeight;
-
-        DecimalFormat df = new DecimalFormat("#.#");
-        df.setRoundingMode(RoundingMode.FLOOR);
-        double result = Double.parseDouble(df.format(finalWeight));
-        TextViewf.setText(nf.format(result));
-    }
-
 
     public void showMessage(String title, String message) {
         Builder builder = new Builder(this);
@@ -543,8 +300,6 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
     }
 
     protected void dialog() {
-        //MainActivity ma = new MainActivity();
-        //branch = ma.branch;
         StringBuffer buffer = new StringBuffer();
         Intent intent = new Intent(MonitorActivity.this, MainActivity.class);
         Bundle getBundle = this.getIntent().getExtras();
@@ -636,108 +391,11 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
         //TextView.setText("");
         //TextViewf.setText("");
         sno.setText("");
-
     }
-
 
     private SQLiteDatabase getWritableDatabase() {
         // TODO Auto-generated method stub
         return null;
-    }
-
-    public void loadUpdate() {
-
-
-    }
-
-
-    //my code......
-    public void connectDevice() {
-        if (mSocket == null) {
-            //Log.d(TAG, "Socket is null");
-            UUID SPP_UUID = UUID
-                    .fromString("8ce255c0-200a-11e0-ac64-0800200c9a66");
-            @SuppressLint("MissingPermission") Set<BluetoothDevice> bondedDevices = BluetoothAdapter.getDefaultAdapter().getBondedDevices();
-            //Log.d(TAG, "Size: " + bondedDevices.size());
-            /**
-             * Select your divice form paired devices
-             */
-            for (BluetoothDevice bluetoothDevice : bondedDevices) {
-                selectDevice = bluetoothDevice;
-                //Log.d(TAG, bluetoothDevice.getName()+" "+bluetoothDevice.getAddress());
-            }
-
-            if (selectDevice.getBondState() == selectDevice.BOND_BONDED) {
-                //Log.d(TAG, selectDevice.getName());
-                try {
-                    mSocket = selectDevice.createInsecureRfcommSocketToServiceRecord(SPP_UUID);
-                } catch (IOException e1) {
-                    // TODO Auto-generated catch block
-                    //Log.d(TAG, "socket not created");
-                    e1.printStackTrace();
-                }
-                try {
-                    mSocket.connect();
-                } catch (IOException e) {
-                    try {
-                        mSocket.close();
-                        //Log.d(TAG, "Cannot connect");
-                    } catch (IOException e1) {
-                        //Log.d(TAG, "Socket not closed");
-                        e1.printStackTrace();
-                    }
-                }
-            }
-        }
-    }
-
-
-    public String bufferStrToHex(String buffer, boolean flag) {
-        String all = buffer;
-        StringBuffer sb = new StringBuffer();
-        String[] ones = all.split("GS, ");
-        for (int i = 0; i < ones.length; i++) {
-            if (ones[i] != "") {
-                String[] twos = ones[i].split("  ");
-                for (int j = 0; j < twos.length; j++) {
-                    if (twos[j] != "") {
-                        if (flag) {
-                            sb.append(SamplesUtils.stringToHex(twos[j]));
-                        } else {
-                            sb.append(SamplesUtils.hexToString(twos[j]));
-                        }
-                        if (j != twos.length - 1) {
-                            if (sb.toString() != "") {
-                                sb.append("\n");
-                            }
-                            sb.append("GS, ");
-                        }
-                    }
-                }
-                if (i != ones.length - 1) {
-                    if (sb.toString() != "") {
-                        sb.append("\n");
-                    }
-                    sb.append(" ");
-                }
-            }
-        }
-        return sb.toString();
-    }
-
-
-    @Override
-    public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,
-                               long arg3) {
-        // TODO Auto-generated method stub
-
-    }
-
-
-    @Override
-    public void onNothingSelected(AdapterView<?> arg0) {
-        // TODO Auto-generated method stub
-
     }
 }
 

@@ -20,16 +20,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-
-import Rest.ApiClient;
 import Rest.ApiInterface;
-import model.ProductResp;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-
-//import myactivities.R;
 
 public class CollectionActivity extends MainPrintActivity implements OnClickListener {
 
@@ -67,15 +58,12 @@ public class CollectionActivity extends MainPrintActivity implements OnClickList
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-
-        ImageView btndcol = (ImageView) findViewById(R.id.dcollection);
         ImageView btnCcoll = (ImageView) findViewById(R.id.ccollection);
         Data=findViewById(R.id.btn_Enquiry);
 
 
         Data.setOnClickListener(this);
 
-        btndcol.setOnClickListener(this);
         btnCcoll.setOnClickListener(this);
 
     }
@@ -122,14 +110,10 @@ public class CollectionActivity extends MainPrintActivity implements OnClickList
     public void onClick(View v) {
         // TODO Auto-generated method stub
         switch (v.getId()) {
-            case R.id.dcollection:
-                Intent pcollectionIntent = new Intent(getApplicationContext(), DailyReportsActivity.class);
-                startActivity(pcollectionIntent);
-                break;
             case R.id.ccollection:
                 //if connection not yet established:
 
-                Intent ccollectionIntent = new Intent(getApplicationContext(), SearchDeviceActivity.class);
+                Intent ccollectionIntent = new Intent(getApplicationContext(), MonitorActivity.class);
                 startActivity(ccollectionIntent);
                 break;
             case R.id.btn_Enquiry:
