@@ -1189,8 +1189,6 @@ id btn_reset
 id btnreg
 id button1
 id buttonPanel
-id c_branch
-id c_coperative
 id cancel_action
 id card_view
 id ccollection

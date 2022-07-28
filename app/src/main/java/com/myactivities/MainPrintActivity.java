@@ -122,7 +122,6 @@ public class MainPrintActivity extends MyActivity {
         return list;
     }
 
-
     private void showToast(String message) {
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
