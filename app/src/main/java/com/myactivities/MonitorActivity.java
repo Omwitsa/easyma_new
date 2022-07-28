@@ -37,6 +37,7 @@ import model.ProductResp;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import util.AppConstants;
 import util.DateUtil;
 
 import static com.myactivities.MainActivity.branch;
@@ -158,9 +159,8 @@ public class MonitorActivity extends MyActivity {
         catch (Exception e){
             System.out.println("Exception :" + e.getMessage());
         }
-
         apiService = ApiClient.getClient().create(ApiInterface.class);
-        Call<ProductResp> call= apiService.getItems();
+        Call<ProductResp> call= apiService.getItems(AppConstants.SACCO_CODE);
         call.enqueue(new Callback<ProductResp>() {
             @Override
             public void onResponse(Call<ProductResp> call, Response<ProductResp> response) {
@@ -196,7 +196,7 @@ public class MonitorActivity extends MyActivity {
         db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
         db.execSQL("CREATE TABLE IF NOT EXISTS CollectionDB(supplier VARCHAR,quantity VARCHAR,branch VARCHAR, date DATETIME, auditId VARCHAR,status VARCHAR, type VARCHAR, saccoCode VARCHAR);");
     }
-
+// supplier,
     public void onButtonClickclear(View view) throws IOException {
         hexString = new StringBuffer();
         sTextView.setText(hexString.toString());
@@ -230,8 +230,7 @@ public class MonitorActivity extends MyActivity {
                         SimpleDateFormat ff = new SimpleDateFormat("yyyy-MM-dd");
                         String trans= ff.format(c.getTime());
                         String loggenInUser = sharedPreferences.getString("loggedInUser", "");
-                        String sacco = "KIENI DAIRY PRODUCTS LTD";
-                        db.execSQL("INSERT INTO CollectionDB  VALUES('" + sno.getText() + "', '" + TextView.getText() + "', '" + branchhh +"', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + sacco + "');");
+                        db.execSQL("INSERT INTO CollectionDB  VALUES('" + sno.getText() + "', '" + TextView.getText() + "', '" + branchhh +"', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "');");
                         showMessage("Success", "Record added");
                         TextView.setText("0");
 

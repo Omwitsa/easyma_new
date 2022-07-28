@@ -42,6 +42,7 @@ import model.SynchData;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import util.AppConstants;
 import util.DateUtil;
 import util.FontDefine;
 import util.Printer;
@@ -71,9 +72,6 @@ public class MainPrintActivity extends MyActivity {
 
     private ProgressDialog mProgressDlg, mConnectingDlg;
 
-    private BluetoothAdapter mBluetoothAdapter;
-
-    private P25Connector mConnector;
     String qty1 = "";// =getIntent().getStringExtra("qty").toString();
     String sno1 = "";
     String pin1 = "";
@@ -82,16 +80,11 @@ public class MainPrintActivity extends MyActivity {
     MainActivity mainActivity;
     public static String company, userrrrr, branchhh;
 
-    private ArrayList<BluetoothDevice> mDeviceList = new ArrayList<BluetoothDevice>();
     String comp;
-
-    private static BluetoothSocket mSocket;
-    BluetoothDevice selectDevice = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.printmain);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         myToolbar.setTitle("Print Report");
@@ -115,128 +108,7 @@ public class MainPrintActivity extends MyActivity {
 
 
         tv = (TextView) findViewById(R.id.tv);
-        sno1 = "";
-        product = "";
-        qty1 = "2342";//getIntent().getStringExtra("qty").toString();
-         // "234234"
-        pin1 = "A345455345G";// getIntent().getStringExtra("pin").toString();
         db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
-
-        mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-
-        if (mBluetoothAdapter == null) {
-            showUnsupported();
-        } else {
-            if (!mBluetoothAdapter.isEnabled()) {
-                showDisabled();
-            } else {
-                showEnabled();
-
-                Set<BluetoothDevice> pairedDevices = mBluetoothAdapter.getBondedDevices();
-
-                if (pairedDevices != null) {
-                    mDeviceList.addAll(pairedDevices);
-                    updateDeviceList();
-                }
-            }
-
-            mProgressDlg = new ProgressDialog(this);
-            mProgressDlg.setMessage("Scanning...");
-            mProgressDlg.setCancelable(false);
-            mProgressDlg.setButton(DialogInterface.BUTTON_NEGATIVE, "Cancel", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.dismiss();
-                    mBluetoothAdapter.cancelDiscovery();
-                }
-            });
-
-            mConnectingDlg = new ProgressDialog(this);
-            mConnectingDlg.setMessage("Connecting...");
-            mConnectingDlg.setCancelable(false);
-            mConnector = new P25Connector(new P25Connector.P25ConnectionListener() {
-                @Override
-                public void onStartConnecting() {
-                    mConnectingDlg.show();
-                }
-
-                @Override
-                public void onConnectionSuccess() {
-                    mConnectingDlg.dismiss();
-                    showConnected();
-                }
-
-                @Override
-                public void onConnectionFailed(String error) {
-                    mConnectingDlg.dismiss();
-                }
-
-                @Override
-                public void onConnectionCancelled() {
-                    mConnectingDlg.dismiss();
-                }
-
-                @Override
-                public void onDisconnected() {
-                    showDisonnected();
-                }
-            });
-
-            //enable bluetooth
-            mEnableBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-                    startActivityForResult(intent, 1000);
-                }
-            });
-
-            //connect/disconnect
-            mConnectBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View arg0) {
-                    connect();
-
-
-                }
-            });
-
-            mPrintReceiptBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View arg0) {
-                    printStruk();
-                }
-            });
-        }
-
-
-        IntentFilter filter = new IntentFilter();
-        filter.addAction(BluetoothAdapter.ACTION_STATE_CHANGED);
-        filter.addAction(BluetoothDevice.ACTION_FOUND);
-        filter.addAction(BluetoothAdapter.ACTION_DISCOVERY_STARTED);
-        filter.addAction(BluetoothAdapter.ACTION_DISCOVERY_FINISHED);
-        filter.addAction(BluetoothDevice.ACTION_BOND_STATE_CHANGED);
-        registerReceiver(mReceiver, filter);
-
-    }
-
-    @Override
-    public void onPause() {
-        if (mBluetoothAdapter != null) {
-            if (mBluetoothAdapter.isDiscovering()) {
-                mBluetoothAdapter.cancelDiscovery();
-            }
-        }
-
-        if (mConnector != null) {
-            try {
-                mConnector.disconnect();
-            } catch (P25ConnectionException e) {
-                e.printStackTrace();
-            }
-        }
-
-        super.onPause();
     }
 
     private String[] getArray(ArrayList<BluetoothDevice> data) {
@@ -253,13 +125,6 @@ public class MainPrintActivity extends MyActivity {
 
     private void showToast(String message) {
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
-    }
-
-    private void updateDeviceList() {
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.simple_spinner_item2, getArray(mDeviceList));
-        adapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item1);
-        mDeviceSp.setAdapter(adapter);
-        mDeviceSp.setSelection(0);
     }
 
     private void showDisabled() {
@@ -297,68 +162,13 @@ public class MainPrintActivity extends MyActivity {
         mDeviceSp.setEnabled(true);
     }
 
-    private void connect() {
-        if (mDeviceList == null || mDeviceList.size() == 0) {
-
-            return;
-        }
-
-        BluetoothDevice device = mDeviceList.get(mDeviceSp.getSelectedItemPosition());
-        if (device.getBondState() == BluetoothDevice.BOND_NONE) {
-            try {
-                createBond(device);
-            } catch (Exception e) {
-                showToast("Failed to pair device");
-                return;
-            }
-        }
-
-        try {
-            if (!mConnector.isConnected()) {
-                mConnector.connect(device);
-            } else {
-                mConnector.disconnect();
-
-                showDisonnected();
-            }
-        } catch (P25ConnectionException e) {
-            e.printStackTrace();
-        }
-
-
-        //my code
-    }
-
-    private void createBond(BluetoothDevice device) throws Exception {
-
-        try {
-            Class<?> cl = Class.forName("android.bluetooth.BluetoothDevice");
-            Class<?>[] par = {};
-            Method method = cl.getMethod("createBond", par);
-            method.invoke(device);
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw e;
-        }
-    }
-
-    private void sendData(byte[] bytes) {
-        try {
-            mConnector.sendData(bytes);
-            db.execSQL("UPDATE CollectionDB set status='1' where status='0';");
-        } catch (P25ConnectionException e) {
-            e.printStackTrace();
-        }
-    }
-
     public void fetchProducts() {
         apiService = ApiClient.getClient().create(ApiInterface.class);
-        Call<ProductResp> call= apiService.getItems();
+        Call<ProductResp> call= apiService.getItems(AppConstants.SACCO_CODE);
         call.enqueue(new Callback<ProductResp>() {
             @Override
             public void onResponse(Call<ProductResp> call, Response<ProductResp> response) {
                 model.ProductResp responseData = response.body();
-//                assert responseData != null;
                 if (responseData.isSuccess()){
                     ArrayList<String> productList2 = new ArrayList<String>(responseData.getProducts());
                     ArrayList<String> arrProduct = new ArrayList<String>();
@@ -376,7 +186,7 @@ public class MainPrintActivity extends MyActivity {
 
             @Override
             public void onFailure(Call<ProductResp> call, Throwable t) {
-
+                showToast("Sorry, An error occurred");
             }
         });
     }
@@ -424,31 +234,33 @@ public class MainPrintActivity extends MyActivity {
             showMessage("Collection Message", "No new collection found");
             return;
         }
+
         String sup = null;
         String qty = null;
+        String branchhh = null;
         String dates = null;
         String auditid = null;
-        String shift = null;
-        String branchhh = null;
         String product = null;
+        String saccoCode = null;
 
         try {
             while (c.moveToNext()) {
                 sup = c.getString(0);
                 qty = c.getString(1);
                 branchhh = c.getString(2);
-                dates = c.getString(4);
-                auditid = c.getString(5);
-                shift=c.getString(6);
-                product=c.getString(9);
+                dates = c.getString(3);
+                auditid = c.getString(4);
+                product=c.getString(6);
+                saccoCode=c.getString(7);
 
-                SynchData synchData = new SynchData(sup, qty, dates,shift,auditid,branchhh, product);
+                SynchData synchData = new SynchData(sup, qty, branchhh, dates, auditid, product, saccoCode);
                 apiService = ApiClient.getClient().create(ApiInterface.class);
-                Call<model.Response>call= apiService.login(synchData);
+                Call<model.Response> call= apiService.login(synchData);
                 call.enqueue(new Callback<model.Response>() {
                     @Override
                     public void onResponse(Call<model.Response> call, Response<model.Response> response) {
                         model.Response responseData = response.body();
+                        db.execSQL("UPDATE CollectionDB set status='1' where status='0';");
                         assert responseData != null;
                         String status = responseData.getMessage();
                         Toast.makeText(getApplicationContext(), status, Toast.LENGTH_LONG).show();
@@ -459,85 +271,12 @@ public class MainPrintActivity extends MyActivity {
                         Toast.makeText(getApplicationContext(), "An Error occurred", Toast.LENGTH_LONG).show();
                     }
                 });
-
-//                httpclient = new DefaultHttpClient();
-//                httppost = new HttpPost(BASE_URL + "webservice/users/login");
-//                nameValuePairs = new ArrayList<NameValuePair>();
-//                nameValuePairs.add(new BasicNameValuePair("sup", sup));
-//                nameValuePairs.add(new BasicNameValuePair("qty", qty));
-//                nameValuePairs.add(new BasicNameValuePair("dates", dates));
-//                nameValuePairs.add(new BasicNameValuePair("auditid", auditid));
-//                nameValuePairs.add(new BasicNameValuePair("shift", shift));
-//                nameValuePairs.add(new BasicNameValuePair("branchhh", branchhh));
-//                nameValuePairs.add(new BasicNameValuePair("product", product));
-//                httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-//                //Execute HTTP Post Request
-//               // response = httpclient.execute(httppost);
-//                // edited by James from coderzheaven.. from here....
-//                ResponseHandler<String> responseHandler = new BasicResponseHandler();
-//                final String response = httpclient.execute(httppost, responseHandler);
-//                System.out.println("Response : " + response);
-//
-//                runOnUiThread(new Runnable() {
-//                    public void run() {
-//                        //tv.setText("Status : " + response);
-//                        try {
-//                            dialog.dismiss();
-//                            Toast.makeText(MainPrintActivity.this, "Collection Submited Succesifully", Toast.LENGTH_SHORT).show();
-//                        } catch (Exception e) {
-//                            e.printStackTrace();
-//                        }
-//                    }
-//                });
-//
-//                if (response.equalsIgnoreCase("Successful")) {
-//                    //set status='2'
-//                    // db.execSQL("UPDATE CollectionDB set status='2'  where status='1';");
-//                    runOnUiThread(new Runnable() {
-//                        public void run() {
-//                            db.execSQL("UPDATE CollectionDB set status='0'  where status='0';");
-//                            Toast.makeText(MainPrintActivity.this, "success", Toast.LENGTH_SHORT).show();
-//                        }
-//                    });
-//                }
             }
         } catch (Exception e) {
             dialog.dismiss();
             System.out.println("Exception :" + e.getMessage());
         }
-        //}
-
-        db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
-        db.execSQL("CREATE TABLE IF NOT EXISTS CollectionDB(supplier VARCHAR," +
-                "quantity VARCHAR,branch VARCHAR,datep DATETIME,date DATETIME, auditId VARCHAR,shift VARCHAR, status VARCHAR,transdate VARCHAR, Type VARCHAR);");
-        Cursor cursor = db.rawQuery("SELECT count(*) FROM CollectionDB", null);
-        cursor.moveToFirst();
-        if (cursor.getInt(0) > 0) {
-            //showAlert();
-            //dialog.dismiss();
-        } else {
-            Toast.makeText(MainPrintActivity.this, "No new collection record found", Toast.LENGTH_LONG).show();
-        }
     }
-
-//    public void showAlert() {
-//        MainPrintActivity.this.runOnUiThread(new Runnable() {
-//            public void run() {
-//                AlertDialog.Builder builder = new AlertDialog.Builder(MainPrintActivity.this);
-//                builder.setTitle("Success.");
-//                builder.setMessage("Milk Collection submited Successfully.")
-//                        .setCancelable(false)
-//                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, int id) {
-//
-//                            }
-//                        });
-//                AlertDialog alert = builder.create();
-//                alert.show();
-//            }
-//        });
-//
-//    }
 
     private void printStruk() {
         Bundle getBundle = this.getIntent().getExtras();
@@ -587,7 +326,6 @@ public class MainPrintActivity extends MyActivity {
         System.arraycopy(content2Byte, 0, totalByte, offset, content2Byte.length);
         offset += content2Byte.length;
         byte[] senddata = PocketPos.FramePack(PocketPos.FRAME_TOF_PRINT, totalByte, 0, totalByte.length);
-        sendData(senddata);
 
 //        dialog = ProgressDialog.show(MainPrintActivity.this, "",
 //                "submitting collection Online, please wait...", true);
@@ -612,49 +350,5 @@ public class MainPrintActivity extends MyActivity {
         builder.setTitle(title);
         builder.setMessage(message);
         builder.show();
-    }
-
-    private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
-        public void onReceive(Context context, Intent intent) {
-            String action = intent.getAction();
-
-            if (BluetoothAdapter.ACTION_STATE_CHANGED.equals(action)) {
-                final int state = intent.getIntExtra(BluetoothAdapter.EXTRA_STATE, BluetoothAdapter.ERROR);
-
-                if (state == BluetoothAdapter.STATE_ON) {
-                    showEnabled();
-                } else if (state == BluetoothAdapter.STATE_OFF) {
-                    showDisabled();
-                }
-            } else if (BluetoothAdapter.ACTION_DISCOVERY_STARTED.equals(action)) {
-                mDeviceList = new ArrayList<BluetoothDevice>();
-
-                mProgressDlg.show();
-            } else if (BluetoothAdapter.ACTION_DISCOVERY_FINISHED.equals(action)) {
-                mProgressDlg.dismiss();
-
-                updateDeviceList();
-            } else if (BluetoothDevice.ACTION_FOUND.equals(action)) {
-                BluetoothDevice device = (BluetoothDevice) intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-
-                mDeviceList.add(device);
-
-                showToast("Found device " + device.getName());
-            } else if (BluetoothDevice.ACTION_BOND_STATE_CHANGED.equals(action)) {
-                final int state = intent.getIntExtra(BluetoothDevice.EXTRA_BOND_STATE, BluetoothDevice.ERROR);
-
-                if (state == BluetoothDevice.BOND_BONDED) {
-                    showToast("Paired");
-
-                    connect();
-                }
-            }
-        }
-    };
-
-    @Override
-    public void onDestroy() {
-        unregisterReceiver(mReceiver);
-        super.onDestroy();
     }
 }

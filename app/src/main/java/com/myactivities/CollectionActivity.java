@@ -21,11 +21,9 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import Rest.ApiInterface;
+import util.AppConstants;
 
 public class CollectionActivity extends MainPrintActivity implements OnClickListener {
-
-    private BluetoothAdapter _bluetooth = BluetoothAdapter.getDefaultAdapter();
-
     ProgressDialog dialog = null;
     private ProgressDialog mProgressDlg, mConnectingDlg;
 
@@ -37,16 +35,10 @@ public class CollectionActivity extends MainPrintActivity implements OnClickList
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
         setContentView(R.layout.collection);
-        if (_bluetooth == null) {
-            showUnsupported();
-        }
 
-        //Data=findViewById(R.id.btn_Enquiry);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        myToolbar.setTitle("MORINGA COLLECTION");
+        myToolbar.setTitle("MILK COLLECTION");
         setSupportActionBar(myToolbar);
         myToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,9 +74,8 @@ public class CollectionActivity extends MainPrintActivity implements OnClickList
 
             case R.id.action_synch:
                 if (isOnline()) {
-                    fetchProducts();
+//                    fetchProducts();
                     sendToDB();
-//                    autosynch();
                 } else {
                     Toast.makeText(CollectionActivity.this, "Check your Internet Connection and try again", Toast.LENGTH_LONG).show();
                 }
@@ -136,11 +127,4 @@ public class CollectionActivity extends MainPrintActivity implements OnClickList
     private void showToast(String message) {
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
-
-    private void showUnsupported() {
-        showToast("Bluetooth is unsupported by this device");
-
-    }
-
-
 }
