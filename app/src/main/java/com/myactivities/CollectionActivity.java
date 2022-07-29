@@ -74,7 +74,7 @@ public class CollectionActivity extends MainPrintActivity implements OnClickList
 
             case R.id.action_synch:
                 if (isOnline()) {
-//                    fetchProducts();
+                    fetchProducts();
                     sendToDB();
                 } else {
                     Toast.makeText(CollectionActivity.this, "Check your Internet Connection and try again", Toast.LENGTH_LONG).show();
