@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alex.dependencies"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="32" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- Creates a custom permission so only this app can receive its messages. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.cheress.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- TODO -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="com.myactivities.Controller"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:icon="@mipmap/current"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.myactivities.Main2Activity"
+            android:exported="false"
+            android:theme="@style/NoActionBar" />
+        <activity android:name="com.myactivities.Enquiry" />
+        <activity
+            android:name="com.myactivities.AdminLogin"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.myactivities.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.myactivities.EmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.myactivities.MonitorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.myactivities.SearchDeviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.myactivities.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.myactivities.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.myactivities.ResetPassword"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.myactivities.NewsWebView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.myactivities.MainPrintActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.myactivities.AddUserActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.myactivities.SuperAdminLogin"
+            android:label="Super User Login"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.myactivities.DailyReportsActivity"
+            android:label="Detail Report" />
+        <activity
+            android:name="com.myactivities.CollectionActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.myactivities.AllClientsActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.myactivities.RegisterFarmer"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.myactivities.SuperAdminActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="firebase_analytics_collection_deactivated"
+            android:value="true" />
+
+        <receiver android:name="com.myactivities.MainActivity" />
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.cheress" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.myactivities.GCMIntentService" />
+    </application>
+
+</manifest>

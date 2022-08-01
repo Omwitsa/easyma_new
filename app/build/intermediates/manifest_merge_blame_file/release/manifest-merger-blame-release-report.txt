@@ -1,0 +1,275 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.alex.dependencies"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:5-73
+8        android:minSdkVersion="16"
+8-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:5-73
+9        android:targetSdkVersion="32" />
+9-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:5-73
+10    <!-- Keeps the processor from sleeping when a message is received. -->
+11    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- Creates a custom permission so only this app can receive its messages. -->
+11-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:8:5-71
+11-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:8:22-68
+12    <uses-permission android:name="android.permission.WAKE_LOCK" />
+12-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:9:5-68
+12-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:9:22-65
+13    <uses-permission android:name="com.cheress.permission.C2D_MESSAGE" />
+13-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:10:5-74
+13-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:10:22-71
+14    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+14-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:11:5-82
+14-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:11:22-79
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:12:5-79
+15-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:12:22-76
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:13:5-67
+16-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:13:22-64
+17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+17-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:14:5-76
+17-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:14:22-73
+18    <uses-permission android:name="android.permission.VIBRATE" />
+18-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:15:5-66
+18-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:15:22-63
+19    <uses-permission android:name="android.permission.BLUETOOTH" />
+19-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:16:5-68
+19-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:16:22-65
+20    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+20-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:17:5-76
+20-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:17:22-73
+21    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+21-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:18:5-73
+21-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:18:22-70
+22    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+22-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:19:5-74
+22-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:19:22-71
+23    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+23-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:20:5-81
+23-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:20:22-78
+24    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+24-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:21:5-75
+24-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:21:22-72
+25    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- TODO -->
+25-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:22:5-80
+25-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:22:22-77
+26    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+26-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:23:5-81
+26-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:23:22-78
+27    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+27-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:24:5-79
+27-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:24:22-76
+28    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+28-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:25:5-81
+28-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:25:22-78
+29
+30    <application
+30-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:27:5-133:19
+31        android:name="com.myactivities.Controller"
+31-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:28:9-35
+32        android:allowBackup="true"
+32-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:29:9-35
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\b435c9c9cde5a7559bf6855b099cbe7a\transformed\core-1.0.0\AndroidManifest.xml:22:18-86
+34        android:icon="@mipmap/current"
+34-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:30:9-39
+35        android:label="@string/app_name"
+35-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:31:9-41
+36        android:supportsRtl="true"
+36-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:32:9-35
+37        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+37-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:33:9-65
+38        android:usesCleartextTraffic="true" >
+38-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:35:9-44
+39        <activity
+39-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:37:9-40:50
+40            android:name="com.myactivities.Main2Activity"
+40-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:38:13-42
+41            android:exported="false"
+41-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:39:13-37
+42            android:theme="@style/NoActionBar" />
+42-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:40:13-47
+43        <activity android:name="com.myactivities.Enquiry" />
+43-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:41:9-45
+43-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:41:19-42
+44        <activity
+44-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:42:9-53:20
+45            android:name="com.myactivities.AdminLogin"
+45-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:43:13-39
+46            android:exported="true"
+46-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:44:13-36
+47            android:screenOrientation="portrait"
+47-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:45:13-49
+48            android:theme="@style/AppTheme.NoActionBar"
+48-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:46:13-56
+49            android:windowSoftInputMode="stateHidden|adjustResize" >
+49-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:47:13-67
+50            <intent-filter>
+50-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:48:13-52:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:49:17-69
+51-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:49:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:51:17-77
+53-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:51:27-74
+54            </intent-filter>
+55        </activity>
+56        <activity
+56-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:54:9-56:52
+57            android:name="com.myactivities.AboutActivity"
+57-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:55:13-42
+58            android:screenOrientation="portrait" />
+58-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:56:13-49
+59        <activity
+59-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:57:9-59:52
+60            android:name="com.myactivities.EmailActivity"
+60-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:58:13-42
+61            android:screenOrientation="portrait" />
+61-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:59:13-49
+62        <activity
+62-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:60:9-62:52
+63            android:name="com.myactivities.MonitorActivity"
+63-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:61:13-44
+64            android:screenOrientation="portrait" />
+64-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:62:13-49
+65        <activity
+65-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:63:9-65:52
+66            android:name="com.myactivities.SearchDeviceActivity"
+66-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:64:13-49
+67            android:screenOrientation="portrait" />
+67-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:65:13-49
+68        <activity
+68-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:66:9-68:52
+69            android:name="com.myactivities.SettingActivity"
+69-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:67:13-44
+70            android:screenOrientation="portrait" />
+70-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:68:13-49
+71        <activity
+71-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:69:9-73:59
+72            android:name="com.myactivities.MainActivity"
+72-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:70:13-41
+73            android:label="@string/app_name"
+73-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:71:13-45
+74            android:screenOrientation="portrait"
+74-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:72:13-49
+75            android:theme="@style/AppTheme.NoActionBar" />
+75-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:73:13-56
+76        <activity
+76-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:74:9-76:59
+77            android:name="com.myactivities.ResetPassword"
+77-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:75:13-42
+78            android:theme="@style/AppTheme.NoActionBar" />
+78-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:76:13-56
+79        <activity
+79-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:77:9-79:59
+80            android:name="com.myactivities.NewsWebView"
+80-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:78:13-40
+81            android:theme="@style/AppTheme.NoActionBar" />
+81-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:79:13-56
+82        <activity
+82-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:80:9-82:59
+83            android:name="com.myactivities.MainPrintActivity"
+83-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:81:13-46
+84            android:theme="@style/AppTheme.NoActionBar" />
+84-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:82:13-56
+85        <activity
+85-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:83:9-86:70
+86            android:name="com.myactivities.AddUserActivity"
+86-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:84:13-44
+87            android:theme="@style/AppTheme.NoActionBar"
+87-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:85:13-56
+88            android:windowSoftInputMode="stateHidden|adjustResize" />
+88-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:86:13-67
+89        <activity
+89-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:87:9-91:70
+90            android:name="com.myactivities.SuperAdminLogin"
+90-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:88:13-44
+91            android:label="Super User Login"
+91-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:89:13-45
+92            android:theme="@style/AppTheme.NoActionBar"
+92-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:90:13-56
+93            android:windowSoftInputMode="stateHidden|adjustResize" />
+93-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:91:13-67
+94        <activity
+94-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:92:9-94:45
+95            android:name="com.myactivities.DailyReportsActivity"
+95-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:93:13-49
+96            android:label="Detail Report" />
+96-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:94:13-42
+97        <activity
+97-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:95:9-97:48
+98            android:name="com.myactivities.CollectionActivity"
+98-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:96:13-47
+99            android:label="@string/app_name" />
+99-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:97:13-45
+100        <activity
+100-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:98:9-100:48
+101            android:name="com.myactivities.AllClientsActivity"
+101-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:99:13-47
+102            android:label="@string/app_name" />
+102-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:100:13-45
+103        <activity
+103-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:101:9-103:48
+104            android:name="com.myactivities.RegisterFarmer"
+104-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:102:13-43
+105            android:label="@string/app_name" />
+105-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:103:13-45
+106        <activity
+106-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:104:9-106:70
+107            android:name="com.myactivities.SuperAdminActivity"
+107-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:105:13-47
+108            android:windowSoftInputMode="stateHidden|adjustResize" />
+108-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:106:13-67
+109
+110        <meta-data
+110-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:108:9-110:36
+111            android:name="QUERY_LOG"
+111-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:109:13-37
+112            android:value="true" />
+112-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:110:13-33
+113        <meta-data
+113-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:111:9-113:36
+114            android:name="firebase_analytics_collection_deactivated"
+114-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:112:13-69
+115            android:value="true" />
+115-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:113:13-33
+116
+117        <receiver android:name="com.myactivities.MainActivity" />
+117-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:115:9-50
+117-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:115:19-47
+118        <receiver
+118-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:116:9-130:20
+119            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+119-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:117:13-71
+120            android:exported="true"
+120-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:118:13-36
+121            android:permission="com.google.android.c2dm.permission.SEND" >
+121-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:119:13-73
+122            <intent-filter>
+122-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:121:13-129:29
+123
+124                <!-- Receives the actual messages. -->
+125                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+125-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:124:17-81
+125-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:124:25-78
+126                <!-- Receives the registration id. -->
+127                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+127-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:126:17-86
+127-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:126:25-83
+128
+129                <category android:name="com.cheress" />
+129-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:128:17-56
+129-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:128:27-53
+130            </intent-filter>
+131        </receiver>
+132
+133        <service android:name="com.myactivities.GCMIntentService" />
+133-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:132:9-53
+133-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:132:18-50
+134    </application>
+135
+136</manifest>

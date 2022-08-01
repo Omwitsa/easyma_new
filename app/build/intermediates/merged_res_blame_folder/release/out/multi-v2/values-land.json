@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.myactivities.app-mergeReleaseResources-13:/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-3\\500d961bcb0b5d815367365c7b2a7852\\transformed\\appcompat-1.0.0\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-3\\a4db26b0fb38a1ec94d3074bd95e9b3e\\transformed\\material-1.0.0\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "10",
+                        "endOffsets": "222"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "264",
+                        "endLines": "8",
+                        "endColumns": "10",
+                        "endOffsets": "431"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+#Fri Jul 29 10:48:08 EAT 2022
+base.0=D\:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

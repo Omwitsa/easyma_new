@@ -1,0 +1,435 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:2:1-135:12
+INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:2:1-135:12
+INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:2:1-135:12
+INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:2:1-135:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\a4db26b0fb38a1ec94d3074bd95e9b3e\transformed\material-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\500d961bcb0b5d815367365c7b2a7852\transformed\appcompat-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Dell\.gradle\caches\transforms-3\ed17b228528a4ae462a20d34a093e396\transformed\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [com.yqritc:recyclerview-flexibledivider:1.4.0] C:\Users\Dell\.gradle\caches\transforms-3\2bed56fb38f0e6fd00eb61a7fb0865a4\transformed\jetified-recyclerview-flexibledivider-1.4.0\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\7c7a8c29ecce42e20d903e3a51f8df85\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\80982afc3ffacfd3e547d41c135be4d5\transformed\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\1fa0836807d90414e6cb9eed6694f7bf\transformed\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\34c3819cee2951fdcdce0cc29fa8544c\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.jaredrummler:material-spinner:1.2.4] C:\Users\Dell\.gradle\caches\transforms-3\ec0310cb306c5008224ebca07c8ccf3e\transformed\jetified-material-spinner-1.2.4\AndroidManifest.xml:2:1-10:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\ad822f617078449710576407c5919783\transformed\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\3da53a589ad0c95b5ed41ebfbc806c9f\transformed\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\a0f487a4babc02e94edd80c903b84cb8\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\9b680f4524c73cf4651435f7b7ab96a9\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\d4b30b1971471f6b83602b161da62c5c\transformed\vectordrawable-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\134b728fa4e8aa6475e3c09158ebb5ed\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\4c56d7bd17f6a127a154315066c41e88\transformed\transition-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\a9f454f90017dca7389400a6976be6d0\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\e1b23a5846fa69c62ae6c2763eaeb253\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\9799da5c1e0689f1193d2bfe97eafa0b\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\28987daf94618d12a626039a1bcb819f\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\672c698f430ef3053188faf174992e0a\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\167a7615f5c326be626c34db5c113190\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\5dc7619c10ef7678503baa0c7d18529c\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\7f38362bc79cae2826970a4e78d0cb43\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\b435c9c9cde5a7559bf6855b099cbe7a\transformed\core-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\c1a9d072f675a0182d61ba643fe0605b\transformed\versionedparcelable-1.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\b62f021449e53cd8f85a380c2a59df94\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\c91ee04b2e3e2b4e3408d247f58d785c\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\daafd13ed6472e5d90ee94a442cae491\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\bd2b858bc6569916fd0b165974e7ef03\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\e1e2678fabf72a33f79cbc86269cb4b6\transformed\lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\204d3d0be73b32d1e471282cc38c7187\transformed\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\f11a2796b54455e05ab8603854e4e469\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\50d1210be62fa0ff51eb398d1f0c84bc\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\be65a5e1808a5e2d45730c2d80164a89\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\81f39f6b10eaffbd9990198b840796f5\transformed\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:2:1-135:12
+INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:2:1-135:12
+INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:2:1-135:12
+	package
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:4:5-31
+		INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:2:1-135:12
+		INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:2:1-135:12
+		INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:5-73
+INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:5-73
+INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:5-73
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\a4db26b0fb38a1ec94d3074bd95e9b3e\transformed\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\a4db26b0fb38a1ec94d3074bd95e9b3e\transformed\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\500d961bcb0b5d815367365c7b2a7852\transformed\appcompat-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\500d961bcb0b5d815367365c7b2a7852\transformed\appcompat-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Dell\.gradle\caches\transforms-3\ed17b228528a4ae462a20d34a093e396\transformed\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Dell\.gradle\caches\transforms-3\ed17b228528a4ae462a20d34a093e396\transformed\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.yqritc:recyclerview-flexibledivider:1.4.0] C:\Users\Dell\.gradle\caches\transforms-3\2bed56fb38f0e6fd00eb61a7fb0865a4\transformed\jetified-recyclerview-flexibledivider-1.4.0\AndroidManifest.xml:8:5-10:41
+MERGED from [com.yqritc:recyclerview-flexibledivider:1.4.0] C:\Users\Dell\.gradle\caches\transforms-3\2bed56fb38f0e6fd00eb61a7fb0865a4\transformed\jetified-recyclerview-flexibledivider-1.4.0\AndroidManifest.xml:8:5-10:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\7c7a8c29ecce42e20d903e3a51f8df85\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\7c7a8c29ecce42e20d903e3a51f8df85\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\80982afc3ffacfd3e547d41c135be4d5\transformed\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\80982afc3ffacfd3e547d41c135be4d5\transformed\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\1fa0836807d90414e6cb9eed6694f7bf\transformed\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\1fa0836807d90414e6cb9eed6694f7bf\transformed\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\34c3819cee2951fdcdce0cc29fa8544c\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\34c3819cee2951fdcdce0cc29fa8544c\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.jaredrummler:material-spinner:1.2.4] C:\Users\Dell\.gradle\caches\transforms-3\ec0310cb306c5008224ebca07c8ccf3e\transformed\jetified-material-spinner-1.2.4\AndroidManifest.xml:6:5-8:41
+MERGED from [com.jaredrummler:material-spinner:1.2.4] C:\Users\Dell\.gradle\caches\transforms-3\ec0310cb306c5008224ebca07c8ccf3e\transformed\jetified-material-spinner-1.2.4\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\ad822f617078449710576407c5919783\transformed\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\ad822f617078449710576407c5919783\transformed\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\3da53a589ad0c95b5ed41ebfbc806c9f\transformed\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\3da53a589ad0c95b5ed41ebfbc806c9f\transformed\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\a0f487a4babc02e94edd80c903b84cb8\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\a0f487a4babc02e94edd80c903b84cb8\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\9b680f4524c73cf4651435f7b7ab96a9\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\9b680f4524c73cf4651435f7b7ab96a9\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\d4b30b1971471f6b83602b161da62c5c\transformed\vectordrawable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\d4b30b1971471f6b83602b161da62c5c\transformed\vectordrawable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\134b728fa4e8aa6475e3c09158ebb5ed\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\134b728fa4e8aa6475e3c09158ebb5ed\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\4c56d7bd17f6a127a154315066c41e88\transformed\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\4c56d7bd17f6a127a154315066c41e88\transformed\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\a9f454f90017dca7389400a6976be6d0\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\a9f454f90017dca7389400a6976be6d0\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\e1b23a5846fa69c62ae6c2763eaeb253\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\e1b23a5846fa69c62ae6c2763eaeb253\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\9799da5c1e0689f1193d2bfe97eafa0b\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\9799da5c1e0689f1193d2bfe97eafa0b\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\28987daf94618d12a626039a1bcb819f\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\28987daf94618d12a626039a1bcb819f\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\672c698f430ef3053188faf174992e0a\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\672c698f430ef3053188faf174992e0a\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\167a7615f5c326be626c34db5c113190\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\167a7615f5c326be626c34db5c113190\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\5dc7619c10ef7678503baa0c7d18529c\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\5dc7619c10ef7678503baa0c7d18529c\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\7f38362bc79cae2826970a4e78d0cb43\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\7f38362bc79cae2826970a4e78d0cb43\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\b435c9c9cde5a7559bf6855b099cbe7a\transformed\core-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\b435c9c9cde5a7559bf6855b099cbe7a\transformed\core-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\c1a9d072f675a0182d61ba643fe0605b\transformed\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\c1a9d072f675a0182d61ba643fe0605b\transformed\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\b62f021449e53cd8f85a380c2a59df94\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\b62f021449e53cd8f85a380c2a59df94\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\c91ee04b2e3e2b4e3408d247f58d785c\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\c91ee04b2e3e2b4e3408d247f58d785c\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\daafd13ed6472e5d90ee94a442cae491\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\daafd13ed6472e5d90ee94a442cae491\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\bd2b858bc6569916fd0b165974e7ef03\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\bd2b858bc6569916fd0b165974e7ef03\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\e1e2678fabf72a33f79cbc86269cb4b6\transformed\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\e1e2678fabf72a33f79cbc86269cb4b6\transformed\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\204d3d0be73b32d1e471282cc38c7187\transformed\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\204d3d0be73b32d1e471282cc38c7187\transformed\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\f11a2796b54455e05ab8603854e4e469\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\f11a2796b54455e05ab8603854e4e469\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\50d1210be62fa0ff51eb398d1f0c84bc\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\50d1210be62fa0ff51eb398d1f0c84bc\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\be65a5e1808a5e2d45730c2d80164a89\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\be65a5e1808a5e2d45730c2d80164a89\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\81f39f6b10eaffbd9990198b840796f5\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\81f39f6b10eaffbd9990198b840796f5\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:5-73
+INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:5-73
+	tools:overrideLibrary
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:15-70
+	android:targetSdkVersion
+		INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:5-73
+		INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:5-73
+		INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:8:5-71
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:8:22-68
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:9:5-68
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:9:22-65
+uses-permission#com.cheress.permission.C2D_MESSAGE
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:10:5-74
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:10:22-71
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:11:5-82
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:11:22-79
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:12:22-76
+uses-permission#android.permission.INTERNET
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:13:5-67
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:13:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:14:5-76
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:14:22-73
+uses-permission#android.permission.VIBRATE
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:15:5-66
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:15:22-63
+uses-permission#android.permission.BLUETOOTH
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:16:5-68
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:16:22-65
+uses-permission#android.permission.BLUETOOTH_CONNECT
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:17:5-76
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:17:22-73
+uses-permission#android.permission.BLUETOOTH_SCAN
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:18:5-73
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:18:22-70
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:19:5-74
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:19:22-71
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:20:5-81
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:20:22-78
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:21:5-75
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:21:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:22:5-80
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:22:22-77
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:23:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:24:22-76
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:25:5-81
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:25:22-78
+application
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:27:5-133:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\a4db26b0fb38a1ec94d3074bd95e9b3e\transformed\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\a4db26b0fb38a1ec94d3074bd95e9b3e\transformed\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Dell\.gradle\caches\transforms-3\ed17b228528a4ae462a20d34a093e396\transformed\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Dell\.gradle\caches\transforms-3\ed17b228528a4ae462a20d34a093e396\transformed\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\b435c9c9cde5a7559bf6855b099cbe7a\transformed\core-1.0.0\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\b435c9c9cde5a7559bf6855b099cbe7a\transformed\core-1.0.0\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\c1a9d072f675a0182d61ba643fe0605b\transformed\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\c1a9d072f675a0182d61ba643fe0605b\transformed\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\b435c9c9cde5a7559bf6855b099cbe7a\transformed\core-1.0.0\AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:32:9-35
+	android:label
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:31:9-41
+	tools:targetApi
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:36:9-28
+	android:icon
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:30:9-39
+	android:allowBackup
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:29:9-35
+	android:theme
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:33:9-65
+	tools:replace
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:34:9-51
+	android:usesCleartextTraffic
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:35:9-44
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:28:9-35
+activity#com.myactivities.Main2Activity
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:37:9-40:50
+	android:exported
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:39:13-37
+	android:theme
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:40:13-47
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:38:13-42
+activity#com.myactivities.Enquiry
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:41:9-45
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:41:19-42
+activity#com.myactivities.AdminLogin
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:42:9-53:20
+	android:screenOrientation
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:45:13-49
+	android:windowSoftInputMode
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:47:13-67
+	android:exported
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:44:13-36
+	android:theme
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:46:13-56
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:43:13-39
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:48:13-52:29
+action#android.intent.action.MAIN
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:49:17-69
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:49:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:51:17-77
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:51:27-74
+activity#com.myactivities.AboutActivity
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:54:9-56:52
+	android:screenOrientation
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:56:13-49
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:55:13-42
+activity#com.myactivities.EmailActivity
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:57:9-59:52
+	android:screenOrientation
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:59:13-49
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:58:13-42
+activity#com.myactivities.MonitorActivity
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:60:9-62:52
+	android:screenOrientation
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:62:13-49
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:61:13-44
+activity#com.myactivities.SearchDeviceActivity
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:63:9-65:52
+	android:screenOrientation
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:65:13-49
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:64:13-49
+activity#com.myactivities.SettingActivity
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:66:9-68:52
+	android:screenOrientation
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:68:13-49
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:67:13-44
+activity#com.myactivities.MainActivity
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:69:9-73:59
+	android:screenOrientation
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:72:13-49
+	android:label
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:71:13-45
+	android:theme
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:73:13-56
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:70:13-41
+activity#com.myactivities.ResetPassword
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:74:9-76:59
+	android:theme
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:76:13-56
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:75:13-42
+activity#com.myactivities.NewsWebView
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:77:9-79:59
+	android:theme
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:79:13-56
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:78:13-40
+activity#com.myactivities.MainPrintActivity
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:80:9-82:59
+	android:theme
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:82:13-56
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:81:13-46
+activity#com.myactivities.AddUserActivity
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:83:9-86:70
+	android:windowSoftInputMode
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:86:13-67
+	android:theme
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:85:13-56
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:84:13-44
+activity#com.myactivities.SuperAdminLogin
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:87:9-91:70
+	android:label
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:89:13-45
+	android:windowSoftInputMode
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:91:13-67
+	android:theme
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:90:13-56
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:88:13-44
+activity#com.myactivities.DailyReportsActivity
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:92:9-94:45
+	android:label
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:94:13-42
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:93:13-49
+activity#com.myactivities.CollectionActivity
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:95:9-97:48
+	android:label
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:97:13-45
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:96:13-47
+activity#com.myactivities.AllClientsActivity
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:98:9-100:48
+	android:label
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:100:13-45
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:99:13-47
+activity#com.myactivities.RegisterFarmer
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:101:9-103:48
+	android:label
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:103:13-45
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:102:13-43
+activity#com.myactivities.SuperAdminActivity
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:104:9-106:70
+	android:windowSoftInputMode
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:106:13-67
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:105:13-47
+meta-data#QUERY_LOG
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:108:9-110:36
+	android:value
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:110:13-33
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:109:13-37
+meta-data#firebase_analytics_collection_deactivated
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:111:9-113:36
+	android:value
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:113:13-33
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:112:13-69
+receiver#com.myactivities.MainActivity
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:115:9-50
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:115:19-47
+receiver#com.google.android.gcm.GCMBroadcastReceiver
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:116:9-130:20
+	android:exported
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:118:13-36
+	tools:ignore
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:120:13-37
+	android:permission
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:119:13-73
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:117:13-71
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+action:name:com.google.android.c2dm.intent.REGISTRATION+category:name:com.cheress
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:121:13-129:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:124:17-81
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:124:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:126:17-86
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:126:25-83
+category#com.cheress
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:128:17-56
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:128:27-53
+service#com.myactivities.GCMIntentService
+ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:132:9-53
+	android:name
+		ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:132:18-50
