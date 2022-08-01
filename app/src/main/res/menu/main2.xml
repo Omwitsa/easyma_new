@@ -6,9 +6,9 @@
         android:id="@+id/action_scan2"
         android:title="@string/text_scan_devices"/>
 
-    <item
-        android:id="@+id/action_synch_collection"
-        android:title="Synch Collection"/>
+<!--    <item-->
+<!--        android:id="@+id/action_synch_collection"-->
+<!--        android:title="Synch Collection"/>-->
 
 </menu>
 

@@ -4,24 +4,24 @@
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-main-17:\\layout\\searchable.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-merged_res-15:\\layout_web_view.xml.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-main-17:\\layout\\web_view.xml"
-    },
-    {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-merged_res-15:\\drawable-hdpi_moringa.jpg.flat",
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-main-17:\\drawable-hdpi\\moringa.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-merged_res-15:\\layout_web_view.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-main-17:\\layout\\web_view.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-merged_res-15:\\drawable-mdpi_ic_help.png.flat",
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-main-17:\\drawable-mdpi\\ic_help.png"
     },
     {
-        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-merged_res-15:\\drawable-mdpi_checked.png.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-main-17:\\drawable-mdpi\\checked.png"
-    },
-    {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-merged_res-15:\\drawable-mdpi_drop_d.png.flat",
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-main-17:\\drawable-mdpi\\drop_d.png"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-merged_res-15:\\drawable-mdpi_checked.png.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-main-17:\\drawable-mdpi\\checked.png"
     },
     {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-merged_res-15:\\mipmap-xhdpi_current.png.flat",
@@ -130,10 +130,6 @@
     {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-merged_res-15:\\menu_menu_adduser.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-main-17:\\menu\\menu_adduser.xml"
-    },
-    {
-        "merged": "com.myactivities.app-merged_res-15:/layout_activity_dailyreport.xml.flat",
-        "source": "com.myactivities.app-main-17:/layout/activity_dailyreport.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-merged_res-15:\\mipmap-xxxhdpi_current.png.flat",
@@ -354,6 +350,10 @@
     {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-merged_res-15:\\drawable-hdpi_ic_date.png.flat",
         "source": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-main-17:\\drawable-hdpi\\ic_date.png"
+    },
+    {
+        "merged": "com.myactivities.app-merged_res-15:/menu_main2.xml.flat",
+        "source": "com.myactivities.app-main-17:/menu/main2.xml"
     },
     {
         "merged": "C:\\Users\\Dell\\.gradle\\daemon\\7.3.3\\com.myactivities.app-merged_res-15:\\mipmap-xhdpi_col3.png.flat",

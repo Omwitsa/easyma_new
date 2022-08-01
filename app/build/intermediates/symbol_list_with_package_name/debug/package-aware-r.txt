@@ -1147,7 +1147,6 @@ id action_scan2
 id action_search_client
 id action_settings
 id action_synch
-id action_synch_collection
 id action_synch_farmer
 id action_synch_plant
 id action_synch_users

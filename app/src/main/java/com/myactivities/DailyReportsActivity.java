@@ -272,7 +272,6 @@ public class DailyReportsActivity extends AppCompatActivity implements OnClickLi
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main2, menu);
-
         return true;
     }
 
