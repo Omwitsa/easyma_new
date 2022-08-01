@@ -48,8 +48,6 @@
 	        android:layout_alignParentLeft="true"
 	        android:layout_alignParentTop="true"/>
 
-
-
 	</RelativeLayout>
 
 	<EditText
@@ -63,12 +61,6 @@
 		android:focusableInTouchMode="false"
 		android:hint="Click Here to pick Famer's Date of Birth"
 		android:inputType="date" />
-	<Spinner
-		android:id="@+id/Dayshift"
-		android:layout_width="match_parent"
-		android:layout_height="50dp"
-		android:entries="@array/shift_array"
-		android:prompt="@string/container_prompt" />
     <View
         android:id="@+id/separatord"
         android:layout_width="match_parent"

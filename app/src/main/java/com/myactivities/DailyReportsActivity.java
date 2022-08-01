@@ -115,7 +115,6 @@ public class DailyReportsActivity extends AppCompatActivity implements OnClickLi
         mEnableBtn			= (Button) findViewById(R.id.btn_enabled);
         mPrintReceiptBtn 	= (Button) findViewById(R.id.btn_print_receiptd);
         mDeviceSp 			= (Spinner) findViewById(R.id.sp_deviced);
-        final Spinner spinner = (Spinner) findViewById(R.id.Dayshift);
 
         Transsdate 			= (EditText) findViewById(R.id.Transsdate);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
@@ -124,28 +123,6 @@ public class DailyReportsActivity extends AppCompatActivity implements OnClickLi
         qty1 ="2342";//getIntent().getStringExtra("qty").toString();
         sno1 ="234234";//getIntent().getStringExtra("sno").toString();
         pin1 ="A345455345G";// getIntent().getStringExtra("pin").toString();
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.shift_array, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-                //shift = spinner.get(position).getPlant_name();
-
-                Dayshift = spinner.getSelectedItem().toString();
-                //String shift = (String) spinner.getSelectedItem();
-
-                //Toast.makeText(MonitorActivity.this,  shift, Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
         mBluetoothAdapter	= BluetoothAdapter.getDefaultAdapter();
 
         if (mBluetoothAdapter == null) {
@@ -273,8 +250,6 @@ public class DailyReportsActivity extends AppCompatActivity implements OnClickLi
                             "Clearing the collection/data from phone memory", true);
                     new Thread(new Runnable() {
                         public void run() {
-                            //sendToDB();
-                            //DailyReportsActivity.this.finish();
                             dialog.dismiss();
                         }
                     }).start();
@@ -490,8 +465,6 @@ public class DailyReportsActivity extends AppCompatActivity implements OnClickLi
     private void printStruk() {
         try {
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-
-
             String myDate =(Transsdate.getText().toString());
             myDate =  myDate.trim();
 
@@ -510,7 +483,7 @@ public class DailyReportsActivity extends AppCompatActivity implements OnClickLi
             //Dayshift="";
             //myDate.setText(sdf.format(new Date()));
 
-            Cursor c = db.rawQuery("SELECT * FROM CollectionDB WHERE   transdate ='"+myDate+"'  and  shift='" + Dayshift + "'", null);
+            Cursor c = db.rawQuery("SELECT * FROM CollectionDB WHERE   transdate ='"+myDate+"'", null);
             //
            // Cursor c = db.rawQuery("SELECT * FROM CollectionDB WHERE transdate="2020-03-04", null);
             if (c.getCount() == 0) {
@@ -523,19 +496,13 @@ public class DailyReportsActivity extends AppCompatActivity implements OnClickLi
 
 
             while (c.moveToNext()) {
-
-                buffer.append(c.getString(0) + "\t" + c.getString(1) + " \t" + c.getString(6) + " \t" + c.getString(9) +"\n");
-
+                buffer.append(c.getString(0) + "\t\t" + c.getString(1) + " \t" + c.getString(8) + " \t" + c.getString(6) +"\n");
             }
-            Cursor c1 = db.rawQuery("SELECT sum(quantity) FROM CollectionDB WHERE  transdate ='"+myDate+"'    and  shift='" + Dayshift + "'", null);
+            Cursor c1 = db.rawQuery("SELECT sum(quantity) FROM CollectionDB WHERE  transdate ='"+myDate+"'", null);
             while (c1.moveToNext()) {
-
                 qtyyy = c1.getString(0);
-                ;
-
             }
             showMessage("Collection Details +"+ qtyyy +"", buffer.toString());
-
             Date dNow = new Date();
             SimpleDateFormat ft = new SimpleDateFormat("E yyyy.MM.dd 'at' hh:mm:ss");
             long milis1 = System.currentTimeMillis();
@@ -546,11 +513,6 @@ public class DailyReportsActivity extends AppCompatActivity implements OnClickLi
             //SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             String date = sdf.format(b.getTime());
             int count=c.getCount();
-
-
-
-
-
 
             MainActivity ma=new MainActivity();
             company = ma.company;

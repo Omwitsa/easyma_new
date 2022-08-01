@@ -194,7 +194,7 @@ public class MonitorActivity extends MyActivity {
 
         suppp_no = sno.getText().toString().trim();
         db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
-        db.execSQL("CREATE TABLE IF NOT EXISTS CollectionDB(supplier VARCHAR,quantity VARCHAR,branch VARCHAR, date DATETIME, auditId VARCHAR,status VARCHAR, type VARCHAR, saccoCode VARCHAR);");
+        db.execSQL("CREATE TABLE IF NOT EXISTS CollectionDB(supplier VARCHAR,quantity VARCHAR,branch VARCHAR, date DATETIME, auditId VARCHAR,status VARCHAR, type VARCHAR, saccoCode VARCHAR, transdate DATETIME);");
     }
 // supplier,
     public void onButtonClickclear(View view) throws IOException {
@@ -223,14 +223,11 @@ public class MonitorActivity extends MyActivity {
 
                         long milis1 = System.currentTimeMillis();
                         String date_print = DateUtil.timeMilisToString(milis1, "yyyy-MM-dd");
-
                         Calendar c = Calendar.getInstance();
                         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                         String date1 = sdf.format(c.getTime());
-                        SimpleDateFormat ff = new SimpleDateFormat("yyyy-MM-dd");
-                        String trans= ff.format(c.getTime());
                         String loggenInUser = sharedPreferences.getString("loggedInUser", "");
-                        db.execSQL("INSERT INTO CollectionDB  VALUES('" + sno.getText() + "', '" + TextView.getText() + "', '" + branchhh +"', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "');");
+                        db.execSQL("INSERT INTO CollectionDB  VALUES('" + sno.getText() + "', '" + TextView.getText() + "', '" + branchhh +"', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "', '"+date_print +"');");
                         showMessage("Success", "Record added");
                         TextView.setText("0");
 
