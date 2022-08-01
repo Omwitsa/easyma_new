@@ -1119,7 +1119,6 @@ id ALT
 id Button01
 id Button012
 id CTRL
-id Dayshift
 id FUNCTION
 id META
 id SHIFT
@@ -1148,7 +1147,6 @@ id action_scan2
 id action_search_client
 id action_settings
 id action_synch
-id action_synch_collection
 id action_synch_farmer
 id action_synch_plant
 id action_synch_users
@@ -1210,6 +1208,7 @@ id coordinator
 id coporate_branch
 id custom
 id customPanel
+id dcollection
 id decor_content_parent
 id default_activity_button
 id design_bottom_sheet
@@ -1362,6 +1361,7 @@ id selected
 id separator
 id separator2
 id separatord
+id separatord2
 id separatorp
 id shortcut
 id showCustom
