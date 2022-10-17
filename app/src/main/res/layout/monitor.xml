@@ -91,9 +91,7 @@
                 android:editable="false"
                 android:scrollHorizontally="false"
                 android:scrollbars="vertical"
-
                 android:textSize="45sp" >
-
             </EditText>
 
             <TextView

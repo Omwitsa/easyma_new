@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
+            "outputFile": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\wilso\\.gradle\\caches\\transforms-3\\3129aefb039950c1e74161910f9690d1\\transformed\\jetified-play-services-auth-11.0.4\\res\\values-watch-v20\\values.xml",
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-3\\569ad2bff59161f222b0c7d74d884ab0\\transformed\\jetified-play-services-auth-11.0.4\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\wilso\\.gradle\\caches\\transforms-3\\6665114af997474ad6e8fdbaa6169b2e\\transformed\\appcompat-1.0.0\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-3\\6665114af997474ad6e8fdbaa6169b2e\\transformed\\appcompat-1.0.0\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

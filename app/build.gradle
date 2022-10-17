@@ -31,8 +31,9 @@ android {
 }
 
 dependencies {
-    implementation files('E:/Newtech/SourceCode/android/Freshpro/libs/gcm.jar')
+    implementation files('D:/Newtech/SourceCode/android/Freshpro/libs/gcm.jar')
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.firebase:firebase-crashlytics-buildtools:2.9.1'
     androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })

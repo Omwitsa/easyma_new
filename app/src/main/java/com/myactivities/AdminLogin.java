@@ -21,10 +21,10 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpPost;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.HttpResponse;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.NameValuePair;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.HttpClient;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.methods.HttpPost;
 
 import java.util.List;
 
@@ -41,6 +41,9 @@ public class AdminLogin extends Activity implements AdapterView.OnItemSelectedLi
     ProgressDialog dialog = null;
     SQLiteDatabase db;
 
+    SharedPreferences sharedPreferences;
+    // Creating an Editor object to edit(write to the file)
+    SharedPreferences.Editor prefsEditor;
     private ProgressBar progress;
     private SharedPreferences pref;
     String bran, compny,usser;
@@ -49,6 +52,8 @@ public class AdminLogin extends Activity implements AdapterView.OnItemSelectedLi
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_login);
+        sharedPreferences = getSharedPreferences("preferences",MODE_PRIVATE);
+        prefsEditor = sharedPreferences.edit();
 
         b = (Button) findViewById(R.id.Button01);
         et = (EditText) findViewById(R.id.username);
@@ -62,7 +67,7 @@ public class AdminLogin extends Activity implements AdapterView.OnItemSelectedLi
         Cursor c = db.rawQuery("SELECT * FROM admin_login", null);
 
         if (c.getCount() == 0) {
-            db.execSQL("INSERT INTO admin_login VALUES('ADMIN','EMUKA MORINGA FCS','MAIN','admin123','2018-01-23 17:37:11','3');");
+            db.execSQL("INSERT INTO admin_login VALUES('ADMIN','MBURUGU DAIRY COOPERATIVE SOCIETY','MAIN','admin123','2022-10-14 17:37:11','3');");
         }
 
         b.setOnClickListener(new OnClickListener() {
@@ -129,6 +134,11 @@ public class AdminLogin extends Activity implements AdapterView.OnItemSelectedLi
                             int branchIndex = c.getColumnIndex("branch");
                             bran = c.getString(branchIndex);
                         }
+
+                        // Storing the key and its value as the data fetched from edittext
+                        prefsEditor.putString("loggedInUser", usser);
+                        // Commit to apply the changes
+                        prefsEditor.commit();
 
                         Intent intent = new Intent(AdminLogin.this, MainActivity.class);
                         Bundle bundle = new Bundle();

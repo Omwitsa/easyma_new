@@ -13,6 +13,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -25,16 +26,6 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.ResponseHandler;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.BasicResponseHandler;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
 
 import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
@@ -52,12 +43,18 @@ import model.SynchData;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import util.AppConstants;
 import util.DateUtil;
 import util.FontDefine;
 import util.Printer;
 
 import static com.myactivities.DailyReportsActivity.Transsdate;
 import static network.Urls.BASE_URL;
+
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.HttpResponse;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.NameValuePair;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.HttpClient;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.methods.HttpPost;
 
 
 public class MainPrintActivity extends MyActivity {
@@ -71,6 +68,7 @@ public class MainPrintActivity extends MyActivity {
     HttpClient httpclient;
     List<NameValuePair> nameValuePairs;
     ProgressDialog dialog = null;
+    SharedPreferences sharedPreferences;
     TextView tv;
     static SQLiteDatabase db;
 
@@ -98,6 +96,7 @@ public class MainPrintActivity extends MyActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.printmain);
+        sharedPreferences = getSharedPreferences("preferences", MODE_PRIVATE);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         myToolbar.setTitle("Print Report");
         setSupportActionBar(myToolbar);
@@ -111,7 +110,6 @@ public class MainPrintActivity extends MyActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-
 
         mConnectBtn = (Button) findViewById(R.id.btn_connect);
         mEnableBtn = (Button) findViewById(R.id.btn_enable);
@@ -201,8 +199,6 @@ public class MainPrintActivity extends MyActivity {
                 @Override
                 public void onClick(View arg0) {
                     connect();
-
-
                 }
             });
 
@@ -214,7 +210,6 @@ public class MainPrintActivity extends MyActivity {
             });
         }
 
-
         IntentFilter filter = new IntentFilter();
         filter.addAction(BluetoothAdapter.ACTION_STATE_CHANGED);
         filter.addAction(BluetoothDevice.ACTION_FOUND);
@@ -222,7 +217,6 @@ public class MainPrintActivity extends MyActivity {
         filter.addAction(BluetoothAdapter.ACTION_DISCOVERY_FINISHED);
         filter.addAction(BluetoothDevice.ACTION_BOND_STATE_CHANGED);
         registerReceiver(mReceiver, filter);
-
     }
 
     @Override
@@ -350,7 +344,6 @@ public class MainPrintActivity extends MyActivity {
     private void sendData(byte[] bytes) {
         try {
             mConnector.sendData(bytes);
-            db.execSQL("UPDATE CollectionDB set status='1' where status='0';");
         } catch (P25ConnectionException e) {
             e.printStackTrace();
         }
@@ -358,12 +351,11 @@ public class MainPrintActivity extends MyActivity {
 
     public void fetchProducts() {
         apiService = ApiClient.getClient().create(ApiInterface.class);
-        Call<ProductResp> call= apiService.getItems();
+        Call<ProductResp> call= apiService.getItems(AppConstants.SACCO_CODE);
         call.enqueue(new Callback<ProductResp>() {
             @Override
             public void onResponse(Call<ProductResp> call, Response<ProductResp> response) {
                 model.ProductResp responseData = response.body();
-//                assert responseData != null;
                 if (responseData.isSuccess()){
                     ArrayList<String> productList2 = new ArrayList<String>(responseData.getProducts());
                     ArrayList<String> arrProduct = new ArrayList<String>();
@@ -381,17 +373,12 @@ public class MainPrintActivity extends MyActivity {
 
             @Override
             public void onFailure(Call<ProductResp> call, Throwable t) {
-
+                showToast("Sorry, An error occurred");
             }
         });
     }
 
     public void autosynch() {
-
-//        db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
-//        db.execSQL("CREATE TABLE IF NOT EXISTS CollectionDB(supplier VARCHAR," +
-//                "quantity VARCHAR,branch VARCHAR,datep DATETIME,date DATETIME, auditId VARCHAR,shift VARCHAR, status VARCHAR,transdate VARCHAR, Type VARCHAR);");
-
         Cursor c = db.rawQuery("SELECT * FROM CollectionDB WHERE status='0'", null);
         if (c.getCount() == 0) {
             showMessage("Collection Message", "No new collection found");
@@ -423,7 +410,6 @@ public class MainPrintActivity extends MyActivity {
             setDate = Transsdate.getText() == null ? setDate : Transsdate.getText().toString();
         }
         setDate =  setDate.trim();
-//        Cursor c=db.rawQuery("SELECT * FROM CollectionDB WHERE transdate ='"+setDate+"'" , null);
         Cursor c = db.rawQuery("SELECT * FROM CollectionDB WHERE status='0'", null);
         if (c.getCount() == 0) {
             showMessage("Collection Message", "No new collection found");
@@ -431,23 +417,23 @@ public class MainPrintActivity extends MyActivity {
         }
         String sup = null;
         String qty = null;
+        String branchhh = null;
         String dates = null;
         String auditid = null;
-        String shift = null;
-        String branchhh = null;
         String product = null;
+        String saccoCode = null;
 
         try {
             while (c.moveToNext()) {
                 sup = c.getString(0);
                 qty = c.getString(1);
                 branchhh = c.getString(2);
-                dates = c.getString(4);
-                auditid = c.getString(5);
-                shift=c.getString(6);
-                product=c.getString(9);
+                dates = c.getString(3);
+                auditid = c.getString(4);
+                product=c.getString(6);
+                saccoCode=c.getString(7);
 
-                SynchData synchData = new SynchData(sup, qty, dates,shift,auditid,branchhh, product);
+                SynchData synchData = new SynchData(sup, qty, branchhh, dates, auditid, product, saccoCode);
                 apiService = ApiClient.getClient().create(ApiInterface.class);
                 Call<model.Response>call= apiService.login(synchData);
                 call.enqueue(new Callback<model.Response>() {
@@ -464,91 +450,18 @@ public class MainPrintActivity extends MyActivity {
                         Toast.makeText(getApplicationContext(), "An Error occurred", Toast.LENGTH_LONG).show();
                     }
                 });
-
-//                httpclient = new DefaultHttpClient();
-//                httppost = new HttpPost(BASE_URL + "webservice/users/login");
-//                nameValuePairs = new ArrayList<NameValuePair>();
-//                nameValuePairs.add(new BasicNameValuePair("sup", sup));
-//                nameValuePairs.add(new BasicNameValuePair("qty", qty));
-//                nameValuePairs.add(new BasicNameValuePair("dates", dates));
-//                nameValuePairs.add(new BasicNameValuePair("auditid", auditid));
-//                nameValuePairs.add(new BasicNameValuePair("shift", shift));
-//                nameValuePairs.add(new BasicNameValuePair("branchhh", branchhh));
-//                nameValuePairs.add(new BasicNameValuePair("product", product));
-//                httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-//                //Execute HTTP Post Request
-//               // response = httpclient.execute(httppost);
-//                // edited by James from coderzheaven.. from here....
-//                ResponseHandler<String> responseHandler = new BasicResponseHandler();
-//                final String response = httpclient.execute(httppost, responseHandler);
-//                System.out.println("Response : " + response);
-//
-//                runOnUiThread(new Runnable() {
-//                    public void run() {
-//                        //tv.setText("Status : " + response);
-//                        try {
-//                            dialog.dismiss();
-//                            Toast.makeText(MainPrintActivity.this, "Collection Submited Succesifully", Toast.LENGTH_SHORT).show();
-//                        } catch (Exception e) {
-//                            e.printStackTrace();
-//                        }
-//                    }
-//                });
-//
-//                if (response.equalsIgnoreCase("Successful")) {
-//                    //set status='2'
-//                    // db.execSQL("UPDATE CollectionDB set status='2'  where status='1';");
-//                    runOnUiThread(new Runnable() {
-//                        public void run() {
-//                            db.execSQL("UPDATE CollectionDB set status='0'  where status='0';");
-//                            Toast.makeText(MainPrintActivity.this, "success", Toast.LENGTH_SHORT).show();
-//                        }
-//                    });
-//                }
             }
         } catch (Exception e) {
             dialog.dismiss();
             System.out.println("Exception :" + e.getMessage());
         }
-        //}
-
-        db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
-        db.execSQL("CREATE TABLE IF NOT EXISTS CollectionDB(supplier VARCHAR," +
-                "quantity VARCHAR,branch VARCHAR,datep DATETIME,date DATETIME, auditId VARCHAR,shift VARCHAR, status VARCHAR,transdate VARCHAR, Type VARCHAR);");
-        Cursor cursor = db.rawQuery("SELECT count(*) FROM CollectionDB", null);
-        cursor.moveToFirst();
-        if (cursor.getInt(0) > 0) {
-            //showAlert();
-            //dialog.dismiss();
-        } else {
-            Toast.makeText(MainPrintActivity.this, "No new collection record found", Toast.LENGTH_LONG).show();
-        }
     }
-
-//    public void showAlert() {
-//        MainPrintActivity.this.runOnUiThread(new Runnable() {
-//            public void run() {
-//                AlertDialog.Builder builder = new AlertDialog.Builder(MainPrintActivity.this);
-//                builder.setTitle("Success.");
-//                builder.setMessage("Milk Collection submited Successfully.")
-//                        .setCancelable(false)
-//                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, int id) {
-//
-//                            }
-//                        });
-//                AlertDialog alert = builder.create();
-//                alert.show();
-//            }
-//        });
-//
-//    }
 
     private void printStruk() {
         Bundle getBundle = this.getIntent().getExtras();
         sno1 = getBundle.getString("sno");
         product = getBundle.getString("product");
-        Cursor c = db.rawQuery("SELECT * FROM CollectionDB WHERE status='0' AND supplier='"+sno1+"'", null);
+        Cursor c = db.rawQuery("SELECT * FROM CollectionDB WHERE status='0' AND supplier='"+sno1+"' AND saccoCode='"+AppConstants.SACCO_CODE+"'", null);
         if (c.getCount() == 0) {
             showMessage("Record Message", "No records found");
             return;
@@ -556,16 +469,13 @@ public class MainPrintActivity extends MyActivity {
 
         StringBuffer buffer = new StringBuffer();
         MainActivity ma = new MainActivity();
-        company = MainActivity.company;
-        userrrrr = MainActivity.logedInUser;
-        branchhh = MainActivity.branch;
 
         while (c.moveToNext()) {
             buffer.append("Supplier No    :" + c.getString(0) + "\n");
             buffer.append("Quantity       :" + c.getString(1) + " KGs\n");
-            buffer.append("Product       :" + c.getString(9) + "\n");
-            buffer.append("Station Name    :" + branchhh + "\n");
-            buffer.append("Received By    :" + userrrrr + "\n");
+            buffer.append("Product       :" + c.getString(6) + "\n");
+            buffer.append("Station Name    :" + c.getString(2) + "\n");
+            buffer.append("Received By    :" + c.getString(4) + "\n");
         }
 
         showMessage("Collection Details", buffer.toString());
@@ -574,7 +484,7 @@ public class MainPrintActivity extends MyActivity {
         String time1 = DateUtil.timeMilisToString(milis1, "  HH:mm a");
 
         StringBuilder content2Sb = new StringBuilder();
-        content2Sb.append("\n" + company + "\n" + product + " RECEIPT" + "\n");
+        content2Sb.append("\n" + AppConstants.SACCO_CODE + "\n" + product + " RECEIPT" + "\n\n");
         content2Sb.append("-----------------------------" + "\n");
         content2Sb.append("" + buffer.toString() + "" + "\n");
         content2Sb.append("--------------------------" + "\n");
@@ -593,20 +503,6 @@ public class MainPrintActivity extends MyActivity {
         offset += content2Byte.length;
         byte[] senddata = PocketPos.FramePack(PocketPos.FRAME_TOF_PRINT, totalByte, 0, totalByte.length);
         sendData(senddata);
-
-//        dialog = ProgressDialog.show(MainPrintActivity.this, "",
-//                "submitting collection Online, please wait...", true);
-//        new Thread(new Runnable() {
-//            public void run() {
-//                sendToDB();
-//                //SocketApplication app = (SocketApplication) getApplicationContext();
-//                //app.setDevice(null);
-//                MainPrintActivity.this.finish();
-//                //socket.close();
-//                dialog.dismiss();
-//            }
-//        }).start();
-
     }
 
 

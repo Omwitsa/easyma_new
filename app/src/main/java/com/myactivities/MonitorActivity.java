@@ -10,6 +10,7 @@ import android.bluetooth.BluetoothSocket;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -27,11 +28,6 @@ import android.widget.EditText;
 import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.Toast;
-
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpPost;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -52,10 +48,16 @@ import model.ProductResp;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import util.AppConstants;
 import util.DateUtil;
 
 import static com.myactivities.MainActivity.branch;
 import static com.myactivities.MainActivity.logedInUser;
+
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.HttpResponse;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.NameValuePair;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.HttpClient;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.methods.HttpPost;
 
 
 public class MonitorActivity extends MyActivity implements OnItemSelectedListener {
@@ -108,12 +110,8 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
     //double value1 = Double.valueOf(bvalue);
     //double fvalue = value1-value;
 
-
-
-
+    SharedPreferences sharedPreferences;
     public static String branchhh,userrrrr,company;
-
-
     private static BluetoothSocket mSocket;
     BluetoothDevice selectDevice = null;
 
@@ -125,6 +123,7 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
         this.getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.monitor);
 
+        sharedPreferences = getSharedPreferences("preferences", MODE_PRIVATE);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         myToolbar.setTitle("Measure Collection");
         setSupportActionBar(myToolbar);
@@ -202,20 +201,12 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
             }
         });
 
-//        ArrayList productList = new ArrayList<>();
-//        productList.add("Leaves");
-//        productList.add("Seeds");
-//        productList.add("Powder");
-//        productList.add("Dry Leaves");
-//        productList.add("Moringa Seeds");
-//        productList.add("Fresh Leaves");
-
         db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
         db.execSQL("CREATE TABLE IF NOT EXISTS products(type VARCHAR);");
         Cursor c = db.rawQuery("SELECT * FROM products", null);
 
         if (c.getCount() == 0) {
-            db.execSQL("INSERT INTO products VALUES('Leaves'), ('Seeds'), ('Powder'), ('Dry Leaves'), ('Moringa Seeds'), ('Fresh Leaves');");
+            db.execSQL("INSERT INTO products VALUES('MILK');");
         }
 
         ArrayList productList = new ArrayList<>();
@@ -229,20 +220,6 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
         catch (Exception e){
             System.out.println("Exception :" + e.getMessage());
         }
-
-        apiService = ApiClient.getClient().create(ApiInterface.class);
-        Call<ProductResp> call= apiService.getItems();
-        call.enqueue(new Callback<ProductResp>() {
-            @Override
-            public void onResponse(Call<ProductResp> call, Response<ProductResp> response) {
-
-            }
-
-            @Override
-            public void onFailure(Call<ProductResp> call, Throwable t) {
-
-            }
-        });
 
         ArrayAdapter<String> productAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, productList);
         productAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -265,22 +242,7 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
 
         suppp_no = sno.getText().toString().trim();
         db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
-        db1 = openOrCreateDatabase("loginDB", Context.MODE_PRIVATE, null);
-        db.execSQL("CREATE TABLE IF NOT EXISTS CollectionDB(supplier VARCHAR,quantity VARCHAR,branch VARCHAR,datep DATETIME,date DATETIME, auditId VARCHAR, shift VARCHAR,status VARCHAR,transdate VARCHAR, Type VARCHAR);");
-        //db.execSQL("ALTER TABLE CollectionDB  ADD transdate  varchar");
-        //db.execSQL("UPDATE CollectionDB   SET transdate  = datep");
-
-
-
-        /*Starting new db for accepting data from mysql database*/
-        //db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
-        //db1 = openOrCreateDatabase("loginDB", Context.MODE_PRIVATE, null);
-        //db.execSQL("CREATE TABLE IF NOT EXISTS DetailsDB(name VARCHAR,quantity VARCHAR,phone VARCHAR,idno VARCHAR);");
-        //db.execSQL("ALTER TABLE CollectionDB  ADD transdate  varchar");
-        //db.execSQL("UPDATE CollectionDB   SET transdate  = datep");
-        /*Starting new db for accepting data from mysql database*/
-
-
+        db.execSQL("CREATE TABLE IF NOT EXISTS CollectionDB(supplier VARCHAR,quantity VARCHAR,branch VARCHAR, date DATETIME, auditId VARCHAR,status VARCHAR, type VARCHAR, saccoCode VARCHAR, transdate DATETIME);");
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         BluetoothDevice finalDevice = this.getIntent().getParcelableExtra(
                 BluetoothDevice.EXTRA_DEVICE);
@@ -426,11 +388,6 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
                                         float quantity =0;
                                         if (bb1 !="") {
                                             try {
-
-
-                                                //Log.d(TAG, "e",String.valueOf(bb1));
-                                                //String qty=String.format("%.2f",Float.valueOf(bb1));
-//                                                String qty=String.format("%.0f",Float.valueOf(bb1));
                                                 String qty=String.format("%.2f",Float.valueOf(bb1));
                                                 quantity = Float.parseFloat(qty);
                                             }
@@ -452,11 +409,6 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
                                         }
 
                                         double finalWeight = quantity - containerWeight;
-
-//                                        DecimalFormat df = new DecimalFormat("#.##");
-//                                        df.setRoundingMode(RoundingMode.FLOOR);
-//                                        double result = Double.parseDouble(df.format(finalWeight));
-
                                         TextViewf.setText(String.valueOf(finalWeight));
                                         calculate();
                                     }
@@ -543,8 +495,6 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
     }
 
     protected void dialog() {
-        //MainActivity ma = new MainActivity();
-        //branch = ma.branch;
         StringBuffer buffer = new StringBuffer();
         Intent intent = new Intent(MonitorActivity.this, MainActivity.class);
         Bundle getBundle = this.getIntent().getExtras();
@@ -553,39 +503,13 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
         logedInUser = getBundle.getString("user");
 
         AlertDialog.Builder build = new AlertDialog.Builder(com.myactivities.MonitorActivity.this);
-        build.setTitle("Confirmation :SNo=" + sno.getText() + " and Quantity =" + TextViewf.getText().toString() + "  using:OSARAI");
-
-        //validating the values....
-        //double quantity = Double.parseDouble(TextView.getText().toString());
-        //NumberFormat nf = new DecimalFormat("##.##");
-        // System.out.println(nf.format(quantity));
-
-
-        //if ((TextView.getText().toString()).equalsIgnoreCase(nf.format(quantity))) {
-        //Toast.makeText(ma, "Wait for the scale to stabilize the quantity", Toast.LENGTH_SHORT).show();
-        //} else
-        //build.setTitle("Confirmation :SNo=" + sno.getText() + " and Quantity =" + TextView.getText().toString() + "  using " + branchhh);
-        //final String cont = branch;
-        //final String sess= String.valueOf(spinner21.getSelectedItem());
+        build.setTitle("Confirmation :SNo=" + sno.getText() + " and Quantity =" + TextViewf.getText().toString() + "  using:Main");
         build.setPositiveButton(R.string.ok,
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
                         String user = null;
-
-                        //Cursor c1 = db1.rawQuery("SELECT * FROM admin_login where status=1", null);
-                        //if (c1.getCount() == 0) {
-                        //showMessage("Oh Noo!", "You are using the default admin session, contact system admin if you dont have a user account");
-                        //return;
-                        //}
-                        //StringBuffer buffer = new StringBuffer();
-
-                        //while (c1.moveToNext()) {
-                        //user = c1.getString(0);
-
-                        //}
-
                         long milis1 = System.currentTimeMillis();
                         String date_print = DateUtil.timeMilisToString(milis1, "yyyy-MM-dd");
 
@@ -594,17 +518,13 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
                         String date1 = sdf.format(c.getTime());
                         SimpleDateFormat ff = new SimpleDateFormat("yyyy-MM-dd");
                         String trans= ff.format(c.getTime());
-                        final String branchhh = "OSARAI";
-                        //date_print
-                        //Editable sno1=sno.getText();
-                        //String quantity=TextView.getText().toString();
-                        //trans = trans.trim();
+                        final String branchhh = "MAIN";
 
-                        db.execSQL("INSERT INTO CollectionDB  VALUES('" + sno.getText() + "','" + (TextViewf.getText() + "','")+ branchhh +"','" + date_print +"','" + date1 + "','MORINGA','" + shift + "','0','"+trans+"', '" + product + "');");
+                        String loggenInUser = sharedPreferences.getString("loggedInUser", "");
+                        db.execSQL("INSERT INTO CollectionDB  VALUES('" + sno.getText() + "', '" + TextView.getText() + "', '" + branchhh +"', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "', '"+date_print +"');");
                         showMessage("Success", "Record added");
                         TextViewf.setText("0");
 
-//                        //connectDevice();
                         Intent i = new Intent(getApplicationContext(), MainPrintActivity.class);
                         Bundle bundle = new Bundle();
                         bundle.putString("qty", TextViewf.getText().toString());
@@ -613,11 +533,7 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
                         bundle.putString("product", product);
                         i.putExtras(bundle);
                         startActivity(i);
-                        //sno.setText("");
                         clear();
-
-
-
                     }
                 });
 

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+            "outputFile": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\wilso\\.gradle\\caches\\transforms-3\\1b5b9244dfc03c7f10c200c930fb4b44\\transformed\\mediarouter-1.0.0-alpha5\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-3\\1b5b9244dfc03c7f10c200c930fb4b44\\transformed\\mediarouter-1.0.0-alpha5\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

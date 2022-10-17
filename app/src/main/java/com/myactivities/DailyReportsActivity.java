@@ -30,11 +30,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpPost;
-
 import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -49,6 +44,11 @@ import util.FontDefine;
 import util.Printer;
 
 import static java.util.Calendar.DATE;
+
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.HttpResponse;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.NameValuePair;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.HttpClient;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.methods.HttpPost;
 
 
 public class DailyReportsActivity extends AppCompatActivity implements OnClickListener {
@@ -510,9 +510,7 @@ public class DailyReportsActivity extends AppCompatActivity implements OnClickLi
             //Dayshift="";
             //myDate.setText(sdf.format(new Date()));
 
-            Cursor c = db.rawQuery("SELECT * FROM CollectionDB WHERE   transdate ='"+myDate+"'  and  shift='" + Dayshift + "'", null);
-            //
-           // Cursor c = db.rawQuery("SELECT * FROM CollectionDB WHERE transdate="2020-03-04", null);
+            Cursor c = db.rawQuery("SELECT * FROM CollectionDB WHERE   transdate ='"+myDate+"'", null);
             if (c.getCount() == 0) {
                 showMessage("Collection", "No collection found");
                 mPrintReceiptBtn.setEnabled(true);
@@ -527,12 +525,9 @@ public class DailyReportsActivity extends AppCompatActivity implements OnClickLi
                 buffer.append(c.getString(0) + "\t" + c.getString(1) + " \t" + c.getString(6) + " \t" + c.getString(9) +"\n");
 
             }
-            Cursor c1 = db.rawQuery("SELECT sum(quantity) FROM CollectionDB WHERE  transdate ='"+myDate+"'    and  shift='" + Dayshift + "'", null);
+            Cursor c1 = db.rawQuery("SELECT sum(quantity) FROM CollectionDB WHERE  transdate ='"+myDate+"'", null);
             while (c1.moveToNext()) {
-
                 qtyyy = c1.getString(0);
-                ;
-
             }
             showMessage("Collection Details +"+ qtyyy +"", buffer.toString());
 

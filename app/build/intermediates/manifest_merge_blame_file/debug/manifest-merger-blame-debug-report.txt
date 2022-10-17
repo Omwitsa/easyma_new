@@ -5,525 +5,524 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-7-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:5-73
+7-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:5-73
 8        android:minSdkVersion="16"
-8-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:5-73
+8-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:5-73
 9        android:targetSdkVersion="32" />
-9-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:5-73
+9-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:5-73
 10    <!-- Keeps the processor from sleeping when a message is received. -->
 11    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- Creates a custom permission so only this app can receive its messages. -->
-11-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:8:5-71
-11-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:8:22-68
+11-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:8:5-71
+11-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:8:22-68
 12    <uses-permission android:name="android.permission.WAKE_LOCK" />
-12-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:9:5-68
-12-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:9:22-65
+12-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:9:5-68
+12-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:9:22-65
 13    <uses-permission android:name="com.cheress.permission.C2D_MESSAGE" />
-13-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:10:5-74
-13-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:10:22-71
+13-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:10:5-74
+13-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:10:22-71
 14    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-14-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:11:5-82
-14-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:11:22-79
+14-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:11:5-82
+14-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:11:22-79
 15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-15-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:12:5-79
-15-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:12:22-76
+15-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:12:5-79
+15-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:12:22-76
 16    <uses-permission android:name="android.permission.INTERNET" />
-16-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:13:5-67
-16-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:13:22-64
+16-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:13:5-67
+16-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:13:22-64
 17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-17-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:14:5-76
-17-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:14:22-73
+17-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:14:5-76
+17-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:14:22-73
 18    <uses-permission android:name="android.permission.VIBRATE" />
-18-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:15:5-66
-18-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:15:22-63
+18-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:15:5-66
+18-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:15:22-63
 19    <uses-permission android:name="android.permission.BLUETOOTH" />
-19-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:16:5-68
-19-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:16:22-65
+19-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:16:5-68
+19-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:16:22-65
 20    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
-20-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:17:5-76
-20-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:17:22-73
+20-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:17:5-76
+20-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:17:22-73
 21    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
-21-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:18:5-73
-21-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:18:22-70
+21-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:18:5-73
+21-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:18:22-70
 22    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-22-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:19:5-74
-22-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:19:22-71
+22-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:19:5-74
+22-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:19:22-71
 23    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-23-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:20:5-81
-23-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:20:22-78
+23-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:20:5-81
+23-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:20:22-78
 24    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-24-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:21:5-75
-24-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:21:22-72
+24-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:21:5-75
+24-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:21:22-72
 25    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- TODO -->
-25-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:22:5-80
-25-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:22:22-77
+25-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:22:5-80
+25-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:22:22-77
 26    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-26-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:23:5-81
-26-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:23:22-78
+26-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:23:5-81
+26-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:23:22-78
 27    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-27-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:24:5-79
-27-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:24:22-76
+27-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:24:5-79
+27-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:24:22-76
 28    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-28-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:25:5-81
-28-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:25:22-78
+28-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:25:5-81
+28-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:25:22-78
 29
 30    <uses-feature
-30-->[com.google.android.gms:play-services-maps:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\1b689d6d8c70a272d53d68679fe0c6af\transformed\jetified-play-services-maps-11.0.4\AndroidManifest.xml:21:5-77
+30-->[com.google.android.gms:play-services-maps:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\a21c43a2b917c3d4ec42724475235107\transformed\jetified-play-services-maps-11.0.4\AndroidManifest.xml:21:5-77
 31        android:glEsVersion="0x00020000"
-31-->[com.google.android.gms:play-services-maps:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\1b689d6d8c70a272d53d68679fe0c6af\transformed\jetified-play-services-maps-11.0.4\AndroidManifest.xml:21:19-51
+31-->[com.google.android.gms:play-services-maps:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\a21c43a2b917c3d4ec42724475235107\transformed\jetified-play-services-maps-11.0.4\AndroidManifest.xml:21:19-51
 32        android:required="true" />
-32-->[com.google.android.gms:play-services-maps:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\1b689d6d8c70a272d53d68679fe0c6af\transformed\jetified-play-services-maps-11.0.4\AndroidManifest.xml:21:52-75
+32-->[com.google.android.gms:play-services-maps:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\a21c43a2b917c3d4ec42724475235107\transformed\jetified-play-services-maps-11.0.4\AndroidManifest.xml:21:52-75
 33
 34    <permission
-34-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:24:5-109
+34-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:24:5-109
 35        android:name="com.example.alex.dependencies.permission.C2D_MESSAGE"
-35-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:24:17-71
+35-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:24:17-71
 36        android:protectionLevel="signature" />
-36-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:24:72-107
+36-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:24:72-107
 37
 38    <uses-permission android:name="com.example.alex.dependencies.permission.C2D_MESSAGE" />
-38-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:26:5-78
-38-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:26:22-76
+38-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:26:5-78
+38-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:26:22-76
 39
 40    <application
-40-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:27:5-133:19
+40-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:27:5-133:19
 41        android:name="com.myactivities.Controller"
-41-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:28:9-35
+41-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:28:9-35
 42        android:allowBackup="true"
-42-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:29:9-35
+42-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:29:9-35
 43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-43-->[androidx.core:core:1.0.0] C:\Users\wilso\.gradle\caches\transforms-3\ce8440ae97e4c8c64058d4b497fe89be\transformed\core-1.0.0\AndroidManifest.xml:22:18-86
+43-->[androidx.core:core:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\ce8440ae97e4c8c64058d4b497fe89be\transformed\core-1.0.0\AndroidManifest.xml:22:18-86
 44        android:debuggable="true"
 45        android:icon="@mipmap/current"
-45-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:30:9-39
+45-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:30:9-39
 46        android:label="@string/app_name"
-46-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:31:9-41
+46-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:31:9-41
 47        android:supportsRtl="true"
-47-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:32:9-35
-48        android:testOnly="true"
-49        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-49-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:33:9-65
-50        android:usesCleartextTraffic="true" >
-50-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:35:9-44
-51        <activity
-51-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:37:9-40:50
-52            android:name="com.myactivities.Main2Activity"
-52-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:38:13-42
-53            android:exported="false"
-53-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:39:13-37
-54            android:theme="@style/NoActionBar" />
-54-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:40:13-47
-55        <activity android:name="com.myactivities.Enquiry" />
-55-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:41:9-45
-55-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:41:19-42
-56        <activity
-56-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:42:9-53:20
-57            android:name="com.myactivities.AdminLogin"
-57-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:43:13-39
-58            android:exported="true"
-58-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:44:13-36
-59            android:screenOrientation="portrait"
-59-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:45:13-49
-60            android:theme="@style/AppTheme.NoActionBar"
-60-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:46:13-56
-61            android:windowSoftInputMode="stateHidden|adjustResize" >
-61-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:47:13-67
-62            <intent-filter>
-62-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:48:13-52:29
-63                <action android:name="android.intent.action.MAIN" />
-63-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:49:17-69
-63-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:49:25-66
-64
-65                <category android:name="android.intent.category.LAUNCHER" />
-65-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:51:17-77
-65-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:51:27-74
-66            </intent-filter>
-67        </activity>
-68        <activity
-68-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:54:9-56:52
-69            android:name="com.myactivities.AboutActivity"
-69-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:55:13-42
-70            android:screenOrientation="portrait" />
-70-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:56:13-49
-71        <activity
-71-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:57:9-59:52
-72            android:name="com.myactivities.EmailActivity"
-72-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:58:13-42
-73            android:screenOrientation="portrait" />
-73-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:59:13-49
-74        <activity
-74-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:60:9-62:52
-75            android:name="com.myactivities.MonitorActivity"
-75-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:61:13-44
-76            android:screenOrientation="portrait" />
-76-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:62:13-49
-77        <activity
-77-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:63:9-65:52
-78            android:name="com.myactivities.SearchDeviceActivity"
-78-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:64:13-49
-79            android:screenOrientation="portrait" />
-79-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:65:13-49
-80        <activity
-80-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:66:9-68:52
-81            android:name="com.myactivities.SettingActivity"
-81-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:67:13-44
-82            android:screenOrientation="portrait" />
-82-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:68:13-49
-83        <activity
-83-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:69:9-73:59
-84            android:name="com.myactivities.MainActivity"
-84-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:70:13-41
-85            android:label="@string/app_name"
-85-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:71:13-45
-86            android:screenOrientation="portrait"
-86-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:72:13-49
-87            android:theme="@style/AppTheme.NoActionBar" />
-87-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:73:13-56
-88        <activity
-88-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:74:9-76:59
-89            android:name="com.myactivities.ResetPassword"
-89-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:75:13-42
-90            android:theme="@style/AppTheme.NoActionBar" />
-90-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:76:13-56
-91        <activity
-91-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:77:9-79:59
-92            android:name="com.myactivities.NewsWebView"
-92-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:78:13-40
-93            android:theme="@style/AppTheme.NoActionBar" />
-93-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:79:13-56
-94        <activity
-94-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:80:9-82:59
-95            android:name="com.myactivities.MainPrintActivity"
-95-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:81:13-46
-96            android:theme="@style/AppTheme.NoActionBar" />
-96-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:82:13-56
-97        <activity
-97-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:83:9-86:70
-98            android:name="com.myactivities.AddUserActivity"
-98-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:84:13-44
-99            android:theme="@style/AppTheme.NoActionBar"
-99-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:85:13-56
-100            android:windowSoftInputMode="stateHidden|adjustResize" />
-100-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:86:13-67
-101        <activity
-101-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:87:9-91:70
-102            android:name="com.myactivities.SuperAdminLogin"
-102-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:88:13-44
-103            android:label="Super User Login"
-103-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:89:13-45
-104            android:theme="@style/AppTheme.NoActionBar"
-104-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:90:13-56
-105            android:windowSoftInputMode="stateHidden|adjustResize" />
-105-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:91:13-67
-106        <activity
-106-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:92:9-94:45
-107            android:name="com.myactivities.DailyReportsActivity"
-107-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:93:13-49
-108            android:label="Detail Report" />
-108-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:94:13-42
-109        <activity
-109-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:95:9-97:48
-110            android:name="com.myactivities.CollectionActivity"
-110-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:96:13-47
-111            android:label="@string/app_name" />
-111-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:97:13-45
-112        <activity
-112-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:98:9-100:48
-113            android:name="com.myactivities.AllClientsActivity"
-113-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:99:13-47
-114            android:label="@string/app_name" />
-114-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:100:13-45
-115        <activity
-115-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:101:9-103:48
-116            android:name="com.myactivities.RegisterFarmer"
-116-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:102:13-43
-117            android:label="@string/app_name" />
-117-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:103:13-45
-118        <activity
-118-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:104:9-106:70
-119            android:name="com.myactivities.SuperAdminActivity"
-119-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:105:13-47
-120            android:windowSoftInputMode="stateHidden|adjustResize" />
-120-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:106:13-67
-121
-122        <meta-data
-122-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:108:9-110:36
-123            android:name="QUERY_LOG"
-123-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:109:13-37
-124            android:value="true" />
-124-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:110:13-33
-125        <meta-data
-125-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:111:9-113:36
-126            android:name="firebase_analytics_collection_deactivated"
-126-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:112:13-69
-127            android:value="true" />
-127-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:113:13-33
-128
-129        <receiver android:name="com.myactivities.MainActivity" />
-129-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:115:9-50
-129-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:115:19-47
-130        <receiver
-130-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:116:9-130:20
-131            android:name="com.google.android.gcm.GCMBroadcastReceiver"
-131-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:117:13-71
-132            android:exported="true"
-132-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:118:13-36
-133            android:permission="com.google.android.c2dm.permission.SEND" >
-133-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:119:13-73
-134            <intent-filter>
-134-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:121:13-129:29
-135
-136                <!-- Receives the actual messages. -->
-137                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-137-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:124:17-81
-137-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:124:25-78
-138                <!-- Receives the registration id. -->
-139                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-139-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:126:17-86
-139-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:126:25-83
-140
-141                <category android:name="com.cheress" />
-141-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:128:17-56
-141-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:128:27-53
-142            </intent-filter>
-143        </receiver>
-144
-145        <service android:name="com.myactivities.GCMIntentService" />
-145-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:132:9-53
-145-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:132:18-50
-146
-147        <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
-147-->[com.google.android.gms:play-services-cast-framework:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\4f993e4e084a5c9733c9f95f3c97f335\transformed\jetified-play-services-cast-framework-11.0.4\AndroidManifest.xml:5:9-99
-147-->[com.google.android.gms:play-services-cast-framework:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\4f993e4e084a5c9733c9f95f3c97f335\transformed\jetified-play-services-cast-framework-11.0.4\AndroidManifest.xml:5:19-97
-148
-149        <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService" />
-149-->[com.google.android.gms:play-services-cast-framework:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\4f993e4e084a5c9733c9f95f3c97f335\transformed\jetified-play-services-cast-framework-11.0.4\AndroidManifest.xml:6:9-103
-149-->[com.google.android.gms:play-services-cast-framework:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\4f993e4e084a5c9733c9f95f3c97f335\transformed\jetified-play-services-cast-framework-11.0.4\AndroidManifest.xml:6:18-101
-150        <service android:name="com.google.android.gms.cast.framework.ReconnectionService" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
-150-->[com.google.android.gms:play-services-cast-framework:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\4f993e4e084a5c9733c9f95f3c97f335\transformed\jetified-play-services-cast-framework-11.0.4\AndroidManifest.xml:7:9-92
-150-->[com.google.android.gms:play-services-cast-framework:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\4f993e4e084a5c9733c9f95f3c97f335\transformed\jetified-play-services-cast-framework-11.0.4\AndroidManifest.xml:7:18-90
-151        <activity
-151-->[com.google.android.gms:play-services-ads-lite:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\04fd9b0d917bd9a2e1bb59cdf35a5abc\transformed\jetified-play-services-ads-lite-11.0.4\AndroidManifest.xml:25:9-232
-152            android:name="com.google.android.gms.ads.AdActivity"
-152-->[com.google.android.gms:play-services-ads-lite:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\04fd9b0d917bd9a2e1bb59cdf35a5abc\transformed\jetified-play-services-ads-lite-11.0.4\AndroidManifest.xml:25:19-71
-153            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-153-->[com.google.android.gms:play-services-ads-lite:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\04fd9b0d917bd9a2e1bb59cdf35a5abc\transformed\jetified-play-services-ads-lite-11.0.4\AndroidManifest.xml:25:72-181
-154            android:theme="@android:style/Theme.Translucent" />
-154-->[com.google.android.gms:play-services-ads-lite:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\04fd9b0d917bd9a2e1bb59cdf35a5abc\transformed\jetified-play-services-ads-lite-11.0.4\AndroidManifest.xml:25:182-230
-155        <activity
-155-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\fb0b203daf69822a9b826ecb05c6d44f\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:20:9-25:20
-156            android:name="com.google.android.gms.appinvite.PreviewActivity"
-156-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\fb0b203daf69822a9b826ecb05c6d44f\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:20:19-50
-157            android:exported="true"
-157-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\fb0b203daf69822a9b826ecb05c6d44f\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:20:51-74
-158            android:theme="@style/Theme.AppInvite.Preview" >
-158-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\fb0b203daf69822a9b826ecb05c6d44f\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:20:75-121
-159            <intent-filter>
-159-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\fb0b203daf69822a9b826ecb05c6d44f\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:21:13-24:29
-160                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW" />
-160-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\fb0b203daf69822a9b826ecb05c6d44f\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:22:17-89
-160-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\fb0b203daf69822a9b826ecb05c6d44f\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:22:25-87
-161
-162                <category android:name="android.intent.category.DEFAULT" />
-162-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\fb0b203daf69822a9b826ecb05c6d44f\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:23:17-75
-162-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\fb0b203daf69822a9b826ecb05c6d44f\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:23:27-73
-163            </intent-filter>
-164        </activity>
-165        <activity
-165-->[com.google.android.gms:play-services-auth:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\3129aefb039950c1e74161910f9690d1\transformed\jetified-play-services-auth-11.0.4\AndroidManifest.xml:20:9-189
-166            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-166-->[com.google.android.gms:play-services-auth:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\3129aefb039950c1e74161910f9690d1\transformed\jetified-play-services-auth-11.0.4\AndroidManifest.xml:20:19-68
-167            android:excludeFromRecents="true"
-167-->[com.google.android.gms:play-services-auth:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\3129aefb039950c1e74161910f9690d1\transformed\jetified-play-services-auth-11.0.4\AndroidManifest.xml:20:129-162
-168            android:exported="false"
-168-->[com.google.android.gms:play-services-auth:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\3129aefb039950c1e74161910f9690d1\transformed\jetified-play-services-auth-11.0.4\AndroidManifest.xml:20:163-187
-169            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-169-->[com.google.android.gms:play-services-auth:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\3129aefb039950c1e74161910f9690d1\transformed\jetified-play-services-auth-11.0.4\AndroidManifest.xml:20:69-128
-170        <!--
-171Service handling Google Sign-In user revocation. For apps that do not integrate with
-172            Google Sign-In, this service will never be started.
-173        -->
-174        <service
-174-->[com.google.android.gms:play-services-auth:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\3129aefb039950c1e74161910f9690d1\transformed\jetified-play-services-auth-11.0.4\AndroidManifest.xml:24:9-184
-175            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-175-->[com.google.android.gms:play-services-auth:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\3129aefb039950c1e74161910f9690d1\transformed\jetified-play-services-auth-11.0.4\AndroidManifest.xml:24:18-63
-176            android:exported="true"
-176-->[com.google.android.gms:play-services-auth:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\3129aefb039950c1e74161910f9690d1\transformed\jetified-play-services-auth-11.0.4\AndroidManifest.xml:24:64-87
-177            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-177-->[com.google.android.gms:play-services-auth:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\3129aefb039950c1e74161910f9690d1\transformed\jetified-play-services-auth-11.0.4\AndroidManifest.xml:24:88-182
-178
-179        <activity
-179-->[com.google.android.gms:play-services-base:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\32153f24f7c28ae0417325595243296b\transformed\jetified-play-services-base-11.0.4\AndroidManifest.xml:19:9-172
-180            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-180-->[com.google.android.gms:play-services-base:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\32153f24f7c28ae0417325595243296b\transformed\jetified-play-services-base-11.0.4\AndroidManifest.xml:19:19-85
-181            android:exported="false"
-181-->[com.google.android.gms:play-services-base:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\32153f24f7c28ae0417325595243296b\transformed\jetified-play-services-base-11.0.4\AndroidManifest.xml:19:146-170
-182            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-182-->[com.google.android.gms:play-services-base:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\32153f24f7c28ae0417325595243296b\transformed\jetified-play-services-base-11.0.4\AndroidManifest.xml:19:86-145
-183        <!--
-184 FirebaseMessagingService performs security checks at runtime,
-185             no need for explicit permissions despite exported="true"
-186        -->
-187        <service
-187-->[com.google.firebase:firebase-messaging:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\63e8ac750a2554f2e7cc11e11917f397\transformed\jetified-firebase-messaging-11.0.4\AndroidManifest.xml:23:9-27:19
-188            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-188-->[com.google.firebase:firebase-messaging:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\63e8ac750a2554f2e7cc11e11917f397\transformed\jetified-firebase-messaging-11.0.4\AndroidManifest.xml:23:18-87
-189            android:exported="true" >
-189-->[com.google.firebase:firebase-messaging:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\63e8ac750a2554f2e7cc11e11917f397\transformed\jetified-firebase-messaging-11.0.4\AndroidManifest.xml:23:88-111
-190            <intent-filter android:priority="-500" >
-190-->[com.google.firebase:firebase-messaging:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\63e8ac750a2554f2e7cc11e11917f397\transformed\jetified-firebase-messaging-11.0.4\AndroidManifest.xml:24:13-26:29
-190-->[com.google.firebase:firebase-messaging:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\63e8ac750a2554f2e7cc11e11917f397\transformed\jetified-firebase-messaging-11.0.4\AndroidManifest.xml:24:28-51
-191                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-191-->[com.google.firebase:firebase-messaging:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\63e8ac750a2554f2e7cc11e11917f397\transformed\jetified-firebase-messaging-11.0.4\AndroidManifest.xml:25:17-77
-191-->[com.google.firebase:firebase-messaging:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\63e8ac750a2554f2e7cc11e11917f397\transformed\jetified-firebase-messaging-11.0.4\AndroidManifest.xml:25:25-75
-192            </intent-filter>
-193        </service>
-194        <service
-194-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\56a85d5157ca83f52082bae2f98d111c\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:24:9-134
-195            android:name="com.google.android.gms.tagmanager.TagManagerService"
-195-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\56a85d5157ca83f52082bae2f98d111c\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:24:18-84
-196            android:enabled="true"
-196-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\56a85d5157ca83f52082bae2f98d111c\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:24:110-132
-197            android:exported="false" />
-197-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\56a85d5157ca83f52082bae2f98d111c\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:24:85-109
-198
-199        <activity
-199-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\56a85d5157ca83f52082bae2f98d111c\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:25:9-32:20
-200            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
-200-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\56a85d5157ca83f52082bae2f98d111c\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:25:19-93
-201            android:exported="true"
-201-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\56a85d5157ca83f52082bae2f98d111c\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:25:94-117
-202            android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
-202-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\56a85d5157ca83f52082bae2f98d111c\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:25:118-142
-203            <intent-filter>
-203-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\56a85d5157ca83f52082bae2f98d111c\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:26:13-31:29
-204                <data android:scheme="tagmanager.c.com.example.alex.dependencies" />
-204-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\56a85d5157ca83f52082bae2f98d111c\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:27:17-71
-204-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\56a85d5157ca83f52082bae2f98d111c\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:27:23-69
-205
-206                <action android:name="android.intent.action.VIEW" />
-206-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\56a85d5157ca83f52082bae2f98d111c\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:28:17-68
-206-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\56a85d5157ca83f52082bae2f98d111c\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:28:25-66
-207
-208                <category android:name="android.intent.category.DEFAULT" />
-208-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\fb0b203daf69822a9b826ecb05c6d44f\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:23:17-75
-208-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\fb0b203daf69822a9b826ecb05c6d44f\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:23:27-73
-209                <category android:name="android.intent.category.BROWSABLE" />
-209-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\56a85d5157ca83f52082bae2f98d111c\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:30:17-77
-209-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\56a85d5157ca83f52082bae2f98d111c\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:30:27-75
-210            </intent-filter>
-211        </activity>
-212
-213        <receiver
-213-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:25:7-26:18
-214            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-214-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:25:17-89
-215            android:enabled="true"
-215-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:25:90-112
-216            android:exported="false" >
-216-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:25:113-137
-217        </receiver>
-218        <receiver
-218-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:27:7-31:18
-219            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-219-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:27:17-104
-220            android:enabled="true"
-220-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:27:162-184
-221            android:exported="true"
-221-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:27:185-208
-222            android:permission="android.permission.INSTALL_PACKAGES" >
-222-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:27:105-161
-223            <intent-filter>
-223-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:28:11-30:27
-224                <action android:name="com.android.vending.INSTALL_REFERRER" />
-224-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:29:15-76
-224-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:29:23-74
-225            </intent-filter>
-226        </receiver>
-227
-228        <service
-228-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:32:7-137
-229            android:name="com.google.android.gms.measurement.AppMeasurementService"
-229-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:32:16-87
-230            android:enabled="true"
-230-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:32:88-110
-231            android:exported="false" />
-231-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:32:111-135
-232        <service
-232-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:33:7-197
-233            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-233-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:33:16-90
-234            android:enabled="true"
-234-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:33:148-170
-235            android:exported="false"
-235-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:33:171-195
-236            android:permission="android.permission.BIND_JOB_SERVICE" />
-236-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\e11c8118c7a57180e46a8c3c84612a61\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:33:91-147
-237
-238        <receiver
-238-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:30:9-35:20
-239            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-239-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:30:19-84
-240            android:exported="true"
-240-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:30:85-108
-241            android:permission="com.google.android.c2dm.permission.SEND" >
-241-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:30:109-169
-242            <intent-filter>
-242-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:31:13-34:29
-243                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-243-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:124:17-81
-243-->E:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:124:25-78
-244
-245                <category android:name="com.example.alex.dependencies" />
-245-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:33:17-60
-245-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:33:27-58
-246            </intent-filter>
-247        </receiver>
-248        <!--
-249 Internal (not exported) receiver used by the app to start its own exported services
-250             without risk of being spoofed.
-251        -->
-252        <receiver
-252-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:39:9-119
-253            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
-253-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:39:19-92
-254            android:exported="false" />
-254-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:39:93-117
-255        <!--
-256 FirebaseInstanceIdService performs security checks at runtime,
-257             no need for explicit permissions despite exported="true"
-258        -->
-259        <service
-259-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:43:9-47:19
-260            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
-260-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:43:18-82
-261            android:exported="true" >
-261-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:43:83-106
-262            <intent-filter android:priority="-500" >
-262-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:44:13-46:29
-262-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:44:28-51
-263                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-263-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:45:17-79
-263-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\b3feb3e2b4c8d51b4454c81feb06874c\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:45:25-77
-264            </intent-filter>
-265        </service>
-266
-267        <provider
-267-->[com.google.firebase:firebase-common:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\f84487001b791907b7f5014672a920df\transformed\jetified-firebase-common-11.0.4\AndroidManifest.xml:6:9-194
-268            android:name="com.google.firebase.provider.FirebaseInitProvider"
-268-->[com.google.firebase:firebase-common:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\f84487001b791907b7f5014672a920df\transformed\jetified-firebase-common-11.0.4\AndroidManifest.xml:6:79-143
-269            android:authorities="com.example.alex.dependencies.firebaseinitprovider"
-269-->[com.google.firebase:firebase-common:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\f84487001b791907b7f5014672a920df\transformed\jetified-firebase-common-11.0.4\AndroidManifest.xml:6:19-78
-270            android:exported="false"
-270-->[com.google.firebase:firebase-common:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\f84487001b791907b7f5014672a920df\transformed\jetified-firebase-common-11.0.4\AndroidManifest.xml:6:144-168
-271            android:initOrder="100" />
-271-->[com.google.firebase:firebase-common:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\f84487001b791907b7f5014672a920df\transformed\jetified-firebase-common-11.0.4\AndroidManifest.xml:6:169-192
-272
-273        <meta-data
-273-->[com.google.android.gms:play-services-basement:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\fa456c914b1bbd9ad142307b99e66503\transformed\jetified-play-services-basement-11.0.4\AndroidManifest.xml:20:9-121
-274            android:name="com.google.android.gms.version"
-274-->[com.google.android.gms:play-services-basement:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\fa456c914b1bbd9ad142307b99e66503\transformed\jetified-play-services-basement-11.0.4\AndroidManifest.xml:20:20-65
-275            android:value="@integer/google_play_services_version" />
-275-->[com.google.android.gms:play-services-basement:11.0.4] C:\Users\wilso\.gradle\caches\transforms-3\fa456c914b1bbd9ad142307b99e66503\transformed\jetified-play-services-basement-11.0.4\AndroidManifest.xml:20:66-119
-276    </application>
-277
-278</manifest>
+47-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:32:9-35
+48        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+48-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:33:9-65
+49        android:usesCleartextTraffic="true" >
+49-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:35:9-44
+50        <activity
+50-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:37:9-40:50
+51            android:name="com.myactivities.Main2Activity"
+51-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:38:13-42
+52            android:exported="false"
+52-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:39:13-37
+53            android:theme="@style/NoActionBar" />
+53-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:40:13-47
+54        <activity android:name="com.myactivities.Enquiry" />
+54-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:41:9-45
+54-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:41:19-42
+55        <activity
+55-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:42:9-53:20
+56            android:name="com.myactivities.AdminLogin"
+56-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:43:13-39
+57            android:exported="true"
+57-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:44:13-36
+58            android:screenOrientation="portrait"
+58-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:45:13-49
+59            android:theme="@style/AppTheme.NoActionBar"
+59-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:46:13-56
+60            android:windowSoftInputMode="stateHidden|adjustResize" >
+60-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:47:13-67
+61            <intent-filter>
+61-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:48:13-52:29
+62                <action android:name="android.intent.action.MAIN" />
+62-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:49:17-69
+62-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:49:25-66
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:51:17-77
+64-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:51:27-74
+65            </intent-filter>
+66        </activity>
+67        <activity
+67-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:54:9-56:52
+68            android:name="com.myactivities.AboutActivity"
+68-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:55:13-42
+69            android:screenOrientation="portrait" />
+69-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:56:13-49
+70        <activity
+70-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:57:9-59:52
+71            android:name="com.myactivities.EmailActivity"
+71-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:58:13-42
+72            android:screenOrientation="portrait" />
+72-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:59:13-49
+73        <activity
+73-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:60:9-62:52
+74            android:name="com.myactivities.MonitorActivity"
+74-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:61:13-44
+75            android:screenOrientation="portrait" />
+75-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:62:13-49
+76        <activity
+76-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:63:9-65:52
+77            android:name="com.myactivities.SearchDeviceActivity"
+77-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:64:13-49
+78            android:screenOrientation="portrait" />
+78-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:65:13-49
+79        <activity
+79-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:66:9-68:52
+80            android:name="com.myactivities.SettingActivity"
+80-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:67:13-44
+81            android:screenOrientation="portrait" />
+81-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:68:13-49
+82        <activity
+82-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:69:9-73:59
+83            android:name="com.myactivities.MainActivity"
+83-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:70:13-41
+84            android:label="@string/app_name"
+84-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:71:13-45
+85            android:screenOrientation="portrait"
+85-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:72:13-49
+86            android:theme="@style/AppTheme.NoActionBar" />
+86-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:73:13-56
+87        <activity
+87-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:74:9-76:59
+88            android:name="com.myactivities.ResetPassword"
+88-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:75:13-42
+89            android:theme="@style/AppTheme.NoActionBar" />
+89-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:76:13-56
+90        <activity
+90-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:77:9-79:59
+91            android:name="com.myactivities.NewsWebView"
+91-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:78:13-40
+92            android:theme="@style/AppTheme.NoActionBar" />
+92-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:79:13-56
+93        <activity
+93-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:80:9-82:59
+94            android:name="com.myactivities.MainPrintActivity"
+94-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:81:13-46
+95            android:theme="@style/AppTheme.NoActionBar" />
+95-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:82:13-56
+96        <activity
+96-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:83:9-86:70
+97            android:name="com.myactivities.AddUserActivity"
+97-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:84:13-44
+98            android:theme="@style/AppTheme.NoActionBar"
+98-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:85:13-56
+99            android:windowSoftInputMode="stateHidden|adjustResize" />
+99-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:86:13-67
+100        <activity
+100-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:87:9-91:70
+101            android:name="com.myactivities.SuperAdminLogin"
+101-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:88:13-44
+102            android:label="Super User Login"
+102-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:89:13-45
+103            android:theme="@style/AppTheme.NoActionBar"
+103-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:90:13-56
+104            android:windowSoftInputMode="stateHidden|adjustResize" />
+104-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:91:13-67
+105        <activity
+105-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:92:9-94:45
+106            android:name="com.myactivities.DailyReportsActivity"
+106-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:93:13-49
+107            android:label="Detail Report" />
+107-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:94:13-42
+108        <activity
+108-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:95:9-97:48
+109            android:name="com.myactivities.CollectionActivity"
+109-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:96:13-47
+110            android:label="@string/app_name" />
+110-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:97:13-45
+111        <activity
+111-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:98:9-100:48
+112            android:name="com.myactivities.AllClientsActivity"
+112-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:99:13-47
+113            android:label="@string/app_name" />
+113-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:100:13-45
+114        <activity
+114-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:101:9-103:48
+115            android:name="com.myactivities.RegisterFarmer"
+115-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:102:13-43
+116            android:label="@string/app_name" />
+116-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:103:13-45
+117        <activity
+117-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:104:9-106:70
+118            android:name="com.myactivities.SuperAdminActivity"
+118-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:105:13-47
+119            android:windowSoftInputMode="stateHidden|adjustResize" />
+119-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:106:13-67
+120
+121        <meta-data
+121-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:108:9-110:36
+122            android:name="QUERY_LOG"
+122-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:109:13-37
+123            android:value="true" />
+123-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:110:13-33
+124        <meta-data
+124-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:111:9-113:36
+125            android:name="firebase_analytics_collection_deactivated"
+125-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:112:13-69
+126            android:value="true" />
+126-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:113:13-33
+127
+128        <receiver android:name="com.myactivities.MainActivity" />
+128-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:115:9-50
+128-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:115:19-47
+129        <receiver
+129-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:116:9-130:20
+130            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+130-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:117:13-71
+131            android:exported="true"
+131-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:118:13-36
+132            android:permission="com.google.android.c2dm.permission.SEND" >
+132-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:119:13-73
+133            <intent-filter>
+133-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:121:13-129:29
+134
+135                <!-- Receives the actual messages. -->
+136                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+136-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:124:17-81
+136-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:124:25-78
+137                <!-- Receives the registration id. -->
+138                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+138-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:126:17-86
+138-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:126:25-83
+139
+140                <category android:name="com.cheress" />
+140-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:128:17-56
+140-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:128:27-53
+141            </intent-filter>
+142        </receiver>
+143
+144        <service android:name="com.myactivities.GCMIntentService" />
+144-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:132:9-53
+144-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:132:18-50
+145
+146        <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
+146-->[com.google.android.gms:play-services-cast-framework:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\f76d4980fdd987082005b43d0b004e50\transformed\jetified-play-services-cast-framework-11.0.4\AndroidManifest.xml:5:9-99
+146-->[com.google.android.gms:play-services-cast-framework:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\f76d4980fdd987082005b43d0b004e50\transformed\jetified-play-services-cast-framework-11.0.4\AndroidManifest.xml:5:19-97
+147
+148        <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService" />
+148-->[com.google.android.gms:play-services-cast-framework:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\f76d4980fdd987082005b43d0b004e50\transformed\jetified-play-services-cast-framework-11.0.4\AndroidManifest.xml:6:9-103
+148-->[com.google.android.gms:play-services-cast-framework:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\f76d4980fdd987082005b43d0b004e50\transformed\jetified-play-services-cast-framework-11.0.4\AndroidManifest.xml:6:18-101
+149        <service android:name="com.google.android.gms.cast.framework.ReconnectionService" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+149-->[com.google.android.gms:play-services-cast-framework:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\f76d4980fdd987082005b43d0b004e50\transformed\jetified-play-services-cast-framework-11.0.4\AndroidManifest.xml:7:9-92
+149-->[com.google.android.gms:play-services-cast-framework:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\f76d4980fdd987082005b43d0b004e50\transformed\jetified-play-services-cast-framework-11.0.4\AndroidManifest.xml:7:18-90
+150        <activity
+150-->[com.google.android.gms:play-services-ads-lite:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\ddd6c79435ea183d48b2ae7b37863b62\transformed\jetified-play-services-ads-lite-11.0.4\AndroidManifest.xml:25:9-232
+151            android:name="com.google.android.gms.ads.AdActivity"
+151-->[com.google.android.gms:play-services-ads-lite:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\ddd6c79435ea183d48b2ae7b37863b62\transformed\jetified-play-services-ads-lite-11.0.4\AndroidManifest.xml:25:19-71
+152            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+152-->[com.google.android.gms:play-services-ads-lite:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\ddd6c79435ea183d48b2ae7b37863b62\transformed\jetified-play-services-ads-lite-11.0.4\AndroidManifest.xml:25:72-181
+153            android:theme="@android:style/Theme.Translucent" />
+153-->[com.google.android.gms:play-services-ads-lite:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\ddd6c79435ea183d48b2ae7b37863b62\transformed\jetified-play-services-ads-lite-11.0.4\AndroidManifest.xml:25:182-230
+154        <activity
+154-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\3acc4af8b399eda72cd2ee595c2734b5\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:20:9-25:20
+155            android:name="com.google.android.gms.appinvite.PreviewActivity"
+155-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\3acc4af8b399eda72cd2ee595c2734b5\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:20:19-50
+156            android:exported="true"
+156-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\3acc4af8b399eda72cd2ee595c2734b5\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:20:51-74
+157            android:theme="@style/Theme.AppInvite.Preview" >
+157-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\3acc4af8b399eda72cd2ee595c2734b5\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:20:75-121
+158            <intent-filter>
+158-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\3acc4af8b399eda72cd2ee595c2734b5\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:21:13-24:29
+159                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW" />
+159-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\3acc4af8b399eda72cd2ee595c2734b5\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:22:17-89
+159-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\3acc4af8b399eda72cd2ee595c2734b5\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:22:25-87
+160
+161                <category android:name="android.intent.category.DEFAULT" />
+161-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\3acc4af8b399eda72cd2ee595c2734b5\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:23:17-75
+161-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\3acc4af8b399eda72cd2ee595c2734b5\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:23:27-73
+162            </intent-filter>
+163        </activity>
+164        <activity
+164-->[com.google.android.gms:play-services-auth:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\569ad2bff59161f222b0c7d74d884ab0\transformed\jetified-play-services-auth-11.0.4\AndroidManifest.xml:20:9-189
+165            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+165-->[com.google.android.gms:play-services-auth:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\569ad2bff59161f222b0c7d74d884ab0\transformed\jetified-play-services-auth-11.0.4\AndroidManifest.xml:20:19-68
+166            android:excludeFromRecents="true"
+166-->[com.google.android.gms:play-services-auth:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\569ad2bff59161f222b0c7d74d884ab0\transformed\jetified-play-services-auth-11.0.4\AndroidManifest.xml:20:129-162
+167            android:exported="false"
+167-->[com.google.android.gms:play-services-auth:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\569ad2bff59161f222b0c7d74d884ab0\transformed\jetified-play-services-auth-11.0.4\AndroidManifest.xml:20:163-187
+168            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+168-->[com.google.android.gms:play-services-auth:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\569ad2bff59161f222b0c7d74d884ab0\transformed\jetified-play-services-auth-11.0.4\AndroidManifest.xml:20:69-128
+169        <!--
+170Service handling Google Sign-In user revocation. For apps that do not integrate with
+171            Google Sign-In, this service will never be started.
+172        -->
+173        <service
+173-->[com.google.android.gms:play-services-auth:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\569ad2bff59161f222b0c7d74d884ab0\transformed\jetified-play-services-auth-11.0.4\AndroidManifest.xml:24:9-184
+174            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+174-->[com.google.android.gms:play-services-auth:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\569ad2bff59161f222b0c7d74d884ab0\transformed\jetified-play-services-auth-11.0.4\AndroidManifest.xml:24:18-63
+175            android:exported="true"
+175-->[com.google.android.gms:play-services-auth:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\569ad2bff59161f222b0c7d74d884ab0\transformed\jetified-play-services-auth-11.0.4\AndroidManifest.xml:24:64-87
+176            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+176-->[com.google.android.gms:play-services-auth:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\569ad2bff59161f222b0c7d74d884ab0\transformed\jetified-play-services-auth-11.0.4\AndroidManifest.xml:24:88-182
+177
+178        <activity
+178-->[com.google.android.gms:play-services-base:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\ab6b97ea90b2df7d149638e97e8e2b6d\transformed\jetified-play-services-base-11.0.4\AndroidManifest.xml:19:9-172
+179            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+179-->[com.google.android.gms:play-services-base:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\ab6b97ea90b2df7d149638e97e8e2b6d\transformed\jetified-play-services-base-11.0.4\AndroidManifest.xml:19:19-85
+180            android:exported="false"
+180-->[com.google.android.gms:play-services-base:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\ab6b97ea90b2df7d149638e97e8e2b6d\transformed\jetified-play-services-base-11.0.4\AndroidManifest.xml:19:146-170
+181            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+181-->[com.google.android.gms:play-services-base:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\ab6b97ea90b2df7d149638e97e8e2b6d\transformed\jetified-play-services-base-11.0.4\AndroidManifest.xml:19:86-145
+182        <!--
+183 FirebaseMessagingService performs security checks at runtime,
+184             no need for explicit permissions despite exported="true"
+185        -->
+186        <service
+186-->[com.google.firebase:firebase-messaging:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\6cfc1eb33bd9e097919688ad5a730fa1\transformed\jetified-firebase-messaging-11.0.4\AndroidManifest.xml:23:9-27:19
+187            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+187-->[com.google.firebase:firebase-messaging:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\6cfc1eb33bd9e097919688ad5a730fa1\transformed\jetified-firebase-messaging-11.0.4\AndroidManifest.xml:23:18-87
+188            android:exported="true" >
+188-->[com.google.firebase:firebase-messaging:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\6cfc1eb33bd9e097919688ad5a730fa1\transformed\jetified-firebase-messaging-11.0.4\AndroidManifest.xml:23:88-111
+189            <intent-filter android:priority="-500" >
+189-->[com.google.firebase:firebase-messaging:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\6cfc1eb33bd9e097919688ad5a730fa1\transformed\jetified-firebase-messaging-11.0.4\AndroidManifest.xml:24:13-26:29
+189-->[com.google.firebase:firebase-messaging:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\6cfc1eb33bd9e097919688ad5a730fa1\transformed\jetified-firebase-messaging-11.0.4\AndroidManifest.xml:24:28-51
+190                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+190-->[com.google.firebase:firebase-messaging:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\6cfc1eb33bd9e097919688ad5a730fa1\transformed\jetified-firebase-messaging-11.0.4\AndroidManifest.xml:25:17-77
+190-->[com.google.firebase:firebase-messaging:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\6cfc1eb33bd9e097919688ad5a730fa1\transformed\jetified-firebase-messaging-11.0.4\AndroidManifest.xml:25:25-75
+191            </intent-filter>
+192        </service>
+193        <service
+193-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\7421c235fb2c910f9d65bd13b3d39b8d\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:24:9-134
+194            android:name="com.google.android.gms.tagmanager.TagManagerService"
+194-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\7421c235fb2c910f9d65bd13b3d39b8d\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:24:18-84
+195            android:enabled="true"
+195-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\7421c235fb2c910f9d65bd13b3d39b8d\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:24:110-132
+196            android:exported="false" />
+196-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\7421c235fb2c910f9d65bd13b3d39b8d\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:24:85-109
+197
+198        <activity
+198-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\7421c235fb2c910f9d65bd13b3d39b8d\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:25:9-32:20
+199            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
+199-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\7421c235fb2c910f9d65bd13b3d39b8d\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:25:19-93
+200            android:exported="true"
+200-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\7421c235fb2c910f9d65bd13b3d39b8d\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:25:94-117
+201            android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
+201-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\7421c235fb2c910f9d65bd13b3d39b8d\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:25:118-142
+202            <intent-filter>
+202-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\7421c235fb2c910f9d65bd13b3d39b8d\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:26:13-31:29
+203                <data android:scheme="tagmanager.c.com.example.alex.dependencies" />
+203-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\7421c235fb2c910f9d65bd13b3d39b8d\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:27:17-71
+203-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\7421c235fb2c910f9d65bd13b3d39b8d\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:27:23-69
+204
+205                <action android:name="android.intent.action.VIEW" />
+205-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\7421c235fb2c910f9d65bd13b3d39b8d\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:28:17-68
+205-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\7421c235fb2c910f9d65bd13b3d39b8d\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:28:25-66
+206
+207                <category android:name="android.intent.category.DEFAULT" />
+207-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\3acc4af8b399eda72cd2ee595c2734b5\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:23:17-75
+207-->[com.google.android.gms:play-services-appinvite:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\3acc4af8b399eda72cd2ee595c2734b5\transformed\jetified-play-services-appinvite-11.0.4\AndroidManifest.xml:23:27-73
+208                <category android:name="android.intent.category.BROWSABLE" />
+208-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\7421c235fb2c910f9d65bd13b3d39b8d\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:30:17-77
+208-->[com.google.android.gms:play-services-tagmanager-api:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\7421c235fb2c910f9d65bd13b3d39b8d\transformed\jetified-play-services-tagmanager-api-11.0.4\AndroidManifest.xml:30:27-75
+209            </intent-filter>
+210        </activity>
+211
+212        <receiver
+212-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:25:7-26:18
+213            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+213-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:25:17-89
+214            android:enabled="true"
+214-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:25:90-112
+215            android:exported="false" >
+215-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:25:113-137
+216        </receiver>
+217        <receiver
+217-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:27:7-31:18
+218            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+218-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:27:17-104
+219            android:enabled="true"
+219-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:27:162-184
+220            android:exported="true"
+220-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:27:185-208
+221            android:permission="android.permission.INSTALL_PACKAGES" >
+221-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:27:105-161
+222            <intent-filter>
+222-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:28:11-30:27
+223                <action android:name="com.android.vending.INSTALL_REFERRER" />
+223-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:29:15-76
+223-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:29:23-74
+224            </intent-filter>
+225        </receiver>
+226
+227        <service
+227-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:32:7-137
+228            android:name="com.google.android.gms.measurement.AppMeasurementService"
+228-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:32:16-87
+229            android:enabled="true"
+229-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:32:88-110
+230            android:exported="false" />
+230-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:32:111-135
+231        <service
+231-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:33:7-197
+232            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+232-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:33:16-90
+233            android:enabled="true"
+233-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:33:148-170
+234            android:exported="false"
+234-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:33:171-195
+235            android:permission="android.permission.BIND_JOB_SERVICE" />
+235-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d3cf03885a197baf62bb440332278eba\transformed\jetified-firebase-analytics-11.0.4\AndroidManifest.xml:33:91-147
+236
+237        <receiver
+237-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:30:9-35:20
+238            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+238-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:30:19-84
+239            android:exported="true"
+239-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:30:85-108
+240            android:permission="com.google.android.c2dm.permission.SEND" >
+240-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:30:109-169
+241            <intent-filter>
+241-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:31:13-34:29
+242                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+242-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:124:17-81
+242-->D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:124:25-78
+243
+244                <category android:name="com.example.alex.dependencies" />
+244-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:33:17-60
+244-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:33:27-58
+245            </intent-filter>
+246        </receiver>
+247        <!--
+248 Internal (not exported) receiver used by the app to start its own exported services
+249             without risk of being spoofed.
+250        -->
+251        <receiver
+251-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:39:9-119
+252            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+252-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:39:19-92
+253            android:exported="false" />
+253-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:39:93-117
+254        <!--
+255 FirebaseInstanceIdService performs security checks at runtime,
+256             no need for explicit permissions despite exported="true"
+257        -->
+258        <service
+258-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:43:9-47:19
+259            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+259-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:43:18-82
+260            android:exported="true" >
+260-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:43:83-106
+261            <intent-filter android:priority="-500" >
+261-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:44:13-46:29
+261-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:44:28-51
+262                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+262-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:45:17-79
+262-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\0886e09311b28ab601464c010752cf5b\transformed\jetified-firebase-iid-11.0.4\AndroidManifest.xml:45:25-77
+263            </intent-filter>
+264        </service>
+265
+266        <provider
+266-->[com.google.firebase:firebase-common:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\9d886c6aa6f3e6bd61e09d38447277d6\transformed\jetified-firebase-common-11.0.4\AndroidManifest.xml:6:9-194
+267            android:name="com.google.firebase.provider.FirebaseInitProvider"
+267-->[com.google.firebase:firebase-common:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\9d886c6aa6f3e6bd61e09d38447277d6\transformed\jetified-firebase-common-11.0.4\AndroidManifest.xml:6:79-143
+268            android:authorities="com.example.alex.dependencies.firebaseinitprovider"
+268-->[com.google.firebase:firebase-common:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\9d886c6aa6f3e6bd61e09d38447277d6\transformed\jetified-firebase-common-11.0.4\AndroidManifest.xml:6:19-78
+269            android:exported="false"
+269-->[com.google.firebase:firebase-common:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\9d886c6aa6f3e6bd61e09d38447277d6\transformed\jetified-firebase-common-11.0.4\AndroidManifest.xml:6:144-168
+270            android:initOrder="100" />
+270-->[com.google.firebase:firebase-common:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\9d886c6aa6f3e6bd61e09d38447277d6\transformed\jetified-firebase-common-11.0.4\AndroidManifest.xml:6:169-192
+271
+272        <meta-data
+272-->[com.google.android.gms:play-services-basement:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d93eb0e8fef1d8bea14f398191765af9\transformed\jetified-play-services-basement-11.0.4\AndroidManifest.xml:20:9-121
+273            android:name="com.google.android.gms.version"
+273-->[com.google.android.gms:play-services-basement:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d93eb0e8fef1d8bea14f398191765af9\transformed\jetified-play-services-basement-11.0.4\AndroidManifest.xml:20:20-65
+274            android:value="@integer/google_play_services_version" />
+274-->[com.google.android.gms:play-services-basement:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\d93eb0e8fef1d8bea14f398191765af9\transformed\jetified-play-services-basement-11.0.4\AndroidManifest.xml:20:66-119
+275    </application>
+276
+277</manifest>

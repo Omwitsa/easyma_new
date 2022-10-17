@@ -1,10 +1,37 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\wilso\\.gradle\\caches\\transforms-3\\01f1c7c61b3c97d5ef72286bc07bc8c1\\transformed\\material-1.0.0\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-3\\1b5b9244dfc03c7f10c200c930fb4b44\\transformed\\mediarouter-1.0.0-alpha5\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,130,208",
+                        "endColumns": "74,77,74",
+                        "endOffsets": "125,203,278"
+                    },
+                    "to": {
+                        "startLines": "11,12,13",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "774,849,927",
+                        "endColumns": "74,77,74",
+                        "endOffsets": "844,922,997"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-3\\6665114af997474ad6e8fdbaa6169b2e\\transformed\\appcompat-1.0.0\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-3\\01f1c7c61b3c97d5ef72286bc07bc8c1\\transformed\\material-1.0.0\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,34 +50,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\wilso\\.gradle\\caches\\transforms-3\\6665114af997474ad6e8fdbaa6169b2e\\transformed\\appcompat-1.0.0\\res\\values-land\\values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\wilso\\.gradle\\caches\\transforms-3\\1b5b9244dfc03c7f10c200c930fb4b44\\transformed\\mediarouter-1.0.0-alpha5\\res\\values-land\\values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,130,208",
-                        "endColumns": "74,77,74",
-                        "endOffsets": "125,203,278"
-                    },
-                    "to": {
-                        "startLines": "11,12,13",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "774,849,927",
-                        "endColumns": "74,77,74",
-                        "endOffsets": "844,922,997"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\wilso\\.gradle\\caches\\transforms-3\\4f993e4e084a5c9733c9f95f3c97f335\\transformed\\jetified-play-services-cast-framework-11.0.4\\res\\values-land\\values.xml",
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-3\\f76d4980fdd987082005b43d0b004e50\\transformed\\jetified-play-services-cast-framework-11.0.4\\res\\values-land\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9",
                         "startColumns": "0,0,0,0,0,0",

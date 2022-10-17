@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rSG\\values-en-rSG.xml",
+            "outputFile": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rSG\\values-en-rSG.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\wilso\\.gradle\\caches\\transforms-3\\e74879270696c0d2e1c3ae900b390ec0\\transformed\\jetified-play-services-wallet-11.0.4\\res\\values-en-rSG\\values.xml",
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-3\\28f87dd2788e8327cf063a655f3527cc\\transformed\\jetified-play-services-wallet-11.0.4\\res\\values-en-rSG\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

@@ -46,8 +46,6 @@ public class CollectionActivity extends MainPrintActivity implements OnClickList
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
         setContentView(R.layout.collection);
         if (_bluetooth == null) {
             showUnsupported();
@@ -55,7 +53,7 @@ public class CollectionActivity extends MainPrintActivity implements OnClickList
 
         //Data=findViewById(R.id.btn_Enquiry);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        myToolbar.setTitle("MORINGA COLLECTION");
+        myToolbar.setTitle("MILK COLLECTION");
         setSupportActionBar(myToolbar);
         myToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,18 +64,13 @@ public class CollectionActivity extends MainPrintActivity implements OnClickList
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-
-
         ImageView btndcol = (ImageView) findViewById(R.id.dcollection);
         ImageView btnCcoll = (ImageView) findViewById(R.id.ccollection);
         Data=findViewById(R.id.btn_Enquiry);
-
-
         Data.setOnClickListener(this);
 
         btndcol.setOnClickListener(this);
         btnCcoll.setOnClickListener(this);
-
     }
 
     @Override
@@ -128,7 +121,6 @@ public class CollectionActivity extends MainPrintActivity implements OnClickList
                 break;
             case R.id.ccollection:
                 //if connection not yet established:
-
                 Intent ccollectionIntent = new Intent(getApplicationContext(), SearchDeviceActivity.class);
                 startActivity(ccollectionIntent);
                 break;
