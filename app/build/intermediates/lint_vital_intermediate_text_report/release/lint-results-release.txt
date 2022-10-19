@@ -1,0 +1,9 @@
+D:\Newtech\SourceCode\android\Freshpro\app\src\main\res\layout\activity_farmer_receipt.xml:44: Error: @+id/btn_connect is not a sibling in the same RelativeLayout [NotSibling]
+            android:layout_toLeftOf="@+id/btn_connect"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "NotSibling":
+   Layout constraints in a given ConstraintLayout or RelativeLayout should
+   reference other views within the same relative layout (but not itself!)
+
+1 errors, 0 warnings
