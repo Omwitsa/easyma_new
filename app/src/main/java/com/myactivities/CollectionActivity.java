@@ -121,7 +121,8 @@ public class CollectionActivity extends MainPrintActivity implements OnClickList
                 break;
             case R.id.ccollection:
                 //if connection not yet established:
-                Intent ccollectionIntent = new Intent(getApplicationContext(), SearchDeviceActivity.class);
+//                Intent ccollectionIntent = new Intent(getApplicationContext(), SearchDeviceActivity.class);
+                Intent ccollectionIntent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(ccollectionIntent);
                 break;
             case R.id.btn_Enquiry:
