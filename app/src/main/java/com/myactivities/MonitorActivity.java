@@ -149,32 +149,32 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
         TextViewc.setText(String.valueOf(CONTAINER_WEIGHT));
         // TextViewf.setText(String.valueOf (fvalue));
 
-        final Spinner spinner = (Spinner) findViewById(R.id.shift);
-        final Spinner spinner1 = (Spinner) findViewById(R.id.branch);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.shift_array, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
+//        final Spinner spinner = (Spinner) findViewById(R.id.shift);
+//        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+//                R.array.shift_array, android.R.layout.simple_spinner_item);
+//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        spinner.setAdapter(adapter);
         //shift = spinner.getSelectedItem().toString().trim();
 
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//            @Override
+//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//
+//                //shift = spinner.get(position).getPlant_name();
+//
+//                shift = spinner.getSelectedItem().toString();
+//                //String shift = (String) spinner.getSelectedItem();
+//
+//                //Toast.makeText(MonitorActivity.this,  shift, Toast.LENGTH_SHORT).show();
+//            }
+//
+//            @Override
+//            public void onNothingSelected(AdapterView<?> parent) {
+//
+//            }
+//        });
 
-                //shift = spinner.get(position).getPlant_name();
-
-                shift = spinner.getSelectedItem().toString();
-                //String shift = (String) spinner.getSelectedItem();
-
-                //Toast.makeText(MonitorActivity.this,  shift, Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
+        final Spinner spinner1 = (Spinner) findViewById(R.id.branch);
         ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this,
                 R.array.branch_array, android.R.layout.simple_spinner_item);
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

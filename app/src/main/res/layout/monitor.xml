@@ -123,19 +123,19 @@
                 android:layout_height="50dp"
                 />
 
-            <TextView
-                android:id="@+id/conType"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="SHIFT" >
-            </TextView>
+<!--            <TextView-->
+<!--                android:id="@+id/conType"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="SHIFT" >-->
+<!--            </TextView>-->
 
-            <Spinner
-                android:id="@+id/shift"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:entries="@array/shift_array"
-                android:prompt="@string/container_prompt" />
+<!--            <Spinner-->
+<!--                android:id="@+id/shift"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:entries="@array/shift_array"-->
+<!--                android:prompt="@string/container_prompt" />-->
 
             <Button
                 android:id="@+id/save"

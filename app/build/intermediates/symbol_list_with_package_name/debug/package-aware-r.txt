@@ -1654,7 +1654,6 @@ id ALT
 id Button01
 id Button012
 id CTRL
-id Dayshift
 id FUNCTION
 id META
 id SHIFT
@@ -1781,7 +1780,6 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id collection_search
-id conType
 id cont
 id contact
 id container
@@ -2051,7 +2049,6 @@ id separator2
 id separatord
 id separatord2
 id separatorp
-id shift
 id shortcut
 id showCustom
 id showHome

@@ -43,7 +43,7 @@
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:clickable="true"
                 android:scaleType="fitXY"
-                android:src="@drawable/moringa" />
+                android:src="@mipmap/current" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -57,10 +57,10 @@
                 android:id="@+id/separatord"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
+                android:layout_below="@+id/text2"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:layout_below="@+id/text2"
-                android:background="#ff8800"/>
+                android:background="#ff8800" />
 
 
             <ImageView
@@ -71,7 +71,7 @@
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:clickable="true"
                 android:scaleType="fitXY"
-                android:src="@drawable/moringa" />
+                android:src="@mipmap/col3" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="30dp"
-                android:text="Convinience and faster technology of Moringa colection"
+                android:text="Convinience and faster technology of milk colection"
                 android:layout_below="@+id/separatord2"
                 android:textColor="@color/tabteal" />
 

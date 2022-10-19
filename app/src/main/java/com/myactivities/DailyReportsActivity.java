@@ -17,6 +17,8 @@ import android.os.Bundle;
 import androidx.core.app.ActivityCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -115,7 +117,6 @@ public class DailyReportsActivity extends AppCompatActivity implements OnClickLi
         mEnableBtn			= (Button) findViewById(R.id.btn_enabled);
         mPrintReceiptBtn 	= (Button) findViewById(R.id.btn_print_receiptd);
         mDeviceSp 			= (Spinner) findViewById(R.id.sp_deviced);
-        final Spinner spinner = (Spinner) findViewById(R.id.Dayshift);
 
         Transsdate 			= (EditText) findViewById(R.id.Transsdate);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
@@ -127,25 +128,6 @@ public class DailyReportsActivity extends AppCompatActivity implements OnClickLi
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.shift_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-                //shift = spinner.get(position).getPlant_name();
-
-                Dayshift = spinner.getSelectedItem().toString();
-                //String shift = (String) spinner.getSelectedItem();
-
-                //Toast.makeText(MonitorActivity.this,  shift, Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
         mBluetoothAdapter	= BluetoothAdapter.getDefaultAdapter();
 
         if (mBluetoothAdapter == null) {
@@ -490,8 +472,6 @@ public class DailyReportsActivity extends AppCompatActivity implements OnClickLi
     private void printStruk() {
         try {
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-
-
             String myDate =(Transsdate.getText().toString());
             myDate =  myDate.trim();
 
@@ -502,15 +482,11 @@ public class DailyReportsActivity extends AppCompatActivity implements OnClickLi
             calendar.add(DATE,-2);
             yesterday = df.format(calendar.getTime());
 
-
             int yy = calendar.get(Calendar.YEAR);
             int mm = calendar.get(Calendar.MONTH)+1;
             int dd = calendar.get(Calendar.DAY_OF_MONTH);
-            //Dayshift = spinner.getSelectedItem().toString();
-            //Dayshift="";
-            //myDate.setText(sdf.format(new Date()));
 
-            Cursor c = db.rawQuery("SELECT * FROM CollectionDB WHERE   transdate ='"+myDate+"'", null);
+            Cursor c = db.rawQuery("SELECT * FROM CollectionDB WHERE  transdate ='"+myDate+"'", null);
             if (c.getCount() == 0) {
                 showMessage("Collection", "No collection found");
                 mPrintReceiptBtn.setEnabled(true);
@@ -519,11 +495,8 @@ public class DailyReportsActivity extends AppCompatActivity implements OnClickLi
             StringBuffer buffer = new StringBuffer();
             String qtyyy = null;
 
-
             while (c.moveToNext()) {
-
-                buffer.append(c.getString(0) + "\t" + c.getString(1) + " \t" + c.getString(6) + " \t" + c.getString(9) +"\n");
-
+                buffer.append(c.getString(0) + "\t" + c.getString(1) + " \t" + c.getString(6) +"\n");
             }
             Cursor c1 = db.rawQuery("SELECT sum(quantity) FROM CollectionDB WHERE  transdate ='"+myDate+"'", null);
             while (c1.moveToNext()) {
@@ -542,23 +515,21 @@ public class DailyReportsActivity extends AppCompatActivity implements OnClickLi
             String date = sdf.format(b.getTime());
             int count=c.getCount();
 
-
-
-
-
-
             MainActivity ma=new MainActivity();
             company = ma.company;
             userrrrr = ma.logedInUser;
-            branchhh = ma.branch;
+            branchhh = TextUtils.isEmpty(ma.branch) ? "MAIN" : ma.branch ;
 
             String titleStr =  "\n" + company +"\n" + "TOTAL DAY COLLECTION RECEIPT" + "\n";
 
             StringBuilder content2Sb = new StringBuilder();
-
+            String clarkName = userrrrr;
+            String clarkNo = "";
+            String transporterName = "";
+            String transporterNo = "";
             content2Sb.append("-----------------------------" + "\n");
             content2Sb.append("Total KGS collected : "+qtyyy+ "\n");
-            content2Sb.append("SNo     Qty    Shift Product " + "\n");
+            content2Sb.append("SNo     Qty    Product" + "\n");
             content2Sb.append("" +buffer.toString() + "" + "\n");
             content2Sb.append("--------------------------" + "\n");
             content2Sb.append("Total KGS collected : "+qtyyy+ "\n");
@@ -566,15 +537,15 @@ public class DailyReportsActivity extends AppCompatActivity implements OnClickLi
             content2Sb.append("Suppliers Served : "+count+ "\n");
             content2Sb.append("                         " + "\n");
             content2Sb.append("##############################" + "\n");
-            content2Sb.append("Transporter  Name :KZG 269  "+"\n");
-            content2Sb.append("Transporter No : KTFL 1  "+"\n");
+            content2Sb.append("Transporter  Name : " +transporterName+"\n");
+            content2Sb.append("Transporter No : " + transporterNo+"\n");
             content2Sb.append("##############################" + "\n");
             content2Sb.append("                         " + "\n");
-            content2Sb.append("Clerk  Name: Duncan  Gatimu   "+"\n");
+            content2Sb.append("Clerk  Name: " +clarkName+"\n");
             content2Sb.append("Phone number :" +userrrrr+"\n");
             content2Sb.append("Route :" +branchhh+"\n");
             content2Sb.append("Date :" +date1+"\n");
-            content2Sb.append("Clerk No : 5  "+"\n");
+            content2Sb.append("Clerk No : " +clarkNo+"\n");
             content2Sb.append("Signature____________________  "+"\n");
             content2Sb.append("                         " + "\n");
             content2Sb.append("                         " + "\n");
