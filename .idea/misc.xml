@@ -12,6 +12,9 @@
         <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/layout/activity_printsales.xml" value="0.1" />
         <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/layout/activity_register_farmer.xml" value="0.1" />
         <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/layout/activity_super_admin.xml" value="0.1" />
+        <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/layout/activity_transporter_collection.xml" value="0.1" />
+        <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/layout/add_admin.xml" value="0.1" />
         <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/layout/admin_login.xml" value="0.1" />
         <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/layout/cardview.xml" value="0.1" />
         <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/layout/cell_layout.xml" value="0.1" />
@@ -27,14 +30,17 @@
         <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/layout/printmain.xml" value="0.1" />
         <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/layout/product_list.xml" value="0.1" />
         <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/layout/searchable.xml" value="0.1" />
+        <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/layout/setting.xml" value="0.1" />
         <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/layout/simple_spinner_dropdown_item.xml" value="0.1" />
         <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/layout/simple_spinner_dropdown_item1.xml" value="0.1" />
         <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/layout/simple_spinner_item2.xml" value="0.1" />
         <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/layout/spinner_list.xml" value="0.1" />
+        <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/layout/super_admin_login.xml" value="0.1" />
         <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/layout/web_view.xml" value="0.1" />
         <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/menu/activity_main_drawer.xml" value="0.1" />
         <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/menu/main.xml" value="0.1" />
         <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/menu/menu3.xml" value="0.1" />
+        <entry key="..\:/Newtech/SourceCode/android/Freshpro/app/src/main/res/menu/menu_addplant.xml" value="0.1" />
       </map>
     </option>
   </component>

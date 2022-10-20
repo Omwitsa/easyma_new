@@ -72,12 +72,12 @@
         "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap\\reg.png"
     },
     {
-        "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_drop_d.png.flat",
-        "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-mdpi\\drop_d.png"
-    },
-    {
         "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_col3.png.flat",
         "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xxxhdpi\\col3.png"
+    },
+    {
+        "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_drop_d.png.flat",
+        "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-mdpi\\drop_d.png"
     },
     {
         "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_sync.png.flat",
@@ -162,6 +162,10 @@
     {
         "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi-v21_ic_menu_manage.xml.flat",
         "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi-v21\\ic_menu_manage.xml"
+    },
+    {
+        "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_transporter_collection.xml.flat",
+        "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\activity_transporter_collection.xml"
     },
     {
         "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_farmer.png.flat",

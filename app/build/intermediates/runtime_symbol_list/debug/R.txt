@@ -1717,7 +1717,6 @@ int id blurred_background_image_view 0x7f090040
 int id book_now 0x7f090041
 int id bottom 0x7f090042
 int id btnAbout 0x7f090043
-int id btnAddPlant 0x7f090044
 int id btnAddUser 0x7f090045
 int id btnExit 0x7f090046
 int id btnMonitor 0x7f090047
@@ -1788,6 +1787,7 @@ int id controllers 0x7f090087
 int id coordinator 0x7f090088
 int id coporate_branch 0x7f090089
 int id crash_reporting_present 0x7f09008a
+int id ctcollection 0x7f0901fe
 int id custom 0x7f09008b
 int id customPanel 0x7f09008c
 int id dark 0x7f09008d
@@ -1964,7 +1964,6 @@ int id nav_share 0x7f090137
 int id nav_view 0x7f090138
 int id navigation_header_container 0x7f090139
 int id never 0x7f09013a
-int id new_dairy_plant 0x7f09013b
 int id new_user 0x7f09013c
 int id none 0x7f09013d
 int id normal 0x7f09013e
@@ -2117,6 +2116,7 @@ int id title 0x7f0901d0
 int id titleDividerNoCustom 0x7f0901d1
 int id title_template 0x7f0901d2
 int id title_view 0x7f0901d3
+int id tno 0x7f0901ff
 int id toolbar 0x7f0901d4
 int id top 0x7f0901d5
 int id topPanel 0x7f0901d6
@@ -2228,6 +2228,7 @@ int layout activity_register_farmer 0x7f0c0026
 int layout activity_resetpassword 0x7f0c0027
 int layout activity_splash 0x7f0c0028
 int layout activity_super_admin 0x7f0c0029
+int layout activity_transporter_collection 0x7f0c0085
 int layout add_admin 0x7f0c002a
 int layout admin_login 0x7f0c002b
 int layout app_bar_main 0x7f0c002c

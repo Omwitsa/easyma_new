@@ -15,10 +15,10 @@
             android:id="@+id/my_toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:elevation="4dp"
             android:background="@color/tabteal"
+            android:elevation="4dp"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view"
@@ -36,34 +36,32 @@
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:orientation="vertical"
                 android:background="@drawable/bg3">
-                <com.google.android.material.textfield.TextInputLayout
+
+                <ImageView
+                    android:id="@+id/ctcollection"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/current" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:visibility="invisible"
-                    android:layout_marginBottom="8dp">
-                    <EditText
-                        android:id="@+id/new_dairy_plant"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:editable="false"
-                        android:inputType="textCapWords"
-                        android:visibility="invisible"
-                        android:hint="Enter Dairy Plant Name" >
-                    </EditText>
-                </com.google.android.material.textfield.TextInputLayout>
+                    android:text="Current Collection"
+                    android:id="@+id/text2"
+                    android:textColor="@color/jet"
+                    android:layout_below="@+id/ccollection"/>
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnAddPlant"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginBottom="24dp"
-                    android:padding="12dp"
-                    android:clickable="false"
-                    android:visibility="invisible"
-                    android:text="Add Dairy Plant"/>
+                <View
+                    android:id="@+id/separatord"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/text2"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ff8800" />
 
                 <ImageView
                     android:id="@+id/new_user"

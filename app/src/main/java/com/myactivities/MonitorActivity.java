@@ -74,8 +74,8 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
     private BluetoothDevice device = null;
     private BluetoothSocket socket = null;
 
-    public EditText TextView, sTextView, sno,pin;
-    public EditText TextViewc,TextViewf;
+    public EditText sTextView, sno,pin;
+    public EditText TextView,TextViewc,TextViewf;
     private OutputStream outputStream;
     private InputStream inputStream;
     HttpPost httppost;
@@ -490,7 +490,7 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
 
     protected void dialog() {
         StringBuffer buffer = new StringBuffer();
-        AlertDialog.Builder build = new AlertDialog.Builder(com.myactivities.MonitorActivity.this);
+        AlertDialog.Builder build = new AlertDialog.Builder(MonitorActivity.this);
         build.setTitle("Confirmation :SNo=" + sno.getText() + " and Quantity =" + TextViewf.getText().toString() + "  using:Main");
         build.setPositiveButton(R.string.ok,
                 new DialogInterface.OnClickListener() {
@@ -516,9 +516,9 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
 
                         Intent i = new Intent(getApplicationContext(), MainPrintActivity.class);
                         Bundle bundle = new Bundle();
+                        bundle.putBoolean("isTransporter", false);
                         bundle.putString("qty", TextViewf.getText().toString());
                         bundle.putString("sno", sno.getText().toString());
-                        bundle.putString("shift", shift);
                         bundle.putString("product", product);
                         i.putExtras(bundle);
                         startActivity(i);

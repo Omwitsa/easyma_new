@@ -77,7 +77,7 @@ public class MainPrintActivity extends MyActivity {
     private BluetoothAdapter mBluetoothAdapter;
 
     private P25Connector mConnector;
-    String qty1 = "";// =getIntent().getStringExtra("qty").toString();
+    String qty1 = "";
     String sno1 = "";
     String pin1 = "";
     String product = "";
@@ -329,7 +329,6 @@ public class MainPrintActivity extends MyActivity {
     }
 
     private void createBond(BluetoothDevice device) throws Exception {
-
         try {
             Class<?> cl = Class.forName("android.bluetooth.BluetoothDevice");
             Class<?>[] par = {};
@@ -341,9 +340,13 @@ public class MainPrintActivity extends MyActivity {
         }
     }
 
-    private void sendData(byte[] bytes, String sno) {
+    private void sendData(byte[] bytes, String sno, Boolean isTransporter) {
         try {
-            db.execSQL("UPDATE CollectionDB set printed='1' where printed='0' AND supplier='"+sno+"';");
+            String query = "UPDATE CollectionDB set printed='1' where printed='0' AND supplier='"+sno+"';";
+            if (isTransporter){
+                query = "UPDATE TransporterCollection set printed='1' where printed='0' AND transCode='"+sno+"';";
+            }
+            db.execSQL(query);
             mConnector.sendData(bytes);
         } catch (P25ConnectionException e) {
             e.printStackTrace();
@@ -460,7 +463,8 @@ public class MainPrintActivity extends MyActivity {
 
     private void printStruk() {
         Bundle getBundle = this.getIntent().getExtras();
-        sno1 = getBundle.getString("sno");
+        boolean isTransporter = getBundle.getBoolean("isTransporter");
+        sno1 = isTransporter? getBundle.getString("tno") : getBundle.getString("sno");
         product = getBundle.getString("product");
 
         StringBuffer buffer = new StringBuffer();
@@ -469,7 +473,11 @@ public class MainPrintActivity extends MyActivity {
         String strAuditId = "";
         String strProduct = "";
 
-        Cursor c1 = db.rawQuery("SELECT sum(quantity),auditId,type FROM CollectionDB WHERE printed='0' AND supplier='"+sno1+"' AND saccoCode='"+AppConstants.SACCO_CODE+"'", null);
+        String query = "SELECT sum(quantity),auditId,type FROM CollectionDB WHERE printed='0' AND supplier='"+sno1+"' AND saccoCode='"+AppConstants.SACCO_CODE+"'";
+        if (isTransporter){
+            query = "SELECT sum(actualKg),auditId,type FROM TransporterCollection WHERE printed='0' AND transCode='"+sno1+"' AND saccoCode='"+AppConstants.SACCO_CODE+"'";
+        }
+        Cursor c1 = db.rawQuery(query, null);
         while (c1.moveToNext()) {
             strQnt = c1.getString(0);
             strAuditId = c1.getString(1);
@@ -506,7 +514,7 @@ public class MainPrintActivity extends MyActivity {
         System.arraycopy(content2Byte, 0, totalByte, offset, content2Byte.length);
         offset += content2Byte.length;
         byte[] senddata = PocketPos.FramePack(PocketPos.FRAME_TOF_PRINT, totalByte, 0, totalByte.length);
-        sendData(senddata, sno1);
+        sendData(senddata, sno1,isTransporter);
     }
 
     public void showMessage(String title, String message) {

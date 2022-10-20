@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/synch_collection"
+        android:title="Synch Collections"
+        android:actionLayout="@layout/chck"
+        />
+
+</menu>

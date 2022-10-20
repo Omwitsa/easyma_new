@@ -1,5 +1,8 @@
 package com.myactivities;
 
+import static com.myactivities.DailyReportsActivity.Transsdate;
+
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -10,38 +13,36 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import android.util.Log;
+
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
-
-import static network.Urls.BASE_URL;
+import java.util.Locale;
 
 import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.HttpResponse;
 import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.NameValuePair;
 import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.HttpClient;
-import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.entity.UrlEncodedFormEntity;
 import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.methods.HttpPost;
-import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.impl.client.BasicResponseHandler;
-import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.impl.client.DefaultHttpClient;
-import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.message.BasicNameValuePair;
+
+import Rest.ApiClient;
+import Rest.ApiInterface;
+import model.Response;
+import model.SynchData;
+import model.TCollection;
+import retrofit2.Call;
+import retrofit2.Callback;
 
 public class  SuperAdminActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnAddPlant;
-    EditText new_dairy_plant;
     SQLiteDatabase db;
-
+    ApiInterface apiService;
     HttpClient httpclient;
     List<NameValuePair> nameValuePairs;
     HttpPost httppost;
@@ -66,21 +67,19 @@ public class  SuperAdminActivity extends AppCompatActivity implements View.OnCli
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        new_dairy_plant = (EditText) findViewById(R.id.new_dairy_plant);
-        btnAddPlant = (Button) findViewById(R.id.btnAddPlant);
         db = openOrCreateDatabase("plantDB", Context.MODE_PRIVATE, null);
         db.execSQL("CREATE TABLE IF NOT EXISTS d_plants(plant_name VARCHAR, datep DATETIME, status VARCHAR);");
 
-        btnAddPlant.setOnClickListener(this);
-
         ImageView btnuser = (ImageView) findViewById(R.id.new_user);
+        ImageView btnCcoll = (ImageView) findViewById(R.id.ctcollection);
         btnuser.setOnClickListener(this);
+        btnCcoll.setOnClickListener(this);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_addplant, menu);
+        inflater.inflate(R.menu.menu_collection, menu);
         return true;
     }
 
@@ -91,10 +90,10 @@ public class  SuperAdminActivity extends AppCompatActivity implements View.OnCli
         switch (item.getItemId()) {
             // action with ID action_refresh was selected
 
-            case R.id.action_synch_plant:
+            case R.id.synch_collection:
                 if (isOnline()) {
                     try {
-                        synchroniser();
+                        sendToDB();
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -109,93 +108,59 @@ public class  SuperAdminActivity extends AppCompatActivity implements View.OnCli
         // return true;
         return super.onOptionsItemSelected(item);
     }
-    public void insertPlantToSqlite() {
 
-        Calendar cc = Calendar.getInstance();
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String date_key = sdf.format(cc.getTime());
-
-        Log.d("my date", date_key);
-
-        if (!validate()) {
+    public void sendToDB() {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault());
+        Cursor c = db.rawQuery("SELECT * FROM TransporterCollection WHERE status='0'", null);
+        if (c.getCount() == 0) {
+            showMessage("Collection Message", "No new collection found");
             return;
-        } else {
-            btnAddPlant.setEnabled(false);
-            dialog = ProgressDialog.show(SuperAdminActivity.this, "",
-                    "Adding Dairy Plant...", true);
+        }
+
+        String transCode = null;
+        String actualKg = null;
+        String date = null;
+        String saccoCode = null;
+
+        try {
+            while (c.moveToNext()) {
+                transCode = c.getString(0);
+                actualKg = c.getString(1);
+                date = c.getString(2);
+                saccoCode = c.getString(6);
+
+                TCollection collection = new TCollection(transCode, actualKg, date, saccoCode);
+                apiService = ApiClient.getClient().create(ApiInterface.class);
+                Call<Response> call= apiService.transporterIntake(collection);
+                call.enqueue(new Callback<Response>() {
+                    @Override
+                    public void onResponse(Call<model.Response> call, retrofit2.Response<Response> response) {
+                        model.Response responseData = response.body();
+                        assert responseData != null;
+                        String status = responseData.getMessage();
+                        Toast.makeText(getApplicationContext(), status, Toast.LENGTH_LONG).show();
+                    }
+
+                    @Override
+                    public void onFailure(Call<model.Response> call, Throwable t) {
+                        Toast.makeText(getApplicationContext(), "An Error occurred", Toast.LENGTH_LONG).show();
+                    }
+                });
+            }
+        } catch (Exception e) {
             dialog.dismiss();
-            db.execSQL("INSERT INTO d_plants VALUES('" + new_dairy_plant.getText() + "','" + date_key + "','1');");
-            synchroniser();
+            System.out.println("Exception :" + e.getMessage());
         }
     }
 
-    public boolean validate() {
-        boolean valid = true;
-
-        String plant_name = new_dairy_plant.getText().toString();
-
-        if (plant_name.isEmpty() || plant_name.length() < 4) {
-            new_dairy_plant.setError("enter a valid dairy plant name");
-            new_dairy_plant.requestFocus();
-            valid = false;
-        } else {
-            new_dairy_plant.setError(null);
-        }
-
-
-        return valid;
+    public void showMessage(String title, String message) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(true);
+        builder.setTitle(title);
+        builder.setMessage(message);
+        builder.show();
     }
 
-//    public void storeDairyPlantToDB() {
-//        Cursor c = db.rawQuery("SELECT * FROM d_plants WHERE status='1'", null);
-//        String plant_name = null;
-//        String datep = null;
-//
-//        while (c.moveToNext()) {
-//            plant_name = c.getString(0);
-//            datep = c.getString(1);
-//        try {
-//            httpclient = new DefaultHttpClient();
-//            httppost = new HttpPost(BASE_URL + "submitDairyPlants.php");
-//            nameValuePairs = new ArrayList<NameValuePair>(2);
-//            nameValuePairs.add(new BasicNameValuePair("plant_name", plant_name.toString().trim()));
-//            nameValuePairs.add(new BasicNameValuePair("datep", datep.toString().trim()));
-//            httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-//            response = httpclient.execute(httppost);
-//            RespoxnseHandler<String> responseHandler = new BasicResponseHandler();
-//            final String response = httpclient.execute(httppost, responseHandler);
-//            System.out.println("Response : " + response);
-//            runOnUiThread(new Runnable() {
-//                public void run() {
-//                    try {
-//                        dialog.dismiss();
-//                       // Toast.makeText(SuperAdminActivity.this, response, Toast.LENGTH_LONG).show();
-//                        Toast.makeText(SuperAdminActivity.this, "success", Toast.LENGTH_LONG).show();
-//                    } catch (Exception e) {
-//                        e.printStackTrace();
-//                    }
-//                }
-//            });
-//
-//
-//            if (response.equalsIgnoreCase("Successful")) {
-//                runOnUiThread(new Runnable() {
-//                    public void run() {
-//                        db.execSQL("UPDATE plant_name set status='2'  where status='1';");
-//                        Toast.makeText(SuperAdminActivity.this, "Dairy Plant stored Successful", Toast.LENGTH_SHORT).show();
-//                    }
-//                });
-//
-//            } else {
-//                Toast.makeText(SuperAdminActivity.this, "Something is wrong, check internet and try again", Toast.LENGTH_SHORT).show();
-//                dialog.dismiss();
-//            }
-//
-//        } catch (Exception e) {
-//            System.out.println("Exception : " + e.getMessage());
-//        }
-//        }
-//    }
 
     @Override
     public void onClick(View v) {
@@ -204,8 +169,9 @@ public class  SuperAdminActivity extends AppCompatActivity implements View.OnCli
                 Intent user = new Intent(getApplicationContext(), AddUserActivity.class);
                 startActivity(user);
                 break;
-            case R.id.btnAddPlant:
-                insertPlantToSqlite();
+            case R.id.ctcollection:
+                Intent ccollectionIntent = new Intent(getApplicationContext(), TransporterCollection.class);
+                startActivity(ccollectionIntent);
             default:
                 break;
         }
@@ -220,24 +186,5 @@ public class  SuperAdminActivity extends AppCompatActivity implements View.OnCli
             return false;
         }
     }
-    public void  synchroniser(){
-        Cursor cursor = db.rawQuery("SELECT count(*) FROM d_plants", null);
-        cursor.moveToFirst();
-        if (cursor.getInt(0) > 0) {
-            dialog = ProgressDialog.show(SuperAdminActivity.this, "",
-                    " Submitting new dairy Plant(s),please wait...", true);
-            dialog.setCancelable(true);
-            new Thread(new Runnable() {
-                public void run() {
-//                    storeDairyPlantToDB();
-                    dialog.dismiss();
 
-                    Intent i = new Intent(getApplicationContext(), AddUserActivity.class);
-                    startActivity(i);
-                }
-            }).start();
-        } else {
-            Toast.makeText(SuperAdminActivity.this, "No new dairy plant records found, add dairy plant and refresh", Toast.LENGTH_LONG).show();
-        }
-    }
 }
