@@ -16,7 +16,10 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.Handler;
 import androidx.appcompat.widget.Toolbar;
+
+import android.text.Editable;
 import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
@@ -98,22 +101,12 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
     double CONTAINER_WEIGHT=0;
     public  String bb;
 
-
-    // String bvalue= TextView.getText().toString();
-    //String bvalue=String.valueOf(TextView.getText().toString());
-    // double bvalue = Double.parseDouble(TextView.getText().toString());
-    // double value1 = Double.valueOf(bvalue);
-    //double fvalue = value1-value;
-
-    //String bvalue= TextView.getText().toString();
-    //double bvalue = Double.parseDouble(TextView.getText().toString());
-    //double value1 = Double.valueOf(bvalue);
-    //double fvalue = value1-value;
-
     SharedPreferences sharedPreferences;
     public static String branchhh,userrrrr,company;
     private static BluetoothSocket mSocket;
     BluetoothDevice selectDevice = null;
+    private String _qty = "0";
+    private String _container = "0";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -138,34 +131,76 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-
         sTextView = (EditText) findViewById(R.id.sTextView);
         TextView = (EditText) findViewById(R.id.TextView);
-        //TextView.setText("0");
         sno = (EditText) findViewById(R.id.sno);
         TextViewc  = findViewById(R.id.TextViewc);
         TextViewf  = findViewById(R.id.TextViewf);
-        //TextViewc.setText(String.format("%D",value));
-        TextViewc.setText(String.valueOf(CONTAINER_WEIGHT));
-        // TextViewf.setText(String.valueOf (fvalue));
+        TextViewc.setText("0");
 
-//        final Spinner spinner = (Spinner) findViewById(R.id.shift);
-//        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-//                R.array.shift_array, android.R.layout.simple_spinner_item);
-//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//        spinner.setAdapter(adapter);
-        //shift = spinner.getSelectedItem().toString().trim();
+        Button btnRegister = (Button) findViewById(R.id.save);
+        btnRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (TextView.getText().toString().trim().length() == 0 ||
+                        TextViewf.getText().toString().trim().length() == 0 ||
+                        sno.getText().toString().trim().length() == 0) {
+                    showMessage("Error", "Please enter all values");
+                    return;
+                } else{
+                    dialog();
+                }
+            }
+        });
 
-//        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        TextView.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                _qty = editable.toString();
+                calculateFinalQnty();
+            }
+        });
+
+        TextViewc.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                _container = editable.toString();
+                calculateFinalQnty();
+            }
+        });
+
+//        final Spinner spinner1 = (Spinner) findViewById(R.id.branch);
+//        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this,
+//                R.array.branch_array, android.R.layout.simple_spinner_item);
+//        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        spinner1.setAdapter(adapter1);
+//
+//        spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 //            @Override
 //            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//
-//                //shift = spinner.get(position).getPlant_name();
-//
-//                shift = spinner.getSelectedItem().toString();
-//                //String shift = (String) spinner.getSelectedItem();
-//
-//                //Toast.makeText(MonitorActivity.this,  shift, Toast.LENGTH_SHORT).show();
+//                fbranch = spinner1.getSelectedItem().toString();
+//                CONTAINER_WEIGHT = Double.valueOf(fbranch) ;
+//                TextViewc.setText(String.valueOf(CONTAINER_WEIGHT));
 //            }
 //
 //            @Override
@@ -173,33 +208,6 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
 //
 //            }
 //        });
-
-        final Spinner spinner1 = (Spinner) findViewById(R.id.branch);
-        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this,
-                R.array.branch_array, android.R.layout.simple_spinner_item);
-        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner1.setAdapter(adapter1);
-        //shift = spinner.getSelectedItem().toString().trim();
-
-        spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-                //shift = spinner.get(position).getPlant_name();
-
-                fbranch = spinner1.getSelectedItem().toString();
-                CONTAINER_WEIGHT = Double.valueOf(fbranch) ;
-                TextViewc.setText(String.valueOf(CONTAINER_WEIGHT));
-                //String shift = (String) spinner.getSelectedItem();
-
-                //Toast.makeText(MonitorActivity.this,  shift, Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
 
         db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
         db.execSQL("CREATE TABLE IF NOT EXISTS products(type VARCHAR);");
@@ -242,35 +250,45 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
 
         suppp_no = sno.getText().toString().trim();
         db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
-        db.execSQL("CREATE TABLE IF NOT EXISTS CollectionDB(supplier VARCHAR,quantity VARCHAR,branch VARCHAR, date DATETIME, auditId VARCHAR,status VARCHAR, type VARCHAR, saccoCode VARCHAR, transdate DATETIME);");
-        mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-        BluetoothDevice finalDevice = this.getIntent().getParcelableExtra(
-                BluetoothDevice.EXTRA_DEVICE);
-        //Controller app = (Controller) getApplicationContext();
-        Controller app = new Controller();
-        device = app.getDevice();
-        Log.d(TAG, "test1");
-        if (finalDevice == null) {
-            if (device == null) {
-                Log.d(TAG, "test2");
-                Intent intent = new Intent(this, SearchDeviceActivity.class);
-                startActivity(intent);
-                finish();
-                return;
-            }
-            Log.d(TAG, "test4");
-        } else if (finalDevice != null) {
-            Log.d(TAG, "test3");
-            app.setDevice(finalDevice);
-            device = app.getDevice();
-        }
-        new Thread() {
-            public void run() {
-                connect(device);
-            }
+        db.execSQL("CREATE TABLE IF NOT EXISTS CollectionDB(supplier VARCHAR,quantity VARCHAR,branch VARCHAR, date DATETIME, auditId VARCHAR,status VARCHAR, type VARCHAR, saccoCode VARCHAR, transdate DATETIME, printed VARCHAR);");
 
-            ;
-        }.start();
+//        mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+//        BluetoothDevice finalDevice = this.getIntent().getParcelableExtra(
+//                BluetoothDevice.EXTRA_DEVICE);
+//        //Controller app = (Controller) getApplicationContext();
+//        Controller app = new Controller();
+//        device = app.getDevice();
+//        Log.d(TAG, "test1");
+//        if (finalDevice == null) {
+//            if (device == null) {
+//                Log.d(TAG, "test2");
+//                Intent intent = new Intent(this, SearchDeviceActivity.class);
+//                startActivity(intent);
+//                finish();
+//                return;
+//            }
+//            Log.d(TAG, "test4");
+//        } else if (finalDevice != null) {
+//            Log.d(TAG, "test3");
+//            app.setDevice(finalDevice);
+//            device = app.getDevice();
+//        }
+//        new Thread() {
+//            public void run() {
+//                connect(device);
+//            }
+//        }.start();
+    }
+
+    private void calculateFinalQnty() {
+        _qty = TextUtils.isEmpty(_qty) ? "0" : _qty ;
+        _container = TextUtils.isEmpty(_container) ? "0" : _container ;
+        double qty = Double.parseDouble(_qty);
+        double container = Double.parseDouble(_container);
+        double finalQty = qty - container;
+        if (finalQty > 0){
+            TextViewf.setText("" + finalQty);
+        }
     }
 
     public void onButtonClickclear(View view) throws IOException {
@@ -362,8 +380,6 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
                             public void run() {
                                 String txt = sTextView.toString();
                                 String value = txt;
-                                //DecimalFormat nf = new DecimalFormat(".0");
-                                //String TextView1 = value.substring(value.lastIndexOf('g')+1);
                                 bb=TextView.getText().toString();
                                 bb = bufferStrToHex(hexString.toString(), false).trim().replaceAll("[^0-9.]", "");
                                 bb = bb.trim();
@@ -423,23 +439,6 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
                     //TextViewc.setText(String.valueOf(CONTAINER_WEIGHT));
 
                 }
-                Button btnRegister = (Button) findViewById(R.id.save);
-                btnRegister.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-
-                        // Switching to Register screen
-                        if (TextView.getText().toString().trim().length() == 0 ||
-                                TextViewf.getText().toString().trim().length() == 0 ||
-                                sno.getText().toString().trim().length() == 0) {
-                            showMessage("Error", "Please enter all values");
-                            return;
-                        } else{
-                            dialog();
-                        }
-                    }
-
-                });
             }
 
         } catch (Exception e) {
@@ -465,14 +464,9 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
 
 
     private void calculate() {
-
         DecimalFormat nf = new DecimalFormat(".#");
-        //String bb = bufferStrToHex(hexString.toString(), false).trim().replaceAll("[^0-9.]", "");
-        //TextView.setText(nf.format(Float.parseFloat(bb.toString())));
         float quantity = Float.parseFloat(bb.toString());
-
         float containerWeight =Float.parseFloat(fbranch) ;
-
         if (!TextUtils.isEmpty(TextViewc.getText().toString())) {
             containerWeight = Float.parseFloat(TextViewc.getText().toString().trim());
         }
@@ -496,12 +490,6 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
 
     protected void dialog() {
         StringBuffer buffer = new StringBuffer();
-        Intent intent = new Intent(MonitorActivity.this, MainActivity.class);
-        Bundle getBundle = this.getIntent().getExtras();
-        branch = getBundle.getString("branch");
-        company = getBundle.getString("company");
-        logedInUser = getBundle.getString("user");
-
         AlertDialog.Builder build = new AlertDialog.Builder(com.myactivities.MonitorActivity.this);
         build.setTitle("Confirmation :SNo=" + sno.getText() + " and Quantity =" + TextViewf.getText().toString() + "  using:Main");
         build.setPositiveButton(R.string.ok,
@@ -521,7 +509,7 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
                         final String branchhh = "MAIN";
 
                         String loggenInUser = sharedPreferences.getString("loggedInUser", "");
-                        db.execSQL("INSERT INTO CollectionDB  VALUES('" + sno.getText() + "', '" + TextView.getText() + "', '" + branchhh +"', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "', '"+date_print +"');");
+                        db.execSQL("INSERT INTO CollectionDB  VALUES('" + sno.getText() + "', '" + TextView.getText() + "', '" + branchhh +"', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "', '"+date_print +"', '0');");
                         showMessage("Success", "Record added");
                         TextViewf.setText("0");
 

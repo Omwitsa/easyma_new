@@ -15,7 +15,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import org.apache.http.NameValuePair;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.NameValuePair;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -238,41 +239,41 @@ public class Enquiry extends AppCompatActivity {
             try {
 
                 List<NameValuePair> params = new ArrayList<NameValuePair>();
-                JSONObject json = jsonParser.makeHttpRequest(syncFarmerURL, "POST", params);
-                Log.e(TAG, json.toString());
-
-
-                success = json.getString("success");
-
-                if (success.equalsIgnoreCase("1")) {
-
-                    JSONArray farmerslist = json.getJSONArray("farmerslist");
-
-
-                    for (int i = 0; i < farmerslist.length(); i++) {
-                        JSONObject farmerslists = farmerslist.getJSONObject(i);
-                        supply_no = farmerslists.getString("supply_no");
-
-                        full_name = farmerslists.getString("full_name");
-
-                        id_no= farmerslists.getString("id_no");
-                        phone_no= farmerslists.getString("phone_no");
-
-                        if (getDuplicateFarmer(supply_no))
-                        db2.execSQL("INSERT INTO FarmersDB  VALUES( '"+supply_no+"','"+full_name+"','"+id_no+"', '"+phone_no+"' );");
-                        else {
-                            db2.execSQL("UPDATE FarmersDB   SET name='"+ full_name+"', idno='" + id_no +"',phone='"+ phone_no +"' WHERE supply='"+supply_no+"'");
-                            //db3.UpdateFarmers(farmer_id, farmer_username, farmer_id_no, farmer_route,Accumulatedkilos,MaximumProd,applylimit,national_id_No);
-                        }
-
-
-                    }
-                    message="updated successfully";
-
-                } else {
-
-                    return json.getString("message");
-                }
+//                JSONObject json = jsonParser.makeHttpRequest(syncFarmerURL, "POST", params);
+//                Log.e(TAG, json.toString());
+//
+//
+//                success = json.getString("success");
+//
+//                if (success.equalsIgnoreCase("1")) {
+//
+//                    JSONArray farmerslist = json.getJSONArray("farmerslist");
+//
+//
+//                    for (int i = 0; i < farmerslist.length(); i++) {
+//                        JSONObject farmerslists = farmerslist.getJSONObject(i);
+//                        supply_no = farmerslists.getString("supply_no");
+//
+//                        full_name = farmerslists.getString("full_name");
+//
+//                        id_no= farmerslists.getString("id_no");
+//                        phone_no= farmerslists.getString("phone_no");
+//
+//                        if (getDuplicateFarmer(supply_no))
+//                        db2.execSQL("INSERT INTO FarmersDB  VALUES( '"+supply_no+"','"+full_name+"','"+id_no+"', '"+phone_no+"' );");
+//                        else {
+//                            db2.execSQL("UPDATE FarmersDB   SET name='"+ full_name+"', idno='" + id_no +"',phone='"+ phone_no +"' WHERE supply='"+supply_no+"'");
+//                            //db3.UpdateFarmers(farmer_id, farmer_username, farmer_id_no, farmer_route,Accumulatedkilos,MaximumProd,applylimit,national_id_No);
+//                        }
+//
+//
+//                    }
+//                    message="updated successfully";
+//
+//                } else {
+//
+//                    return json.getString("message");
+//                }
             } catch (Exception e) {
                 message = "Failed loading members on " + supply_no;
                 e.printStackTrace();

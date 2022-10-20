@@ -461,22 +461,25 @@ public class MainPrintActivity extends MyActivity {
         Bundle getBundle = this.getIntent().getExtras();
         sno1 = getBundle.getString("sno");
         product = getBundle.getString("product");
-        Cursor c = db.rawQuery("SELECT * FROM CollectionDB WHERE status='0' AND supplier='"+sno1+"' AND saccoCode='"+AppConstants.SACCO_CODE+"'", null);
-        if (c.getCount() == 0) {
-            showMessage("Record Message", "No records found");
-            return;
-        }
 
         StringBuffer buffer = new StringBuffer();
         MainActivity ma = new MainActivity();
+        String strQnt = "0";
+        String strAuditId = "";
+        String strProduct = "";
 
-        while (c.moveToNext()) {
-            buffer.append("Supplier No    :" + c.getString(0) + "\n");
-            buffer.append("Quantity       :" + c.getString(1) + " KGs\n");
-            buffer.append("Product       :" + c.getString(6) + "\n");
-            buffer.append("Station Name    :" + c.getString(2) + "\n");
-            buffer.append("Received By    :" + c.getString(4) + "\n");
+        Cursor c1 = db.rawQuery("SELECT sum(quantity),auditId,type FROM CollectionDB WHERE status='0' AND supplier='"+sno1+"' AND saccoCode='"+AppConstants.SACCO_CODE+"'", null);
+        while (c1.moveToNext()) {
+            strQnt = c1.getString(0);
+            strAuditId = c1.getString(1);
+            strProduct = c1.getString(2);
         }
+
+        buffer.append("Supplier No    :" + sno1 + "\n");
+        buffer.append("Quantity       :" + strQnt + " KGs\n");
+        buffer.append("Product       :" + strProduct + "\n");
+        buffer.append("Station Name    : MAIN\n");
+        buffer.append("Received By    :" + strAuditId+ "\n");
 
         showMessage("Collection Details", buffer.toString());
         long milis1 = System.currentTimeMillis();
@@ -504,8 +507,6 @@ public class MainPrintActivity extends MyActivity {
         byte[] senddata = PocketPos.FramePack(PocketPos.FRAME_TOF_PRINT, totalByte, 0, totalByte.length);
         sendData(senddata);
     }
-
-
 
     public void showMessage(String title, String message) {
         Builder builder = new Builder(this);

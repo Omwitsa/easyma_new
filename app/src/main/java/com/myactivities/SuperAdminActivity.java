@@ -20,22 +20,21 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.ResponseHandler;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.BasicResponseHandler;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
-
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
 import static network.Urls.BASE_URL;
+
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.HttpResponse;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.NameValuePair;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.HttpClient;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.entity.UrlEncodedFormEntity;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.methods.HttpPost;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.impl.client.BasicResponseHandler;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.impl.client.DefaultHttpClient;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.message.BasicNameValuePair;
 
 public class  SuperAdminActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -147,56 +146,56 @@ public class  SuperAdminActivity extends AppCompatActivity implements View.OnCli
         return valid;
     }
 
-    public void storeDairyPlantToDB() {
-        Cursor c = db.rawQuery("SELECT * FROM d_plants WHERE status='1'", null);
-        String plant_name = null;
-        String datep = null;
-
-        while (c.moveToNext()) {
-            plant_name = c.getString(0);
-            datep = c.getString(1);
-        try {
-            httpclient = new DefaultHttpClient();
-            httppost = new HttpPost(BASE_URL + "submitDairyPlants.php");
-            nameValuePairs = new ArrayList<NameValuePair>(2);
-            nameValuePairs.add(new BasicNameValuePair("plant_name", plant_name.toString().trim()));
-            nameValuePairs.add(new BasicNameValuePair("datep", datep.toString().trim()));
-            httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-            response = httpclient.execute(httppost);
-            ResponseHandler<String> responseHandler = new BasicResponseHandler();
-            final String response = httpclient.execute(httppost, responseHandler);
-            System.out.println("Response : " + response);
-            runOnUiThread(new Runnable() {
-                public void run() {
-                    try {
-                        dialog.dismiss();
-                       // Toast.makeText(SuperAdminActivity.this, response, Toast.LENGTH_LONG).show();
-                        Toast.makeText(SuperAdminActivity.this, "success", Toast.LENGTH_LONG).show();
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
-            });
-
-
-            if (response.equalsIgnoreCase("Successful")) {
-                runOnUiThread(new Runnable() {
-                    public void run() {
-                        db.execSQL("UPDATE plant_name set status='2'  where status='1';");
-                        Toast.makeText(SuperAdminActivity.this, "Dairy Plant stored Successful", Toast.LENGTH_SHORT).show();
-                    }
-                });
-
-            } else {
-                Toast.makeText(SuperAdminActivity.this, "Something is wrong, check internet and try again", Toast.LENGTH_SHORT).show();
-                dialog.dismiss();
-            }
-
-        } catch (Exception e) {
-            System.out.println("Exception : " + e.getMessage());
-        }
-        }
-    }
+//    public void storeDairyPlantToDB() {
+//        Cursor c = db.rawQuery("SELECT * FROM d_plants WHERE status='1'", null);
+//        String plant_name = null;
+//        String datep = null;
+//
+//        while (c.moveToNext()) {
+//            plant_name = c.getString(0);
+//            datep = c.getString(1);
+//        try {
+//            httpclient = new DefaultHttpClient();
+//            httppost = new HttpPost(BASE_URL + "submitDairyPlants.php");
+//            nameValuePairs = new ArrayList<NameValuePair>(2);
+//            nameValuePairs.add(new BasicNameValuePair("plant_name", plant_name.toString().trim()));
+//            nameValuePairs.add(new BasicNameValuePair("datep", datep.toString().trim()));
+//            httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+//            response = httpclient.execute(httppost);
+//            RespoxnseHandler<String> responseHandler = new BasicResponseHandler();
+//            final String response = httpclient.execute(httppost, responseHandler);
+//            System.out.println("Response : " + response);
+//            runOnUiThread(new Runnable() {
+//                public void run() {
+//                    try {
+//                        dialog.dismiss();
+//                       // Toast.makeText(SuperAdminActivity.this, response, Toast.LENGTH_LONG).show();
+//                        Toast.makeText(SuperAdminActivity.this, "success", Toast.LENGTH_LONG).show();
+//                    } catch (Exception e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            });
+//
+//
+//            if (response.equalsIgnoreCase("Successful")) {
+//                runOnUiThread(new Runnable() {
+//                    public void run() {
+//                        db.execSQL("UPDATE plant_name set status='2'  where status='1';");
+//                        Toast.makeText(SuperAdminActivity.this, "Dairy Plant stored Successful", Toast.LENGTH_SHORT).show();
+//                    }
+//                });
+//
+//            } else {
+//                Toast.makeText(SuperAdminActivity.this, "Something is wrong, check internet and try again", Toast.LENGTH_SHORT).show();
+//                dialog.dismiss();
+//            }
+//
+//        } catch (Exception e) {
+//            System.out.println("Exception : " + e.getMessage());
+//        }
+//        }
+//    }
 
     @Override
     public void onClick(View v) {
@@ -230,7 +229,7 @@ public class  SuperAdminActivity extends AppCompatActivity implements View.OnCli
             dialog.setCancelable(true);
             new Thread(new Runnable() {
                 public void run() {
-                    storeDairyPlantToDB();
+//                    storeDairyPlantToDB();
                     dialog.dismiss();
 
                     Intent i = new Intent(getApplicationContext(), AddUserActivity.class);

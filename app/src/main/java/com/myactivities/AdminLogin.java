@@ -67,7 +67,7 @@ public class AdminLogin extends Activity implements AdapterView.OnItemSelectedLi
         Cursor c = db.rawQuery("SELECT * FROM admin_login", null);
 
         if (c.getCount() == 0) {
-            db.execSQL("INSERT INTO admin_login VALUES('ADMIN','MBURUGU DAIRY COOPERATIVE SOCIETY','MAIN','admin123','2022-10-14 17:37:11','3');");
+            db.execSQL("INSERT INTO admin_login VALUES('ADMIN','MBURUGU DAIRY F.C.S','MAIN','admin123','2022-10-14 17:37:11','3');");
         }
 
         b.setOnClickListener(new OnClickListener() {

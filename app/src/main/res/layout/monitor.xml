@@ -28,12 +28,12 @@
             android:layout_height="fill_parent"
             android:orientation="vertical" >
 
-            <Spinner
-                android:id="@+id/branch"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:entries="@array/branch_array"
-                android:prompt="@string/container_prompt" />
+<!--            <Spinner-->
+<!--                android:id="@+id/branch"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:entries="@array/branch_array"-->
+<!--                android:prompt="@string/container_prompt" />-->
             <EditText
                 android:id="@+id/sTextView"
                 android:layout_width="wrap_content"
@@ -53,7 +53,7 @@
                 android:id="@+id/TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:editable="false"
+                android:inputType="numberDecimal"
                 android:scrollHorizontally="false"
                 android:scrollbars="vertical"
                 android:textSize="45sp" >
@@ -70,7 +70,7 @@
                 android:id="@+id/TextViewc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:editable="false"
+                android:inputType="numberDecimal"
                 android:scrollHorizontally="false"
                 android:scrollbars="vertical"
                 android:textSize="45sp" >
