@@ -341,8 +341,9 @@ public class MainPrintActivity extends MyActivity {
         }
     }
 
-    private void sendData(byte[] bytes) {
+    private void sendData(byte[] bytes, String sno) {
         try {
+            db.execSQL("UPDATE CollectionDB set printed='1' where printed='0' AND supplier='"+sno+"';");
             mConnector.sendData(bytes);
         } catch (P25ConnectionException e) {
             e.printStackTrace();
@@ -468,7 +469,7 @@ public class MainPrintActivity extends MyActivity {
         String strAuditId = "";
         String strProduct = "";
 
-        Cursor c1 = db.rawQuery("SELECT sum(quantity),auditId,type FROM CollectionDB WHERE status='0' AND supplier='"+sno1+"' AND saccoCode='"+AppConstants.SACCO_CODE+"'", null);
+        Cursor c1 = db.rawQuery("SELECT sum(quantity),auditId,type FROM CollectionDB WHERE printed='0' AND supplier='"+sno1+"' AND saccoCode='"+AppConstants.SACCO_CODE+"'", null);
         while (c1.moveToNext()) {
             strQnt = c1.getString(0);
             strAuditId = c1.getString(1);
@@ -505,7 +506,7 @@ public class MainPrintActivity extends MyActivity {
         System.arraycopy(content2Byte, 0, totalByte, offset, content2Byte.length);
         offset += content2Byte.length;
         byte[] senddata = PocketPos.FramePack(PocketPos.FRAME_TOF_PRINT, totalByte, 0, totalByte.length);
-        sendData(senddata);
+        sendData(senddata, sno1);
     }
 
     public void showMessage(String title, String message) {

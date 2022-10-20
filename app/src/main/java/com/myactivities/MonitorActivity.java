@@ -509,9 +509,10 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
                         final String branchhh = "MAIN";
 
                         String loggenInUser = sharedPreferences.getString("loggedInUser", "");
-                        db.execSQL("INSERT INTO CollectionDB  VALUES('" + sno.getText() + "', '" + TextView.getText() + "', '" + branchhh +"', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "', '"+date_print +"', '0');");
+                        db.execSQL("INSERT INTO CollectionDB  VALUES('" + sno.getText() + "', '" + TextViewf.getText() + "', '" + branchhh +"', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "', '"+date_print +"', '0');");
                         showMessage("Success", "Record added");
                         TextViewf.setText("0");
+                        TextView.setText("0");
 
                         Intent i = new Intent(getApplicationContext(), MainPrintActivity.class);
                         Bundle bundle = new Bundle();
