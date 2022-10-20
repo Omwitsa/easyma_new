@@ -1750,8 +1750,6 @@ id buyButton
 id buy_now
 id buy_with
 id buy_with_google
-id c_branch
-id c_coperative
 id cancel_action
 id card_view
 id cast_button_type_closed_caption

@@ -32,10 +32,6 @@
             android:textSize="24dp"
             android:textColor="@color/RED"/>
 
-
-
-
-
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,8 +42,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="phone"
-                android:hint="User Phone number" >
+                android:inputType="text"
+                android:hint="Transporter Code" >
             </EditText>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -61,62 +57,7 @@
             tools:context="com.myactivities.MainActivity"
             tools:showIn="@layout/app_bar_main">
 
-
-<!--            <android.support.design.widget.TextInputLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="8dp"-->
-<!--                android:layout_marginBottom="8dp">-->
-<!--                <Spinner-->
-<!--                    android:id="@+id/company"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    />-->
-
-<!--                <ProgressBar-->
-<!--                    android:id="@+id/progressBar"-->
-<!--                    style="?android:attr/progressBarStyleLarge"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="29dp"-->
-<!--                    android:layout_centerHorizontal="true"-->
-<!--                    android:layout_centerVertical="true"-->
-<!--                    android:layout_toRightOf="@+id/company" />-->
-<!--            </android.support.design.widget.TextInputLayout>-->
         </RelativeLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
-
-            <EditText
-                android:id="@+id/c_coperative"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="text"
-                android:hint="Enter Co-operative Name" >
-            </EditText>
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
-
-            <EditText
-                android:id="@+id/c_branch"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textCapWords"
-                android:hint="Enter Collection Branch:" >
-            </EditText>
-
-        </com.google.android.material.textfield.TextInputLayout>
-
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -160,7 +101,5 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=" " />
-
-
     </LinearLayout>
 </ScrollView>

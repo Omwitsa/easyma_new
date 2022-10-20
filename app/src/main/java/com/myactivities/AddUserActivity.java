@@ -31,7 +31,7 @@ import Adapters.DairyFarmSpinnerAdapter;
 
 public class AddUserActivity extends AppCompatActivity {
     Button add;
-    EditText username, pass, pass1,c_branch,c_cooperative;
+    EditText username, pass, pass1;
     //ProgressDialog dialog = null;
     SQLiteDatabase db;
     TextView alert;
@@ -73,56 +73,42 @@ public class AddUserActivity extends AppCompatActivity {
 
         username = (EditText) findViewById(R.id.uname123);
         pass = (EditText) findViewById(R.id.pass123);
-        c_cooperative = (EditText) findViewById(R.id.c_coperative);
         pass1 = (EditText) findViewById(R.id.pass23);
-        c_branch=(EditText)findViewById(R.id.c_branch);
-
-
-
 
         add = (Button) findViewById(R.id.btnAddUser);
         db = openOrCreateDatabase("loginDB", Context.MODE_PRIVATE, null);
         db.execSQL("CREATE TABLE IF NOT EXISTS admin_login(username VARCHAR,company VARCHAR,branch VARCHAR, password VARCHAR,datepp DATETIME, status VARCHAR);");
 
-add.setOnClickListener(new OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        String phonee = username.getText().toString();
-        String brancch = c_branch.getText().toString();
-        String password = pass.getText().toString();
-        String Coop = c_cooperative.getText().toString();
-        String confirm_pass = pass1.getText().toString();
+        add.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String phonee = username.getText().toString();
+                String brancch = "";
+                String password = pass.getText().toString();
+                String Coop = "";
+                String confirm_pass = pass1.getText().toString();
 
-        if (phonee.isEmpty())
-        {
-            Toast.makeText(getApplicationContext(), "Please enter Phone Number", Toast.LENGTH_LONG).show();
-        }
-        else if (brancch.isEmpty())
-        {
-            Toast.makeText(getApplicationContext(), "Please enter Branch", Toast.LENGTH_LONG).show();
-        } else if(Coop.isEmpty())
-        {
-            Toast.makeText(getApplicationContext(), "Please enter Cooperative Name", Toast.LENGTH_LONG).show();
-        }
-        else if (password.isEmpty()){
-            Toast.makeText(getApplicationContext(), "Please enter password", Toast.LENGTH_LONG).show();
-        }
-        else if(confirm_pass.isEmpty())
-        {
-            Toast.makeText(getApplicationContext(), "Please enter Confirm Password", Toast.LENGTH_LONG).show();
-        }
-        else if(!password.equals(confirm_pass))
-        {
-            Toast.makeText(getApplicationContext(), "Passwords are not matching", Toast.LENGTH_LONG).show();
-        }
+                if (phonee.isEmpty())
+                {
+                    Toast.makeText(getApplicationContext(), "Please enter Phone Number", Toast.LENGTH_LONG).show();
+                }
+                else if (password.isEmpty()){
+                    Toast.makeText(getApplicationContext(), "Please enter password", Toast.LENGTH_LONG).show();
+                }
+                else if(confirm_pass.isEmpty())
+                {
+                    Toast.makeText(getApplicationContext(), "Please enter Confirm Password", Toast.LENGTH_LONG).show();
+                }
+                else if(!password.equals(confirm_pass))
+                {
+                    Toast.makeText(getApplicationContext(), "Passwords are not matching", Toast.LENGTH_LONG).show();
+                }
 
-        else {
-            insertDataToSqlite();
-        }
-
-
-    }
-});
+                else {
+                    insertDataToSqlite();
+                }
+            }
+        });
 //        add.setOnClickListener(new OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -210,16 +196,16 @@ add.setOnClickListener(new OnClickListener() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String date_pp = sdf.format(cc.getTime());
 
-            db.rawQuery("SELECT * FROM admin_login", null);
-            db.execSQL("INSERT INTO admin_login VALUES('" + username.getText() + "','" + c_cooperative.getText()+ "','" + c_branch.getText() + "','" + pass.getText() + "','" + date_pp + "','1');");
-            Toast.makeText(this, "Success, you can Login now as an authorised user", Toast.LENGTH_LONG).show();
+        db.rawQuery("SELECT * FROM admin_login", null);
+        db.execSQL("INSERT INTO admin_login VALUES('" + username.getText() + "','','','" + pass.getText() + "','" + date_pp + "','1');");
+        Toast.makeText(this, "Success, you can Login now as an authorised user", Toast.LENGTH_LONG).show();
 
-            Intent intent = new Intent(getApplicationContext(), AdminLogin.class);
-            //ComponentName cn = intent.getComponent();
-            //Intent mainIntent = IntentCompat.makeRestartActivityTask(cn);
-            startActivity(intent);
-            //finish();
-        }
+        Intent intent = new Intent(getApplicationContext(), AdminLogin.class);
+        //ComponentName cn = intent.getComponent();
+        //Intent mainIntent = IntentCompat.makeRestartActivityTask(cn);
+        startActivity(intent);
+        //finish();
+    }
 
 
 
@@ -295,7 +281,4 @@ add.setOnClickListener(new OnClickListener() {
 //            }
 //        }
 //    }
-
-
-
 }
