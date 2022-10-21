@@ -136,10 +136,6 @@
         "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\printmain.xml"
     },
     {
-        "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\menu_menu_addplant.xml.flat",
-        "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\menu\\menu_addplant.xml"
-    },
-    {
         "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_news.png.flat",
         "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-mdpi\\news.png"
     },
@@ -472,6 +468,10 @@
         "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-xxxhdpi\\reg.png"
     },
     {
+        "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\menu_menu_collection.xml.flat",
+        "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\menu\\menu_collection.xml"
+    },
+    {
         "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\drawable-ldpi_ic_sync.png.flat",
         "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-ldpi\\ic_sync.png"
     },
@@ -514,6 +514,10 @@
     {
         "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_d_logo3.png.flat",
         "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-mdpi\\d_logo3.png"
+    },
+    {
+        "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\layout_activity_transporter_collection.xml.flat",
+        "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\activity_transporter_collection.xml"
     },
     {
         "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\release\\menu_synch_farmer.xml.flat",

@@ -2,6 +2,29 @@
 <incidents format="6" by="lint 7.1.0" type="incidents">
 
     <incident
+        id="DuplicateIds"
+        severity="fatal"
+        message="Duplicate id `@+id/text2`, already defined earlier in this layout">
+        <location
+            file="${:app*release*sourceProvider*0*resDir*0}/layout/activity_super_admin.xml"
+            line="79"
+            column="21"
+            startOffset="3615"
+            endLine="79"
+            endColumn="44"
+            endOffset="3638"/>
+        <location
+            file="${:app*release*sourceProvider*0*resDir*0}/layout/activity_super_admin.xml"
+            line="53"
+            column="21"
+            startOffset="2448"
+            endLine="53"
+            endColumn="44"
+            endOffset="2471"
+            message="Duplicate id `@+id/text2` originally defined here"/>
+    </incident>
+
+    <incident
         id="NotSibling"
         severity="fatal"
         message="`@+id/btn_connect` is not a sibling in the same `RelativeLayout`">

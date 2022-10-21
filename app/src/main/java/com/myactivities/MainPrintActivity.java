@@ -454,6 +454,8 @@ public class MainPrintActivity extends MyActivity {
                         Toast.makeText(getApplicationContext(), "An Error occurred", Toast.LENGTH_LONG).show();
                     }
                 });
+
+                db.execSQL("UPDATE CollectionDB set status='1' where status='0';");
             }
         } catch (Exception e) {
             dialog.dismiss();

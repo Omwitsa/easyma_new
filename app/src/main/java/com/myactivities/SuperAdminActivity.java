@@ -67,8 +67,7 @@ public class  SuperAdminActivity extends AppCompatActivity implements View.OnCli
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        db = openOrCreateDatabase("plantDB", Context.MODE_PRIVATE, null);
-        db.execSQL("CREATE TABLE IF NOT EXISTS d_plants(plant_name VARCHAR, datep DATETIME, status VARCHAR);");
+        db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
 
         ImageView btnuser = (ImageView) findViewById(R.id.new_user);
         ImageView btnCcoll = (ImageView) findViewById(R.id.ctcollection);
@@ -147,6 +146,8 @@ public class  SuperAdminActivity extends AppCompatActivity implements View.OnCli
                     }
                 });
             }
+
+            db.execSQL("UPDATE TransporterCollection set status='1' where status='0';");
         } catch (Exception e) {
             dialog.dismiss();
             System.out.println("Exception :" + e.getMessage());

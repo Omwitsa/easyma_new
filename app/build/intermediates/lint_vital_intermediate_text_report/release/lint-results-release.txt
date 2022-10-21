@@ -1,3 +1,12 @@
+D:\Newtech\SourceCode\android\Freshpro\app\src\main\res\layout\activity_super_admin.xml:79: Error: Duplicate id @+id/text2, already defined earlier in this layout [DuplicateIds]
+                    android:id="@+id/text2"
+                    ~~~~~~~~~~~~~~~~~~~~~~~
+    D:\Newtech\SourceCode\android\Freshpro\app\src\main\res\layout\activity_super_admin.xml:53: Duplicate id @+id/text2 originally defined here
+
+   Explanation for issues of type "DuplicateIds":
+   Within a layout, id's should be unique since otherwise findViewById() can
+   return an unexpected view.
+
 D:\Newtech\SourceCode\android\Freshpro\app\src\main\res\layout\activity_farmer_receipt.xml:44: Error: @+id/btn_connect is not a sibling in the same RelativeLayout [NotSibling]
             android:layout_toLeftOf="@+id/btn_connect"
             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -6,4 +15,4 @@ D:\Newtech\SourceCode\android\Freshpro\app\src\main\res\layout\activity_farmer_r
    Layout constraints in a given ConstraintLayout or RelativeLayout should
    reference other views within the same relative layout (but not itself!)
 
-1 errors, 0 warnings
+2 errors, 0 warnings

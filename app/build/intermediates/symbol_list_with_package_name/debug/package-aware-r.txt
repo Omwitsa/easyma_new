@@ -1686,7 +1686,6 @@ id action_settings
 id action_synch
 id action_synch_collection
 id action_synch_farmer
-id action_synch_plant
 id action_synch_users
 id action_text
 id actions
@@ -2080,6 +2079,7 @@ id submenuarrow
 id submit_area
 id subtitle_view
 id supply_number
+id synch_collection
 id tabMode
 id tab_host
 id tag_transition_group
@@ -2328,8 +2328,8 @@ menu main
 menu main2
 menu main_activity_actions
 menu menu3
-menu menu_addplant
 menu menu_adduser
+menu menu_collection
 menu synch_farmer
 mipmap aboutus
 mipmap col3

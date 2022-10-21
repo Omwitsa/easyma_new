@@ -47,6 +47,9 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.myactivities.TransporterCollection"
+            android:exported="false" />
+        <activity
             android:name="com.myactivities.Main2Activity"
             android:exported="false"
             android:theme="@style/NoActionBar" />

@@ -1686,7 +1686,6 @@ id action_settings
 id action_synch
 id action_synch_collection
 id action_synch_farmer
-id action_synch_plant
 id action_synch_users
 id action_text
 id actions
@@ -1717,9 +1716,7 @@ id blocking
 id blurred_background_image_view
 id book_now
 id bottom
-id branch
 id btnAbout
-id btnAddPlant
 id btnAddUser
 id btnExit
 id btnMonitor
@@ -1751,8 +1748,6 @@ id buyButton
 id buy_now
 id buy_with
 id buy_with_google
-id c_branch
-id c_coperative
 id cancel_action
 id card_view
 id cast_button_type_closed_caption
@@ -1792,6 +1787,7 @@ id controllers
 id coordinator
 id coporate_branch
 id crash_reporting_present
+id ctcollection
 id custom
 id customPanel
 id dark
@@ -1968,7 +1964,6 @@ id nav_share
 id nav_view
 id navigation_header_container
 id never
-id new_dairy_plant
 id new_user
 id none
 id normal
@@ -2084,6 +2079,7 @@ id submenuarrow
 id submit_area
 id subtitle_view
 id supply_number
+id synch_collection
 id tabMode
 id tab_host
 id tag_transition_group
@@ -2121,6 +2117,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id title_view
+id tno
 id toolbar
 id top
 id topPanel
@@ -2232,6 +2229,7 @@ layout activity_register_farmer
 layout activity_resetpassword
 layout activity_splash
 layout activity_super_admin
+layout activity_transporter_collection
 layout add_admin
 layout admin_login
 layout app_bar_main
@@ -2330,8 +2328,8 @@ menu main
 menu main2
 menu main_activity_actions
 menu menu3
-menu menu_addplant
 menu menu_adduser
+menu menu_collection
 menu synch_farmer
 mipmap aboutus
 mipmap col3
