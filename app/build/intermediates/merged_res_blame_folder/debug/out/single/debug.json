@@ -160,12 +160,12 @@
         "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_menu_manage.png"
     },
     {
-        "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi-v21_ic_menu_manage.xml.flat",
-        "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi-v21\\ic_menu_manage.xml"
-    },
-    {
         "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_transporter_collection.xml.flat",
         "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\layout\\activity_transporter_collection.xml"
+    },
+    {
+        "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi-v21_ic_menu_manage.xml.flat",
+        "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi-v21\\ic_menu_manage.xml"
     },
     {
         "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_farmer.png.flat",
@@ -240,12 +240,12 @@
         "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\mipmap-mdpi\\col3.png"
     },
     {
-        "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_bg3.png.flat",
-        "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-hdpi\\bg3.png"
-    },
-    {
         "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_collection.xml.flat",
         "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\menu\\menu_collection.xml"
+    },
+    {
+        "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_bg3.png.flat",
+        "source": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\src\\main\\res\\drawable-hdpi\\bg3.png"
     },
     {
         "merged": "D:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi-v21_ic_menu_gallery.xml.flat",

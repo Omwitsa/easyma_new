@@ -506,7 +506,7 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
                         String date1 = sdf.format(c.getTime());
                         SimpleDateFormat ff = new SimpleDateFormat("yyyy-MM-dd");
                         String trans= ff.format(c.getTime());
-                        final String branchhh = "MAIN";
+                        final String branchhh = AppConstants.BRANCH;
 
                         String loggenInUser = sharedPreferences.getString("loggedInUser", "");
                         db.execSQL("INSERT INTO CollectionDB  VALUES('" + sno.getText() + "', '" + TextViewf.getText() + "', '" + branchhh +"', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "', '"+date_print +"', '0');");

@@ -195,11 +195,12 @@ public class TransporterCollection extends AppCompatActivity {
                         String date1 = sdf.format(c.getTime());
                         SimpleDateFormat ff = new SimpleDateFormat("yyyy-MM-dd");
                         String trans= ff.format(c.getTime());
-                        final String branchhh = "MAIN";
+                        final String branchhh = AppConstants.BRANCH;
 
                         String transporter = tno.getText().toString().trim().toUpperCase();
+                        String Quantity = TextViewf.getText().toString();
                         String loggenInUser = sharedPreferences.getString("loggedInUser", "");
-                        db.execSQL("INSERT INTO TransporterCollection  VALUES('" + transporter + "', '" + TextViewf.getText() + "', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "', '"+date_print +"', '0');");
+                        db.execSQL("INSERT INTO TransporterCollection  VALUES('" + transporter + "', '" + Quantity + "', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "', '"+date_print +"', '0');");
                         showMessage("Success", "Record added");
                         TextViewf.setText("0");
                         TextView.setText("0");

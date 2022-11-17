@@ -1,4 +1,4 @@
-#Fri Oct 21 11:17:38 EAT 2022
+#Wed Nov 09 10:42:13 EAT 2022
 base.1=D\:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex
 path.1=classes2.dex
 base.0=D\:\\Newtech\\SourceCode\\android\\Freshpro\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex

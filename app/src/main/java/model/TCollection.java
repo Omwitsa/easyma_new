@@ -11,12 +11,18 @@ public class TCollection {
     private String date;
     @SerializedName("saccoCode")
     private String saccoCode;
+    @SerializedName("branch")
+    private String branch;
+    @SerializedName("auditDate")
+    private String auditDate;
 
-    public TCollection(String transCode, String actualKg, String date, String saccoCode) {
+    public TCollection(String transCode, String actualKg, String date, String saccoCode, String branch, String auditDate) {
         this.transCode = transCode;
         this.actualKg = actualKg;
         this.date = date;
         this.saccoCode = saccoCode;
+        this.branch = branch;
+        this.auditDate = auditDate;
     }
 
     public String getTransCode() {
@@ -49,5 +55,21 @@ public class TCollection {
 
     public void setSaccoCode(String saccoCode) {
         this.saccoCode = saccoCode;
+    }
+
+    public String getBranch() {
+        return branch;
+    }
+
+    public void setBranch(String branch) {
+        this.branch = branch;
+    }
+
+    public String getAuditDate() {
+        return auditDate;
+    }
+
+    public void setAuditDate(String auditDate) {
+        this.auditDate = auditDate;
     }
 }

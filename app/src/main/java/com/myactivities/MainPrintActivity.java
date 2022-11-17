@@ -489,7 +489,7 @@ public class MainPrintActivity extends MyActivity {
         buffer.append("Supplier No    :" + sno1 + "\n");
         buffer.append("Quantity       :" + strQnt + " KGs\n");
         buffer.append("Product       :" + strProduct + "\n");
-        buffer.append("Station Name    : MAIN\n");
+        buffer.append("Station Name    : "+ AppConstants.BRANCH +"\n");
         buffer.append("Received By    :" + strAuditId+ "\n");
 
         showMessage("Collection Details", buffer.toString());

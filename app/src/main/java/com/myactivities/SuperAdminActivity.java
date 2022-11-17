@@ -38,6 +38,7 @@ import model.SynchData;
 import model.TCollection;
 import retrofit2.Call;
 import retrofit2.Callback;
+import util.AppConstants;
 
 public class  SuperAdminActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -119,16 +120,17 @@ public class  SuperAdminActivity extends AppCompatActivity implements View.OnCli
         String transCode = null;
         String actualKg = null;
         String date = null;
+        String transDate = null;
         String saccoCode = null;
-
         try {
             while (c.moveToNext()) {
                 transCode = c.getString(0);
                 actualKg = c.getString(1);
                 date = c.getString(2);
                 saccoCode = c.getString(6);
+                transDate = c.getString(7);
 
-                TCollection collection = new TCollection(transCode, actualKg, date, saccoCode);
+                TCollection collection = new TCollection(transCode, actualKg, transDate, saccoCode, AppConstants.BRANCH, date);
                 apiService = ApiClient.getClient().create(ApiInterface.class);
                 Call<Response> call= apiService.transporterIntake(collection);
                 call.enqueue(new Callback<Response>() {

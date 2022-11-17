@@ -53,11 +53,13 @@
   <androidx.games/>
   <androidx.gaming/>
   <androidx.glance/>
+  <androidx.graphics/>
   <androidx.gridlayout/>
   <androidx.health/>
   <androidx.health.connect/>
   <androidx.heifwriter/>
   <androidx.hilt/>
+  <androidx.input/>
   <androidx.interpolator/>
   <androidx.javascriptengine/>
   <androidx.leanback/>
@@ -194,6 +196,7 @@
   <com.google.android.mediahome/>
   <com.google.android.odml/>
   <com.google.android.play/>
+  <com.google.android.recaptcha/>
   <com.google.android.support/>
   <com.google.android.things/>
   <com.google.android.tv/>
