@@ -22,6 +22,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
@@ -117,37 +118,34 @@ public class  SuperAdminActivity extends AppCompatActivity implements View.OnCli
             return;
         }
 
-        String transCode = null;
-        String actualKg = null;
-        String date = null;
-        String transDate = null;
-        String saccoCode = null;
+        ArrayList<TCollection> intakes = new ArrayList<TCollection>();
+        while (c.moveToNext()) {
+            String transCode = c.getString(0);
+            String actualKg = c.getString(1);
+            String date = c.getString(2);
+            String saccoCode = c.getString(6);
+            String transDate = c.getString(7);
+
+            intakes.add(new TCollection(transCode, actualKg, transDate, saccoCode, AppConstants.BRANCH, date));
+        }
+
         try {
-            while (c.moveToNext()) {
-                transCode = c.getString(0);
-                actualKg = c.getString(1);
-                date = c.getString(2);
-                saccoCode = c.getString(6);
-                transDate = c.getString(7);
+            apiService = ApiClient.getClient().create(ApiInterface.class);
+            Call<Response> call= apiService.transporterIntake(intakes);
+            call.enqueue(new Callback<Response>() {
+                @Override
+                public void onResponse(Call<Response> call, retrofit2.Response<Response> response) {
+                    model.Response responseData = response.body();
+                    assert responseData != null;
+                    String status = responseData.getMessage();
+                    Toast.makeText(getApplicationContext(), status, Toast.LENGTH_LONG).show();
+                }
 
-                TCollection collection = new TCollection(transCode, actualKg, transDate, saccoCode, AppConstants.BRANCH, date);
-                apiService = ApiClient.getClient().create(ApiInterface.class);
-                Call<Response> call= apiService.transporterIntake(collection);
-                call.enqueue(new Callback<Response>() {
-                    @Override
-                    public void onResponse(Call<model.Response> call, retrofit2.Response<Response> response) {
-                        model.Response responseData = response.body();
-                        assert responseData != null;
-                        String status = responseData.getMessage();
-                        Toast.makeText(getApplicationContext(), status, Toast.LENGTH_LONG).show();
-                    }
-
-                    @Override
-                    public void onFailure(Call<model.Response> call, Throwable t) {
-                        Toast.makeText(getApplicationContext(), "An Error occurred", Toast.LENGTH_LONG).show();
-                    }
-                });
-            }
+                @Override
+                public void onFailure(Call<Response> call, Throwable t) {
+                    Toast.makeText(getApplicationContext(), "An Error occurred", Toast.LENGTH_LONG).show();
+                }
+            });
 
             db.execSQL("UPDATE TransporterCollection set status='1' where status='0';");
         } catch (Exception e) {

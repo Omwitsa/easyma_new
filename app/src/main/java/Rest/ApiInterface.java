@@ -1,5 +1,7 @@
 package Rest;
 
+import java.util.ArrayList;
+
 import model.ProductResp;
 import model.Response;
 import model.Supplier;
@@ -12,10 +14,10 @@ import retrofit2.http.POST;
 import retrofit2.http.Query;
 
 public interface ApiInterface {
-    @POST("webservice/users/login")
-    Call<Response> login(@Body SynchData synchData);
+    @POST("webservice/users/productIntake")
+    Call<Response> productIntake(@Body ArrayList<SynchData> intakes);
     @POST("webservice/users/transporterIntake")
-    Call<Response> transporterIntake(@Body TCollection collection);
+    Call<Response> transporterIntake(@Body ArrayList<TCollection> collections);
     @GET("webservice/users/getItems")
     Call<ProductResp> getItems(@Query("saccoCode") String saccoCode);
     @POST("webservice/users/registerSupplier")

@@ -419,44 +419,38 @@ public class MainPrintActivity extends MyActivity {
             showMessage("Collection Message", "No new collection found");
             return;
         }
-        String sup = null;
-        String qty = null;
-        String branchhh = null;
-        String dates = null;
-        String auditid = null;
-        String product = null;
-        String saccoCode = null;
+        ArrayList<SynchData> intakes = new ArrayList<SynchData>();
+        while (c.moveToNext()) {
+            String sup = c.getString(0);
+            String qty = c.getString(1);
+            String branch = c.getString(2);
+            String dates = c.getString(3);
+            String auditid = c.getString(4);
+            String product=c.getString(6);
+            String saccoCode=c.getString(7);
+
+            intakes.add(new SynchData(sup, qty, branch, dates, auditid, product, saccoCode));
+        }
 
         try {
-            while (c.moveToNext()) {
-                sup = c.getString(0);
-                qty = c.getString(1);
-                branchhh = c.getString(2);
-                dates = c.getString(3);
-                auditid = c.getString(4);
-                product=c.getString(6);
-                saccoCode=c.getString(7);
+            apiService = ApiClient.getClient().create(ApiInterface.class);
+            Call<model.Response>call= apiService.productIntake(intakes);
+            call.enqueue(new Callback<model.Response>() {
+                @Override
+                public void onResponse(Call<model.Response> call, Response<model.Response> response) {
+                    model.Response responseData = response.body();
+                    assert responseData != null;
+                    String status = responseData.getMessage();
+                    Toast.makeText(getApplicationContext(), status, Toast.LENGTH_LONG).show();
+                }
 
-                SynchData synchData = new SynchData(sup, qty, branchhh, dates, auditid, product, saccoCode);
-                apiService = ApiClient.getClient().create(ApiInterface.class);
-                Call<model.Response>call= apiService.login(synchData);
-                call.enqueue(new Callback<model.Response>() {
-                    @Override
-                    public void onResponse(Call<model.Response> call, Response<model.Response> response) {
-                        model.Response responseData = response.body();
-                        assert responseData != null;
-                        String status = responseData.getMessage();
-                        Toast.makeText(getApplicationContext(), status, Toast.LENGTH_LONG).show();
-                    }
+                @Override
+                public void onFailure(Call<model.Response> call, Throwable t) {
+                    Toast.makeText(getApplicationContext(), "An Error occurred", Toast.LENGTH_LONG).show();
+                }
+            });
 
-                    @Override
-                    public void onFailure(Call<model.Response> call, Throwable t) {
-                        Toast.makeText(getApplicationContext(), "An Error occurred", Toast.LENGTH_LONG).show();
-                    }
-                });
-
-                db.execSQL("UPDATE CollectionDB set status='1' where status='0';");
-            }
+            db.execSQL("UPDATE CollectionDB set status='1' where status='0';");
         } catch (Exception e) {
             dialog.dismiss();
             System.out.println("Exception :" + e.getMessage());
