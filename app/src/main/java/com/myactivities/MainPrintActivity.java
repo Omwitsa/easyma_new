@@ -491,11 +491,17 @@ public class MainPrintActivity extends MyActivity {
         String date1 = DateUtil.timeMilisToString(milis1, "dd-MM-yyyy");
         String time1 = DateUtil.timeMilisToString(milis1, "  HH:mm a");
 
+        /*
+        buffer.append("Office TelNo.   : 0746776828\n");
+        buffer.append("Vet   : \n");
+        * */
         StringBuilder content2Sb = new StringBuilder();
-        content2Sb.append("\n" + AppConstants.SACCO_CODE + "\n" + product + " RECEIPT" + "\n\n");
+        content2Sb.append("\n" + AppConstants.SACCO_CODE + "\n\t" + product + " RECEIPT" + "\n\n");
         content2Sb.append("-----------------------------" + "\n");
         content2Sb.append("" + buffer.toString() + "" + "\n");
         content2Sb.append("--------------------------" + "\n");
+        content2Sb.append("Office TelNo.: 0746776828\n");
+        content2Sb.append("Vet: 0704200115/0711658479\n");
         content2Sb.append("Date:" + date1 + "" + "," + "Time:" + time1 + "" + "\n");
         content2Sb.append("--------------------------" + "\n");
         content2Sb.append("DESIGNED & DEVELOPED BY" + "\n");
