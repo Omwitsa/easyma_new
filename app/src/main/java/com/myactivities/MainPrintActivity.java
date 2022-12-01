@@ -442,6 +442,7 @@ public class MainPrintActivity extends MyActivity {
                     assert responseData != null;
                     String status = responseData.getMessage();
                     Toast.makeText(getApplicationContext(), status, Toast.LENGTH_LONG).show();
+                    db.execSQL("UPDATE CollectionDB set status='1' where status='0';");
                 }
 
                 @Override
@@ -449,8 +450,6 @@ public class MainPrintActivity extends MyActivity {
                     Toast.makeText(getApplicationContext(), "An Error occurred", Toast.LENGTH_LONG).show();
                 }
             });
-
-            db.execSQL("UPDATE CollectionDB set status='1' where status='0';");
         } catch (Exception e) {
             dialog.dismiss();
             System.out.println("Exception :" + e.getMessage());

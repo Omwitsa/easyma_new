@@ -139,6 +139,7 @@ public class  SuperAdminActivity extends AppCompatActivity implements View.OnCli
                     assert responseData != null;
                     String status = responseData.getMessage();
                     Toast.makeText(getApplicationContext(), status, Toast.LENGTH_LONG).show();
+                    db.execSQL("UPDATE TransporterCollection set status='1' where status='0';");
                 }
 
                 @Override
@@ -146,8 +147,6 @@ public class  SuperAdminActivity extends AppCompatActivity implements View.OnCli
                     Toast.makeText(getApplicationContext(), "An Error occurred", Toast.LENGTH_LONG).show();
                 }
             });
-
-            db.execSQL("UPDATE TransporterCollection set status='1' where status='0';");
         } catch (Exception e) {
             dialog.dismiss();
             System.out.println("Exception :" + e.getMessage());
