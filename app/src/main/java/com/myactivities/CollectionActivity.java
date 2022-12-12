@@ -88,6 +88,7 @@ public class CollectionActivity extends MainPrintActivity implements OnClickList
             case R.id.action_synch:
                 if (isOnline()) {
                     fetchProducts();
+                    getSuppliers();
                     sendToDB();
 //                    autosynch();
                 } else {

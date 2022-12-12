@@ -74,7 +74,7 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
     private BluetoothDevice device = null;
     private BluetoothSocket socket = null;
 
-    public EditText sTextView, sno,pin;
+    public EditText sTextView, sno,namesField,pin;
     public EditText TextView,TextViewc,TextViewf;
     private OutputStream outputStream;
     private InputStream inputStream;
@@ -134,6 +134,7 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
         sTextView = (EditText) findViewById(R.id.sTextView);
         TextView = (EditText) findViewById(R.id.TextView);
         sno = (EditText) findViewById(R.id.sno);
+        namesField = (EditText) findViewById(R.id.names);
         TextViewc  = findViewById(R.id.TextViewc);
         TextViewf  = findViewById(R.id.TextViewf);
         TextViewc.setText("0");
@@ -186,6 +187,32 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
             public void afterTextChanged(Editable editable) {
                 _container = editable.toString();
                 calculateFinalQnty();
+            }
+        });
+
+        sno.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                String query = "SELECT * FROM supplierItem WHERE sno ='"+editable.toString()+"'";
+                Cursor c1 = db.rawQuery(query, null);
+                String names = "";
+                Double cummulative = 0.0;
+                while (c1.moveToNext()) {
+                    names = c1.getString(1);
+                    cummulative = c1.getDouble(2);
+                }
+
+                namesField.setText(names);
             }
         });
 
@@ -509,15 +536,7 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
                         final String branchhh = AppConstants.BRANCH;
 
                         String loggenInUser = sharedPreferences.getString("loggedInUser", "");
-                        //Willy
-                        //db.execSQL("INSERT INTO CollectionDB  VALUES('" + sno.getText() + "', '" + TextViewf.getText() + "', '" + branchhh +"', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "', '"+date_print +"', '0');");
-                        int qnty = 0;
-                        for(int i = 1; i < 7000; i++){
-                            qnty++;
-                            qnty = qnty > 9 ? 1 : qnty;
-
-                            db.execSQL("INSERT INTO CollectionDB  VALUES('" + sno.getText() + "', '" + qnty + "', '" + branchhh +"', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "', '"+date_print +"', '0');");
-                        }
+                        db.execSQL("INSERT INTO CollectionDB  VALUES('" + sno.getText() + "', '" + TextViewf.getText() + "', '" + branchhh +"', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "', '"+date_print +"', '0');");
                         showMessage("Success", "Record added");
                         TextViewf.setText("0");
                         TextView.setText("0");

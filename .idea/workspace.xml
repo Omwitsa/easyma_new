@@ -19,18 +19,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ecf75e-d9ba-4f8f-acd2-e710f362e636" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/model/SupplierItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/model/SupplierItemResp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/Rest/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Rest/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Rest/ApiInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Rest/ApiInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myactivities/CollectionActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myactivities/CollectionActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myactivities/MainPrintActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myactivities/MainPrintActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/myactivities/MonitorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/myactivities/MonitorActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/monitor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/monitor.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[0576937161049330]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -245,16 +249,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/myactivities/Enquiry.java</url>
-          <line>215</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/myactivities/Enquiry.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/myactivities/RegisterFarmer.java</url>
           <line>352</line>
           <option name="timeStamp" value="194" />
@@ -263,12 +257,6 @@
           <url>file://$PROJECT_DIR$/app/src/main/java/com/myactivities/DailyReportsActivity.java</url>
           <line>252</line>
           <option name="timeStamp" value="202" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-method">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/myactivities/Enquiry.java</url>
-          <line>60</line>
-          <properties method="onClick" />
-          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

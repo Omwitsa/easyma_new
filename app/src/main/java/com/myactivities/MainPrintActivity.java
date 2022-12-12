@@ -39,6 +39,8 @@ import Pockdata.PocketPos;
 import Rest.ApiClient;
 import Rest.ApiInterface;
 import model.ProductResp;
+import model.SupplierItem;
+import model.SupplierItemResp;
 import model.SynchData;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -382,6 +384,35 @@ public class MainPrintActivity extends MyActivity {
         });
     }
 
+    public void getSuppliers() {
+        apiService = ApiClient.getClient().create(ApiInterface.class);
+        Call<SupplierItemResp> call= apiService.getSuppliers(AppConstants.SACCO_CODE);
+        call.enqueue(new Callback<SupplierItemResp>() {
+            @Override
+            public void onResponse(Call<SupplierItemResp> call, Response<SupplierItemResp> response) {
+                model.SupplierItemResp responseData = response.body();
+                if (responseData.isSuccess()){
+                    ArrayList<SupplierItem> supplierItems = new ArrayList<SupplierItem>(responseData.getSupplierItems());
+                    ArrayList<String> arrItems = new ArrayList<String>();
+                    for (SupplierItem supplier: supplierItems) {
+                        arrItems.add("('"+supplier.getSno()+"', '"+supplier.getNames()+"', '"+supplier.getCummulative()+"')");
+                    }
+
+                    String strItems = TextUtils.join(", ", arrItems);
+                    db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
+                    db.execSQL("CREATE TABLE IF NOT EXISTS supplierItem(sno VARCHAR,names VARCHAR,cummulative Double);");
+                    db.execSQL("DELETE FROM supplierItem");
+                    db.execSQL("INSERT INTO supplierItem VALUES "+strItems+";");
+                }
+            }
+
+            @Override
+            public void onFailure(Call<SupplierItemResp> call, Throwable t) {
+
+            }
+        });
+    }
+
     public void autosynch() {
         Cursor c = db.rawQuery("SELECT * FROM CollectionDB WHERE status='0'", null);
         if (c.getCount() == 0) {
@@ -481,8 +512,21 @@ public class MainPrintActivity extends MyActivity {
             strProduct = c1.getString(2);
         }
 
+        query = "SELECT * FROM supplierItem WHERE sno ='"+sno1+"'";
+        c1 = db.rawQuery(query, null);
+        String names = "";
+        Double cummulative = 0.0;
+        while (c1.moveToNext()) {
+            names = c1.getString(1);
+            cummulative = c1.getDouble(2);
+        }
+
+        db.execSQL("CREATE TABLE IF NOT EXISTS supplierItem(sno VARCHAR,names VARCHAR,cummulative Double);");
+
         buffer.append("Supplier No    :" + sno1 + "\n");
+        buffer.append("Names    :" + names + "\n");
         buffer.append("Quantity       :" + strQnt + " KGs\n");
+        buffer.append("Cummulative       :" + cummulative + " KGs\n");
         buffer.append("Product       :" + strProduct + "\n");
         buffer.append("Station Name    : "+ AppConstants.BRANCH +"\n");
         buffer.append("Received By    :" + strAuditId+ "\n");

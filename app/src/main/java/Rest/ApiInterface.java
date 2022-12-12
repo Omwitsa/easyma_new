@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import model.ProductResp;
 import model.Response;
 import model.Supplier;
+import model.SupplierItemResp;
 import model.SynchData;
 import model.TCollection;
 import retrofit2.Call;
@@ -24,4 +25,6 @@ public interface ApiInterface {
     Call<Response> registerSupplier(@Body Supplier Supplier);
     @GET("webservice/users/getSupplierNo")
     Call<Response> getSupplierNo();
+    @GET("webservice/users/getSuppliers")
+    Call<SupplierItemResp> getSuppliers(@Query("saccoCode") String saccoCode);
 }
