@@ -4,7 +4,6 @@ ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.x
 INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:2:1-138:12
 INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:2:1-138:12
 INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:2:1-138:12
-MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\ce6203738e5c4f24092938f195879ece\transformed\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\01f1c7c61b3c97d5ef72286bc07bc8c1\transformed\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\285d92c9abe7e4b99671ccce643802fa\transformed\jetified-play-services-11.0.4\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-cast-framework:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\f76d4980fdd987082005b43d0b004e50\transformed\jetified-play-services-cast-framework-11.0.4\AndroidManifest.xml:2:1-9:12
@@ -16,6 +15,7 @@ MERGED from [com.google.android.gms:play-services-gcm:11.0.4] C:\Users\Dell\.gra
 MERGED from [com.yqritc:recyclerview-flexibledivider:1.4.0] C:\Users\Dell\.gradle\caches\transforms-3\d0f5ff0ee920053aec8f6617f44ed52e\transformed\jetified-recyclerview-flexibledivider-1.4.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\b8f3cd1adc2299894ae656ed8cc2c6e7\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\578e0305318f5bad5055f1f461d3b1fc\transformed\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\ce6203738e5c4f24092938f195879ece\transformed\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-ads:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\c24de9aebb1c588226d9d7f41f39b1ac\transformed\jetified-play-services-ads-11.0.4\AndroidManifest.xml:16:1-18:12
 MERGED from [com.google.android.gms:play-services-ads-lite:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\ddd6c79435ea183d48b2ae7b37863b62\transformed\jetified-play-services-ads-lite-11.0.4\AndroidManifest.xml:16:1-27:12
 MERGED from [com.google.android.gms:play-services-analytics:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\79b023d481e536adcadcb46cc9778832\transformed\jetified-play-services-analytics-11.0.4\AndroidManifest.xml:16:1-27:12
@@ -118,8 +118,6 @@ uses-sdk
 ADDED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:5-73
 INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:5-73
 INJECTED from D:\Newtech\SourceCode\android\Freshpro\app\src\main\AndroidManifest.xml:6:5-73
-MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\ce6203738e5c4f24092938f195879ece\transformed\multidex-2.0.0\AndroidManifest.xml:20:5-43
-MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\ce6203738e5c4f24092938f195879ece\transformed\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\01f1c7c61b3c97d5ef72286bc07bc8c1\transformed\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\01f1c7c61b3c97d5ef72286bc07bc8c1\transformed\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\285d92c9abe7e4b99671ccce643802fa\transformed\jetified-play-services-11.0.4\AndroidManifest.xml:4:5-43
@@ -142,6 +140,8 @@ MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Dell\.gradle\caches\tran
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\b8f3cd1adc2299894ae656ed8cc2c6e7\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\578e0305318f5bad5055f1f461d3b1fc\transformed\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\578e0305318f5bad5055f1f461d3b1fc\transformed\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\ce6203738e5c4f24092938f195879ece\transformed\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Dell\.gradle\caches\transforms-3\ce6203738e5c4f24092938f195879ece\transformed\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.google.android.gms:play-services-ads:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\c24de9aebb1c588226d9d7f41f39b1ac\transformed\jetified-play-services-ads-11.0.4\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-ads:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\c24de9aebb1c588226d9d7f41f39b1ac\transformed\jetified-play-services-ads-11.0.4\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-ads-lite:11.0.4] C:\Users\Dell\.gradle\caches\transforms-3\ddd6c79435ea183d48b2ae7b37863b62\transformed\jetified-play-services-ads-lite-11.0.4\AndroidManifest.xml:22:5-43

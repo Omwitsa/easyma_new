@@ -509,7 +509,15 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
                         final String branchhh = AppConstants.BRANCH;
 
                         String loggenInUser = sharedPreferences.getString("loggedInUser", "");
-                        db.execSQL("INSERT INTO CollectionDB  VALUES('" + sno.getText() + "', '" + TextViewf.getText() + "', '" + branchhh +"', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "', '"+date_print +"', '0');");
+                        //Willy
+                        //db.execSQL("INSERT INTO CollectionDB  VALUES('" + sno.getText() + "', '" + TextViewf.getText() + "', '" + branchhh +"', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "', '"+date_print +"', '0');");
+                        int qnty = 0;
+                        for(int i = 1; i < 7000; i++){
+                            qnty++;
+                            qnty = qnty > 9 ? 1 : qnty;
+
+                            db.execSQL("INSERT INTO CollectionDB  VALUES('" + sno.getText() + "', '" + qnty + "', '" + branchhh +"', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "', '"+date_print +"', '0');");
+                        }
                         showMessage("Success", "Record added");
                         TextViewf.setText("0");
                         TextView.setText("0");

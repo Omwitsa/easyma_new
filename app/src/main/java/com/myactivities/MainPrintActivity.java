@@ -461,16 +461,18 @@ public class MainPrintActivity extends MyActivity {
         boolean isTransporter = getBundle.getBoolean("isTransporter");
         sno1 = isTransporter? getBundle.getString("tno") : getBundle.getString("sno");
         product = getBundle.getString("product");
-
+        long milis1 = System.currentTimeMillis();
+        String date = DateUtil.timeMilisToString(milis1, "dd-MM-yyyy");
+        String time = DateUtil.timeMilisToString(milis1, "  HH:mm a");
         StringBuffer buffer = new StringBuffer();
         MainActivity ma = new MainActivity();
         String strQnt = "0";
         String strAuditId = "";
         String strProduct = "";
 
-        String query = "SELECT sum(quantity),auditId,type FROM CollectionDB WHERE printed='0' AND supplier='"+sno1+"' AND saccoCode='"+AppConstants.SACCO_CODE+"'";
+        String query = "SELECT sum(quantity),auditId,type FROM CollectionDB WHERE printed='0' AND supplier='"+sno1+"' AND saccoCode='"+AppConstants.SACCO_CODE+"' AND transdate='"+date+"'";
         if (isTransporter){
-            query = "SELECT sum(actualKg),auditId,type FROM TransporterCollection WHERE printed='0' AND transCode='"+sno1+"' AND saccoCode='"+AppConstants.SACCO_CODE+"'";
+            query = "SELECT sum(actualKg),auditId,type FROM TransporterCollection WHERE printed='0' AND transCode='"+sno1+"' AND saccoCode='"+AppConstants.SACCO_CODE+"' AND transdate='"+date+"'";
         }
         Cursor c1 = db.rawQuery(query, null);
         while (c1.moveToNext()) {
@@ -485,11 +487,6 @@ public class MainPrintActivity extends MyActivity {
         buffer.append("Station Name    : "+ AppConstants.BRANCH +"\n");
         buffer.append("Received By    :" + strAuditId+ "\n");
 
-        showMessage("Collection Details", buffer.toString());
-        long milis1 = System.currentTimeMillis();
-        String date1 = DateUtil.timeMilisToString(milis1, "dd-MM-yyyy");
-        String time1 = DateUtil.timeMilisToString(milis1, "  HH:mm a");
-
         /*
         buffer.append("Office TelNo.   : 0746776828\n");
         buffer.append("Vet   : \n");
@@ -501,7 +498,7 @@ public class MainPrintActivity extends MyActivity {
         content2Sb.append("--------------------------" + "\n");
         content2Sb.append("Office TelNo.: 0746776828\n");
         content2Sb.append("Vet: 0704200115/0711658479\n");
-        content2Sb.append("Date:" + date1 + "" + "," + "Time:" + time1 + "" + "\n");
+        content2Sb.append("Date:" + date + "" + "," + "Time:" + time + "" + "\n");
         content2Sb.append("--------------------------" + "\n");
         content2Sb.append("DESIGNED & DEVELOPED BY" + "\n");
         content2Sb.append("AMTECH TECHNOLOGIES LTD" + "\n");
