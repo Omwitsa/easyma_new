@@ -155,7 +155,7 @@ public class TransporterCollection extends AppCompatActivity {
 
         transNo = tno.getText().toString().trim();
         db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
-        db.execSQL("CREATE TABLE IF NOT EXISTS TransporterCollection(transCode VARCHAR,actualKg VARCHAR,date DATETIME,auditId VARCHAR,status VARCHAR,type VARCHAR,saccoCode VARCHAR,transdate DATETIME,printed VARCHAR);");
+        db.execSQL("CREATE TABLE IF NOT EXISTS TransporterCollection(transCode VARCHAR,actualKg VARCHAR,date DATETIME,auditId VARCHAR,status VARCHAR,type VARCHAR,saccoCode VARCHAR,transdate DATETIME,printed VARCHAR,shift VARCHAR);");
     }
 
     public void showMessage(String title, String message) {
@@ -200,7 +200,7 @@ public class TransporterCollection extends AppCompatActivity {
                         String transporter = tno.getText().toString().trim().toUpperCase();
                         String Quantity = TextViewf.getText().toString();
                         String loggenInUser = sharedPreferences.getString("loggedInUser", "");
-                        db.execSQL("INSERT INTO TransporterCollection  VALUES('" + transporter + "', '" + Quantity + "', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "', '"+date_print +"', '0');");
+                        db.execSQL("INSERT INTO TransporterCollection  VALUES('" + transporter + "', '" + Quantity + "', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "', '"+date_print +"', '0','');");
                         showMessage("Success", "Record added");
                         TextViewf.setText("0");
                         TextView.setText("0");

@@ -4204,7 +4204,6 @@ This current collection button takes you to searching of the scale device, that 
     </string-array><string-array name="shift_array">
         <item>AM</item>
         <item>PM</item>
-        <item>PM1</item>
     </string-array><string-array name="branch_array">
         <item>0</item>
         <item>1.5</item>

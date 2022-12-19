@@ -94,6 +94,15 @@
                 android:textSize="45sp" >
             </EditText>
 
+            <EditText
+                android:id="@+id/names"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical" >
+            </EditText>
+
             <TextView
                 android:id="@+id/widget64"
                 android:layout_width="wrap_content"
@@ -107,16 +116,6 @@
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:textSize="34sp">
-            </EditText>
-
-            <EditText
-                android:id="@+id/names"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:editable="false"
-                android:scrollHorizontally="false"
-                android:scrollbars="vertical"
-                android:textSize="45sp" >
             </EditText>
 
             <TextView

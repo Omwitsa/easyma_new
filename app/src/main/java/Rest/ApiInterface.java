@@ -26,5 +26,5 @@ public interface ApiInterface {
     @GET("webservice/users/getSupplierNo")
     Call<Response> getSupplierNo();
     @GET("webservice/users/getSuppliers")
-    Call<SupplierItemResp> getSuppliers(@Query("saccoCode") String saccoCode);
+    Call<SupplierItemResp> getSuppliers(@Query("transCode") String transCode, @Query("saccoCode") String saccoCode);
 }

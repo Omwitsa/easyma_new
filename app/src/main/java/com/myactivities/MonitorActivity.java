@@ -97,7 +97,7 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
     public static StringBuffer hexString = new StringBuffer();
     ScrollView mScrollView;
 
-    String suppp_no,shift,fbranch, product;
+    String suppp_no,fbranch, product;
     double CONTAINER_WEIGHT=0;
     public  String bb;
 
@@ -105,8 +105,7 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
     public static String branchhh,userrrrr,company;
     private static BluetoothSocket mSocket;
     BluetoothDevice selectDevice = null;
-    private String _qty = "0";
-    private String _container = "0";
+    private String _qty = "0",_container = "0", shift = "AM";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -138,6 +137,24 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
         TextViewc  = findViewById(R.id.TextViewc);
         TextViewf  = findViewById(R.id.TextViewf);
         TextViewc.setText("0");
+
+        final Spinner shiftSpinner = (Spinner) findViewById(R.id.shift);
+        ArrayAdapter<CharSequence> shiftAdapter = ArrayAdapter.createFromResource(this,
+                R.array.shift_array, android.R.layout.simple_spinner_item);
+        shiftAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        shiftSpinner.setAdapter(shiftAdapter);
+        shiftSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                shift = shiftSpinner.getSelectedItem().toString();
+                //String shift = (String) spinner.getSelectedItem();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
         Button btnRegister = (Button) findViewById(R.id.save);
         btnRegister.setOnClickListener(new View.OnClickListener() {
@@ -238,6 +255,7 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
 
         db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
         db.execSQL("CREATE TABLE IF NOT EXISTS products(type VARCHAR);");
+        db.execSQL("CREATE TABLE IF NOT EXISTS supplierItem(sno VARCHAR,names VARCHAR,cummulative Double);");
         Cursor c = db.rawQuery("SELECT * FROM products", null);
 
         if (c.getCount() == 0) {
@@ -277,7 +295,7 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
 
         suppp_no = sno.getText().toString().trim();
         db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
-        db.execSQL("CREATE TABLE IF NOT EXISTS CollectionDB(supplier VARCHAR,quantity VARCHAR,branch VARCHAR, date DATETIME, auditId VARCHAR,status VARCHAR, type VARCHAR, saccoCode VARCHAR, transdate DATETIME, printed VARCHAR);");
+        db.execSQL("CREATE TABLE IF NOT EXISTS CollectionDB(supplier VARCHAR,quantity VARCHAR,branch VARCHAR, date DATETIME, auditId VARCHAR,status VARCHAR, type VARCHAR, saccoCode VARCHAR, transdate DATETIME, printed VARCHAR, shift VARCHAR);");
 
 //        mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 //        BluetoothDevice finalDevice = this.getIntent().getParcelableExtra(
@@ -536,7 +554,7 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
                         final String branchhh = AppConstants.BRANCH;
 
                         String loggenInUser = sharedPreferences.getString("loggedInUser", "");
-                        db.execSQL("INSERT INTO CollectionDB  VALUES('" + sno.getText() + "', '" + TextViewf.getText() + "', '" + branchhh +"', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "', '"+date_print +"', '0');");
+                        db.execSQL("INSERT INTO CollectionDB  VALUES('" + sno.getText() + "', '" + TextViewf.getText() + "', '" + branchhh +"', '" + date1 +"','" + loggenInUser + "','0','" + product + "','" + AppConstants.SACCO_CODE + "', '"+date_print +"', '0', '"+shift +"');");
                         showMessage("Success", "Record added");
                         TextViewf.setText("0");
                         TextView.setText("0");

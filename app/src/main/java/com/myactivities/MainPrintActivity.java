@@ -385,8 +385,12 @@ public class MainPrintActivity extends MyActivity {
     }
 
     public void getSuppliers() {
+        String loggenInUser = sharedPreferences.getString("loggedInUser", "");
         apiService = ApiClient.getClient().create(ApiInterface.class);
-        Call<SupplierItemResp> call= apiService.getSuppliers(AppConstants.SACCO_CODE);
+        db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
+        db.execSQL("CREATE TABLE IF NOT EXISTS supplierItem(sno VARCHAR,names VARCHAR,cummulative Double);");
+        db.execSQL("DELETE FROM supplierItem");
+        Call<SupplierItemResp> call= apiService.getSuppliers(loggenInUser, AppConstants.SACCO_CODE);
         call.enqueue(new Callback<SupplierItemResp>() {
             @Override
             public void onResponse(Call<SupplierItemResp> call, Response<SupplierItemResp> response) {
@@ -395,14 +399,13 @@ public class MainPrintActivity extends MyActivity {
                     ArrayList<SupplierItem> supplierItems = new ArrayList<SupplierItem>(responseData.getSupplierItems());
                     ArrayList<String> arrItems = new ArrayList<String>();
                     for (SupplierItem supplier: supplierItems) {
-                        arrItems.add("('"+supplier.getSno()+"', '"+supplier.getNames()+"', '"+supplier.getCummulative()+"')");
+                        if (supplier.getCummulative() == null){
+                            supplier.setCummulative(0.0);
+                        }
+//                        arrItems.add("('"+supplier.getSno()+"', '"+supplier.getNames()+"', '"+supplier.getCummulative()+"')");
+                        String projection = "('"+supplier.getSno()+"', '"+supplier.getNames()+"', '"+supplier.getCummulative()+"')";
+                        db.execSQL("INSERT INTO supplierItem (sno,names,cummulative) VALUES "+projection+";");
                     }
-
-                    String strItems = TextUtils.join(", ", arrItems);
-                    db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
-                    db.execSQL("CREATE TABLE IF NOT EXISTS supplierItem(sno VARCHAR,names VARCHAR,cummulative Double);");
-                    db.execSQL("DELETE FROM supplierItem");
-                    db.execSQL("INSERT INTO supplierItem VALUES "+strItems+";");
                 }
             }
 
@@ -459,8 +462,9 @@ public class MainPrintActivity extends MyActivity {
             String auditid = c.getString(4);
             String product=c.getString(6);
             String saccoCode=c.getString(7);
+            String shift=c.getString(10);
 
-            intakes.add(new SynchData(sup, qty, branch, dates, auditid, product, saccoCode));
+            intakes.add(new SynchData(sup, qty, branch, dates, auditid, product, saccoCode, shift));
         }
 
         try {
@@ -500,16 +504,18 @@ public class MainPrintActivity extends MyActivity {
         String strQnt = "0";
         String strAuditId = "";
         String strProduct = "";
+        String shift = "";
 
-        String query = "SELECT sum(quantity),auditId,type FROM CollectionDB WHERE printed='0' AND supplier='"+sno1+"' AND saccoCode='"+AppConstants.SACCO_CODE+"' AND transdate='"+date+"'";
+        String query = "SELECT sum(quantity),auditId,type,shift FROM CollectionDB WHERE printed='0' AND supplier='"+sno1+"' AND saccoCode='"+AppConstants.SACCO_CODE+"' AND transdate='"+date+"'";
         if (isTransporter){
-            query = "SELECT sum(actualKg),auditId,type FROM TransporterCollection WHERE printed='0' AND transCode='"+sno1+"' AND saccoCode='"+AppConstants.SACCO_CODE+"' AND transdate='"+date+"'";
+            query = "SELECT sum(actualKg),auditId,type,shift FROM TransporterCollection WHERE printed='0' AND transCode='"+sno1+"' AND saccoCode='"+AppConstants.SACCO_CODE+"' AND transdate='"+date+"'";
         }
         Cursor c1 = db.rawQuery(query, null);
         while (c1.moveToNext()) {
             strQnt = c1.getString(0);
             strAuditId = c1.getString(1);
             strProduct = c1.getString(2);
+            shift = c1.getString(3);
         }
 
         query = "SELECT * FROM supplierItem WHERE sno ='"+sno1+"'";
@@ -525,6 +531,7 @@ public class MainPrintActivity extends MyActivity {
 
         buffer.append("Supplier No    :" + sno1 + "\n");
         buffer.append("Names    :" + names + "\n");
+        buffer.append("Shift    :" + shift + "\n");
         buffer.append("Quantity       :" + strQnt + " KGs\n");
         buffer.append("Cummulative       :" + cummulative + " KGs\n");
         buffer.append("Product       :" + strProduct + "\n");
@@ -569,39 +576,39 @@ public class MainPrintActivity extends MyActivity {
 
     private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
         public void onReceive(Context context, Intent intent) {
-            String action = intent.getAction();
+        String action = intent.getAction();
 
-            if (BluetoothAdapter.ACTION_STATE_CHANGED.equals(action)) {
-                final int state = intent.getIntExtra(BluetoothAdapter.EXTRA_STATE, BluetoothAdapter.ERROR);
+        if (BluetoothAdapter.ACTION_STATE_CHANGED.equals(action)) {
+            final int state = intent.getIntExtra(BluetoothAdapter.EXTRA_STATE, BluetoothAdapter.ERROR);
 
-                if (state == BluetoothAdapter.STATE_ON) {
-                    showEnabled();
-                } else if (state == BluetoothAdapter.STATE_OFF) {
-                    showDisabled();
-                }
-            } else if (BluetoothAdapter.ACTION_DISCOVERY_STARTED.equals(action)) {
-                mDeviceList = new ArrayList<BluetoothDevice>();
-
-                mProgressDlg.show();
-            } else if (BluetoothAdapter.ACTION_DISCOVERY_FINISHED.equals(action)) {
-                mProgressDlg.dismiss();
-
-                updateDeviceList();
-            } else if (BluetoothDevice.ACTION_FOUND.equals(action)) {
-                BluetoothDevice device = (BluetoothDevice) intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-
-                mDeviceList.add(device);
-
-                showToast("Found device " + device.getName());
-            } else if (BluetoothDevice.ACTION_BOND_STATE_CHANGED.equals(action)) {
-                final int state = intent.getIntExtra(BluetoothDevice.EXTRA_BOND_STATE, BluetoothDevice.ERROR);
-
-                if (state == BluetoothDevice.BOND_BONDED) {
-                    showToast("Paired");
-
-                    connect();
-                }
+            if (state == BluetoothAdapter.STATE_ON) {
+                showEnabled();
+            } else if (state == BluetoothAdapter.STATE_OFF) {
+                showDisabled();
             }
+        } else if (BluetoothAdapter.ACTION_DISCOVERY_STARTED.equals(action)) {
+            mDeviceList = new ArrayList<BluetoothDevice>();
+
+            mProgressDlg.show();
+        } else if (BluetoothAdapter.ACTION_DISCOVERY_FINISHED.equals(action)) {
+            mProgressDlg.dismiss();
+
+            updateDeviceList();
+        } else if (BluetoothDevice.ACTION_FOUND.equals(action)) {
+            BluetoothDevice device = (BluetoothDevice) intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+
+            mDeviceList.add(device);
+
+            showToast("Found device " + device.getName());
+        } else if (BluetoothDevice.ACTION_BOND_STATE_CHANGED.equals(action)) {
+            final int state = intent.getIntExtra(BluetoothDevice.EXTRA_BOND_STATE, BluetoothDevice.ERROR);
+
+            if (state == BluetoothDevice.BOND_BONDED) {
+                showToast("Paired");
+
+                connect();
+            }
+        }
         }
     };
 

@@ -1,8 +1,13 @@
 package model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class SupplierItem {
+    @SerializedName("SNo")
     private String sno;
+    @SerializedName("Names")
     private String names;
+    @SerializedName("Cummulative")
     private Double cummulative;
 
     public SupplierItem(String sno, String names, Double cummulative) {

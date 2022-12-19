@@ -17,8 +17,10 @@ public class SynchData {
     private String product;
     @SerializedName("saccoCode")
     private String saccoCode;
+    @SerializedName("shift")
+    private String shift;
 
-    public SynchData(String sup, String qty, String branchhh, String dates, String auditid, String product, String saccoCode) {
+    public SynchData(String sup, String qty, String branchhh, String dates, String auditid, String product, String saccoCode, String shift) {
         this.sup = sup;
         this.qty = qty;
         this.branchhh = branchhh;
@@ -26,6 +28,7 @@ public class SynchData {
         this.auditid = auditid;
         this.product = product;
         this.saccoCode = saccoCode;
+        this.shift = shift;
     }
 
     public String getSup() {
@@ -82,5 +85,13 @@ public class SynchData {
 
     public void setSaccoCode(String saccoCode) {
         this.saccoCode = saccoCode;
+    }
+
+    public String getShift() {
+        return shift;
+    }
+
+    public void setShift(String shift) {
+        this.shift = shift;
     }
 }
