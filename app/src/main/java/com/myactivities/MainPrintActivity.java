@@ -402,10 +402,12 @@ public class MainPrintActivity extends MyActivity {
                         if (supplier.getCummulative() == null){
                             supplier.setCummulative(0.0);
                         }
-//                        arrItems.add("('"+supplier.getSno()+"', '"+supplier.getNames()+"', '"+supplier.getCummulative()+"')");
-                        String projection = "('"+supplier.getSno()+"', '"+supplier.getNames()+"', '"+supplier.getCummulative()+"')";
-                        db.execSQL("INSERT INTO supplierItem (sno,names,cummulative) VALUES "+projection+";");
+
+                        arrItems.add("('"+supplier.getSno()+"', '"+supplier.getNames()+"', '"+supplier.getCummulative()+"')");
                     }
+
+                    String strItems = TextUtils.join(", ", arrItems);
+                    db.execSQL("INSERT INTO supplierItem (sno,names,cummulative) VALUES "+strItems+";");
                 }
             }
 

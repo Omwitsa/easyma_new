@@ -233,26 +233,6 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
             }
         });
 
-//        final Spinner spinner1 = (Spinner) findViewById(R.id.branch);
-//        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this,
-//                R.array.branch_array, android.R.layout.simple_spinner_item);
-//        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//        spinner1.setAdapter(adapter1);
-//
-//        spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//                fbranch = spinner1.getSelectedItem().toString();
-//                CONTAINER_WEIGHT = Double.valueOf(fbranch) ;
-//                TextViewc.setText(String.valueOf(CONTAINER_WEIGHT));
-//            }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> parent) {
-//
-//            }
-//        });
-
         db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
         db.execSQL("CREATE TABLE IF NOT EXISTS products(type VARCHAR);");
         db.execSQL("CREATE TABLE IF NOT EXISTS supplierItem(sno VARCHAR,names VARCHAR,cummulative Double);");
@@ -289,9 +269,6 @@ public class MonitorActivity extends MyActivity implements OnItemSelectedListene
             public void onNothingSelected(AdapterView <?> parent) {
             }
         });
-
-        //fetch the supply number from the register farmer activity
-        //  sno.setText("gotten one");
 
         suppp_no = sno.getText().toString().trim();
         db = openOrCreateDatabase("CollectionDB", Context.MODE_PRIVATE, null);
