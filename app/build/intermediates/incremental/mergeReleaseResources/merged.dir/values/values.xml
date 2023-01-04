@@ -33,7 +33,6 @@
     <string-array name="shift_array">
         <item>AM</item>
         <item>PM</item>
-        <item>PM1</item>
     </string-array>
     <string-array name="time_arrays">
         <item>AM</item>

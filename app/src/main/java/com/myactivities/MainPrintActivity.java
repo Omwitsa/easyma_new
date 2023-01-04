@@ -498,8 +498,10 @@ public class MainPrintActivity extends MyActivity {
         boolean isTransporter = getBundle.getBoolean("isTransporter");
         sno1 = isTransporter? getBundle.getString("tno") : getBundle.getString("sno");
         product = getBundle.getString("product");
+
         long milis1 = System.currentTimeMillis();
-        String date = DateUtil.timeMilisToString(milis1, "dd-MM-yyyy");
+        String date = DateUtil.timeMilisToString(milis1, "yyyy-MM-dd");
+
         String time = DateUtil.timeMilisToString(milis1, "  HH:mm a");
         StringBuffer buffer = new StringBuffer();
         MainActivity ma = new MainActivity();
@@ -512,6 +514,7 @@ public class MainPrintActivity extends MyActivity {
         if (isTransporter){
             query = "SELECT sum(actualKg),auditId,type,shift FROM TransporterCollection WHERE printed='0' AND transCode='"+sno1+"' AND saccoCode='"+AppConstants.SACCO_CODE+"' AND transdate='"+date+"'";
         }
+
         Cursor c1 = db.rawQuery(query, null);
         while (c1.moveToNext()) {
             strQnt = c1.getString(0);
